@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArticleBody } from "@/components/article/ArticleBody";
 import { ArticleHeader } from "@/components/article/ArticleHeader";
 import { Sidebar } from "@/components/layout/Sidebar";
+import { Reveal } from "@/components/motion/Reveal";
 import { getAllArticles, getArticleBySlug } from "@/content/load-knowledge";
 import { learningPath } from "@/data/learning-path";
 import { scenarios } from "@/data/scenarios";
@@ -49,9 +50,11 @@ export default async function ArticlePage({
       <Sidebar />
       <section>
         <ArticleHeader article={article} />
-        <ArticleBody html={article.html} />
+        <Reveal as="div" className="section">
+          <ArticleBody html={article.html} />
+        </Reveal>
       </section>
-      <aside className="right-rail">
+      <Reveal as="aside" className="right-rail">
         <h2>学习节点</h2>
         <ul>
           {relatedStages.map((stage) => (
@@ -85,7 +88,7 @@ export default async function ArticlePage({
             <Link href={topicRoute(article.topic)}>查看完整主题</Link>
           </li>
         </ul>
-      </aside>
+      </Reveal>
     </div>
   );
 }

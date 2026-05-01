@@ -31,6 +31,17 @@
 | `npm run build` | Build the production site and generate a static search index |
 | `npm run start` | Start the production server after build |
 
+## GitHub Pages Deployment
+
+The repository is configured to deploy through GitHub Actions to GitHub Pages.
+
+- Workflow: [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+- Target branch: `main`
+- Static output: `out/`
+- Pages URL after deployment: `https://ycl-2004.github.io/Finance/`
+
+For GitHub Pages, the workflow sets `GITHUB_PAGES=true`, which tells Next.js to export a static site under the `/Finance` base path. Local development still runs at the root path with `npm run dev`.
+
 ## Company Snapshot
 
 QM Financials Inc. 是一家位于大温地区的金融服务/财富规划团队。公开官网定位是 financial planning and wealth management，核心服务对象可能包括个人、家庭、新移民、首次买房者、退休规划客户和小企业/企业主。

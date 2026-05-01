@@ -1,10 +1,12 @@
+import { Reveal } from "@/components/motion/Reveal";
+
 export const metadata = {
   title: "使用边界"
 };
 
 export default function BoundariesPage() {
   return (
-    <article className="article-body">
+    <Reveal as="article" className="article-body">
       <p className="eyebrow">Education Boundary</p>
       <h1>使用边界</h1>
       <p>
@@ -29,6 +31,6 @@ export default function BoundariesPage() {
         <li>再用生活场景整理自己的问题和资料。</li>
         <li>最后带着资料清单和问题向合资格专业人士确认。</li>
       </ul>
-    </article>
+    </Reveal>
   );
 }

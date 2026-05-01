@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { MotionListLink } from "@/components/motion/MotionListLink";
+import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getArticlesBySlugs } from "@/content/load-knowledge";
 import { caseStudies, getCaseStudyBySlug } from "@/data/case-studies";
 import { articleRoute } from "@/lib/routes";
@@ -28,7 +29,7 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
   return (
     <div className="page-grid">
       <section>
-        <header className="article-header">
+        <Reveal as="header" className="page-hero detail-hero" layoutId={`case-${study.slug}`}>
           <p className="eyebrow">Case Study</p>
           <h1>{study.title}</h1>
           <p className="lead">{study.background}</p>
@@ -37,57 +38,63 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
             <span className="tag">{study.estimatedMinutes} 分钟</span>
           </div>
           <BoundaryNotice compact />
-        </header>
-        <div className="grid grid--2">
-          <section className="panel">
+        </Reveal>
+        <RevealGroup as="div" className="info-surface info-surface--two">
+          <RevealItem className="info-panel">
             <h2>已知资料</h2>
-            <ul>
+            <ul className="check-list">
               {study.knownFacts.map((fact) => (
                 <li key={fact}>{fact}</li>
               ))}
             </ul>
-          </section>
-          <section className="panel">
+          </RevealItem>
+          <RevealItem className="info-panel">
             <h2>缺失资料</h2>
-            <ul>
+            <ul className="check-list">
               {study.missingFacts.map((fact) => (
                 <li key={fact}>{fact}</li>
               ))}
             </ul>
-          </section>
-        </div>
-        <section className="section panel">
+          </RevealItem>
+        </RevealGroup>
+        <Reveal className="section info-panel">
           <h2>学习任务</h2>
-          <ul>
+          <ul className="check-list check-list--spacious">
             {study.tasks.map((task) => (
               <li key={task}>{task}</li>
             ))}
           </ul>
-        </section>
-        <section className="section panel">
+        </Reveal>
+        <Reveal className="section info-panel">
           <h2>思考路径</h2>
-          <ol>
+          <ol className="step-list">
             {study.thinkingPath.map((step) => (
               <li key={step}>{step}</li>
             ))}
           </ol>
-        </section>
-        <section className="section">
+        </Reveal>
+        <Reveal as="section" className="section">
           <h2>相关知识文章</h2>
-          <div className="grid">
-            {related.map((article) => (
-              <Link className="card" href={articleRoute(article.slug)} key={article.slug}>
-                <h3>{article.title}</h3>
-                <p>{article.summary}</p>
-              </Link>
+          <div className="content-list">
+            {related.map((article, index) => (
+              <MotionListLink
+                description={article.summary}
+                eyebrow={`${article.estimatedMinutes} 分钟`}
+                href={articleRoute(article.slug)}
+                index={index}
+                key={article.slug}
+                layoutId={`article-${article.slug}`}
+                meta={[article.difficulty, `校准：${article.lastReviewed}`]}
+                title={article.title}
+              />
             ))}
           </div>
-        </section>
+        </Reveal>
       </section>
-      <aside className="right-rail">
+      <Reveal as="aside" className="right-rail">
         <h2>边界</h2>
         <p>{study.notAdviceBoundary}</p>
-      </aside>
+      </Reveal>
     </div>
   );
 }

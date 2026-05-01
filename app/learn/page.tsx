@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getAllArticles } from "@/content/load-knowledge";
 import { learningPath } from "@/data/learning-path";
 import { getScenarioBySlug } from "@/data/scenarios";
@@ -14,7 +15,7 @@ export default async function LearnPage() {
 
   return (
     <>
-      <header className="article-header">
+      <Reveal as="header" className="page-hero">
         <p className="eyebrow">Start Here</p>
         <h1>学习路线</h1>
         <p className="lead">
@@ -30,35 +31,26 @@ export default async function LearnPage() {
           </Link>
         </div>
         <BoundaryNotice compact />
-      </header>
+      </Reveal>
 
-      <section className="grid">
+      <RevealGroup className="learning-route">
         {learningPath.map((stage) => (
-          <article className="panel" id={stage.id} key={stage.id}>
-            <div className="meta-row">
-              <span className="tag tag--accent">Stage {stage.order}</span>
-              <span className="tag">{stage.audience}</span>
-            </div>
-            <h2>{stage.title}</h2>
-            <p>{stage.goal}</p>
-            <div className="grid grid--2">
-              <div>
-                <h3>必读文章</h3>
-                <ul>
-                  {stage.requiredArticles.map((slug) => {
-                    const article = articles.find((item) => item.slug === slug);
-                    return (
-                      <li key={slug}>
-                        <Link href={articleRoute(slug)}>{article?.title ?? slug}</Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-                {stage.optionalArticles.length > 0 && (
-                  <>
-                    <h3>选读</h3>
-                    <ul>
-                      {stage.optionalArticles.map((slug) => {
+          <RevealItem className="learning-stage" key={stage.id}>
+            <article id={stage.id}>
+              <div className="learning-stage__number">Stage {stage.order}</div>
+              <div className="learning-stage__main">
+                <div className="learning-stage__intro">
+                  <div className="meta-row">
+                    <span className="tag tag--accent">{stage.audience}</span>
+                  </div>
+                  <h2>{stage.title}</h2>
+                  <p>{stage.goal}</p>
+                </div>
+                <div className="learning-stage__grid">
+                  <div>
+                    <h3>必读文章</h3>
+                    <ul className="inline-link-list">
+                      {stage.requiredArticles.map((slug) => {
                         const article = articles.find((item) => item.slug === slug);
                         return (
                           <li key={slug}>
@@ -67,32 +59,47 @@ export default async function LearnPage() {
                         );
                       })}
                     </ul>
-                  </>
-                )}
+                    {stage.optionalArticles.length > 0 && (
+                      <>
+                        <h3>选读</h3>
+                        <ul className="inline-link-list">
+                          {stage.optionalArticles.map((slug) => {
+                            const article = articles.find((item) => item.slug === slug);
+                            return (
+                              <li key={slug}>
+                                <Link href={articleRoute(slug)}>{article?.title ?? slug}</Link>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </>
+                    )}
+                  </div>
+                  <div>
+                    <h3>学完后检查自己</h3>
+                    <ul className="check-list">
+                      {stage.checkQuestions.map((question) => (
+                        <li key={question}>{question}</li>
+                      ))}
+                    </ul>
+                    <h3>相关生活场景</h3>
+                    <ul className="inline-link-list">
+                      {stage.relatedScenarios.map((slug) => {
+                        const scenario = getScenarioBySlug(slug);
+                        return (
+                          <li key={slug}>
+                            <Link href={scenarioRoute(slug)}>{scenario?.title ?? slug}</Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3>学完后检查自己</h3>
-                <ul>
-                  {stage.checkQuestions.map((question) => (
-                    <li key={question}>{question}</li>
-                  ))}
-                </ul>
-                <h3>相关生活场景</h3>
-                <ul>
-                  {stage.relatedScenarios.map((slug) => {
-                    const scenario = getScenarioBySlug(slug);
-                    return (
-                      <li key={slug}>
-                        <Link href={scenarioRoute(slug)}>{scenario?.title ?? slug}</Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </div>
-          </article>
+            </article>
+          </RevealItem>
         ))}
-      </section>
+      </RevealGroup>
     </>
   );
 }

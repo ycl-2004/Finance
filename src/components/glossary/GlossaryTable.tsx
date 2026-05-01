@@ -44,7 +44,7 @@ export function GlossaryTable({ terms }: { terms: GlossaryTerm[] }) {
           ))}
         </select>
       </div>
-      <div className="article-body">
+      <div className="table-surface">
         <table>
           <thead>
             <tr>

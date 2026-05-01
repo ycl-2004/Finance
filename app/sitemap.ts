@@ -5,8 +5,16 @@ import { scenarios } from "@/data/scenarios";
 import { topicMetadata } from "@/data/topic-metadata";
 import { articleRoute, caseRoute, scenarioRoute, topicRoute } from "@/lib/routes";
 
+export const dynamic = "force-static";
+
+function withTrailingSlash(route: string) {
+  return route === "/" ? "/" : `${route}/`;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://example.com";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.GITHUB_PAGES === "true" ? "https://ycl-2004.github.io/Finance" : "http://localhost:3000");
   const articles = await getAllArticles();
   const staticRoutes = ["/", "/learn", "/topics", "/glossary", "/scenarios", "/cases", "/documents", "/boundaries"];
   const routes = [
@@ -18,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: `${baseUrl}${withTrailingSlash(route)}`,
     lastModified: new Date()
   }));
 }

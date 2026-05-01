@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { MotionListLink } from "@/components/motion/MotionListLink";
+import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getArticlesBySlugs } from "@/content/load-knowledge";
 import { getScenarioBySlug, scenarios } from "@/data/scenarios";
 import { articleRoute } from "@/lib/routes";
@@ -32,7 +33,7 @@ export default async function ScenarioDetailPage({
   return (
     <div className="page-grid">
       <section>
-        <header className="article-header">
+        <Reveal as="header" className="page-hero detail-hero" layoutId={`scenario-${scenario.slug}`}>
           <p className="eyebrow">生活场景 / 按问题学习</p>
           <h1>{scenario.title}</h1>
           <p className="lead">{scenario.problem}</p>
@@ -40,62 +41,67 @@ export default async function ScenarioDetailPage({
             <span className="tag tag--accent">适合：{scenario.userType}</span>
           </div>
           <BoundaryNotice compact />
-        </header>
+        </Reveal>
 
-        <div className="grid grid--2">
-          <section className="panel">
+        <RevealGroup as="div" className="info-surface info-surface--two">
+          <RevealItem className="info-panel">
             <h2>先理解这几件事</h2>
-            <ul>
+            <ul className="check-list">
               {scenario.whatToLearnFirst.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-          </section>
-          <section className="panel">
+          </RevealItem>
+          <RevealItem className="info-panel">
             <h2>需要准备的资料</h2>
-            <ul>
+            <ul className="check-list">
               {scenario.documentsToPrepare.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-          </section>
-        </div>
+          </RevealItem>
+        </RevealGroup>
 
-        <section className="section panel">
+        <Reveal className="section info-panel">
           <h2>可以问顾问的问题</h2>
-          <ul>
+          <ul className="check-list check-list--spacious">
             {scenario.advisorQuestions.map((question) => (
               <li key={question}>{question}</li>
             ))}
           </ul>
-        </section>
+        </Reveal>
 
-        <section className="section">
+        <Reveal as="section" className="section">
           <div className="section-header">
             <div>
               <h2>相关知识文章</h2>
               <p>先读这些，再回到场景整理自己的问题。</p>
             </div>
           </div>
-          <div className="grid">
-            {relatedArticles.map((article) => (
-              <Link className="card" href={articleRoute(article.slug)} key={article.slug}>
-                <span className="tag tag--accent">{article.estimatedMinutes} 分钟</span>
-                <h3>{article.title}</h3>
-                <p>{article.summary}</p>
-              </Link>
+          <div className="content-list">
+            {relatedArticles.map((article, index) => (
+              <MotionListLink
+                description={article.summary}
+                eyebrow={`${article.estimatedMinutes} 分钟`}
+                href={articleRoute(article.slug)}
+                index={index}
+                key={article.slug}
+                layoutId={`article-${article.slug}`}
+                meta={[article.difficulty, `校准：${article.lastReviewed}`]}
+                title={article.title}
+              />
             ))}
           </div>
-        </section>
+        </Reveal>
       </section>
-      <aside className="right-rail">
+      <Reveal as="aside" className="right-rail">
         <h2>不直接下结论</h2>
-        <ul>
+        <ul className="check-list">
           {scenario.boundaries.map((boundary) => (
             <li key={boundary}>{boundary}</li>
           ))}
         </ul>
-      </aside>
+      </Reveal>
     </div>
   );
 }

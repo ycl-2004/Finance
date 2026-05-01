@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { MotionListLink } from "@/components/motion/MotionListLink";
+import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { getArticlesByTopic } from "@/content/load-knowledge";
 import { learningPath } from "@/data/learning-path";
 import { scenarios } from "@/data/scenarios";
@@ -39,7 +41,7 @@ export default async function TopicDetailPage({ params }: { params: Promise<{ sl
   return (
     <div className="page-grid">
       <section>
-        <header className="article-header">
+        <Reveal as="header" className="page-hero detail-hero" layoutId={`topic-${topic.slug}`}>
           <p className="eyebrow">{topic.englishTitle}</p>
           <h1>{topic.title}</h1>
           <p className="lead">{topic.description}</p>
@@ -48,23 +50,24 @@ export default async function TopicDetailPage({ params }: { params: Promise<{ sl
             <span className="tag">{articles.length} 篇文章</span>
           </div>
           <BoundaryNotice compact />
-        </header>
+        </Reveal>
 
-        <section className="grid">
-          {articles.map((article) => (
-            <Link className="card" href={articleRoute(article.slug)} key={article.slug}>
-              <div className="meta-row">
-                <span className="tag tag--accent">{article.difficulty}</span>
-                <span className="tag">{article.estimatedMinutes} 分钟</span>
-                <span className="tag">校准：{article.lastReviewed}</span>
-              </div>
-              <h3>{article.title}</h3>
-              <p>{article.summary}</p>
-            </Link>
+        <RevealGroup className="content-list">
+          {articles.map((article, index) => (
+            <MotionListLink
+              description={article.summary}
+              eyebrow={article.difficulty}
+              href={articleRoute(article.slug)}
+              index={index}
+              key={article.slug}
+              layoutId={`article-${article.slug}`}
+              meta={[`${article.estimatedMinutes} 分钟`, `校准：${article.lastReviewed}`]}
+              title={article.title}
+            />
           ))}
-        </section>
+        </RevealGroup>
       </section>
-      <aside className="right-rail">
+      <Reveal as="aside" className="right-rail">
         <h2>相关学习阶段</h2>
         <ul>
           {relatedStages.map((stage) => (
@@ -81,7 +84,7 @@ export default async function TopicDetailPage({ params }: { params: Promise<{ sl
             </li>
           ))}
         </ul>
-      </aside>
+      </Reveal>
     </div>
   );
 }

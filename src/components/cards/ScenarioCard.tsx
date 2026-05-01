@@ -1,16 +1,17 @@
-import Link from "next/link";
 import type { Scenario } from "@/data/scenarios";
+import { MotionListLink } from "@/components/motion/MotionListLink";
 import { scenarioRoute } from "@/lib/routes";
 
-export function ScenarioCard({ scenario }: { scenario: Scenario }) {
+export function ScenarioCard({ scenario, index = 0 }: { scenario: Scenario; index?: number }) {
   return (
-    <Link className="card scenario-card" href={scenarioRoute(scenario.slug)}>
-      <div className="meta-row">
-        <span className="tag tag--accent">生活场景</span>
-        <span className="tag">{scenario.relatedArticles.length} 个资源</span>
-      </div>
-      <h3>{scenario.title}</h3>
-      <p>{scenario.problem}</p>
-    </Link>
+    <MotionListLink
+      description={scenario.problem}
+      eyebrow="生活场景"
+      href={scenarioRoute(scenario.slug)}
+      index={index}
+      layoutId={`scenario-${scenario.slug}`}
+      meta={[`${scenario.relatedArticles.length} 个资源`, `${scenario.documentsToPrepare.length} 类资料`]}
+      title={scenario.title}
+    />
   );
 }

@@ -2,11 +2,12 @@ import Link from "next/link";
 import type { Article } from "@/content/schema";
 import { getTopicTitle } from "@/data/topic-metadata";
 import { topicRoute } from "@/lib/routes";
+import { Reveal } from "@/components/motion/Reveal";
 import { BoundaryNotice } from "./BoundaryNotice";
 
 export function ArticleHeader({ article }: { article: Article }) {
   return (
-    <header className="article-header">
+    <Reveal as="header" className="page-hero article-hero" layoutId={`article-${article.slug}`}>
       <p className="eyebrow">
         <Link href={topicRoute(article.topic)}>{getTopicTitle(article.topic)}</Link>
       </p>
@@ -19,6 +20,6 @@ export function ArticleHeader({ article }: { article: Article }) {
         <span className="tag">{article.audience}</span>
       </div>
       <BoundaryNotice compact />
-    </header>
+    </Reveal>
   );
 }
