@@ -33,7 +33,8 @@ export default async function ScenarioDetailPage({
   if (!scenario) notFound();
   const relatedArticles = await getArticlesBySlugs(scenario.relatedArticles);
   const checklist = getChecklistByScenarioSlug(scenario.slug);
-  const documentsHref = checklist ? `/documents?scenario=${checklist.slug}` : "/documents";
+  const documentsHref = checklist ? `/documents?scenario=${checklist.scenarioSlug}` : "/documents";
+  const printableDocumentsHref = `${documentsHref}#document-print-area`;
 
   return (
     <div className="page-grid">
@@ -50,9 +51,9 @@ export default async function ScenarioDetailPage({
               <AppIcon name="clipboard" />
               生成资料清单
             </Link>
-            <Link className="button" href={`${documentsHref}#document-print-area`}>
+            <Link className="button" href={printableDocumentsHref}>
               <AppIcon name="fileText" />
-              下载 PDF
+              查看可打印清单
             </Link>
             <Link className="button" href={`/consultation?scenario=${scenario.slug}`}>
               <AppIcon name="phone" />
@@ -122,7 +123,7 @@ export default async function ScenarioDetailPage({
           <div>
             <p className="eyebrow">Ready</p>
             <h2>1 分钟生成你的准备清单</h2>
-            <p>勾选进度会保存在本机浏览器。准备好后可以打印或保存为 PDF。</p>
+            <p>勾选进度会保存在本机浏览器。进入清单页后，可以用打印功能保存为 PDF。</p>
           </div>
           <div className="actions">
             <Link className="button button--primary" href={documentsHref}>

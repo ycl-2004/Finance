@@ -82,6 +82,51 @@ export const documentChecklists: DocumentChecklist[] = [
     ]
   },
   {
+    slug: "account-differences",
+    scenarioSlug: "account-differences",
+    title: "注册账户比较清单",
+    description: "用于比较 TFSA、RRSP、FHSA 和其他账户前，先整理 room、税务记录、资金时间和已有账户资料。",
+    advisorQuestions: [
+      "我的 CRA room 和金融机构记录是否一致？",
+      "这笔钱的使用时间会怎样影响账户选择？",
+      "哪些提款、转账或供款记录还需要向税务专业人士确认？"
+    ],
+    groups: [
+      {
+        id: "tax-room",
+        title: "税务与 room 记录",
+        items: [
+          { id: "cra-account", label: "CRA account 可查看 contribution room 的准备信息" },
+          { id: "latest-noa", label: "最近 Notice of Assessment / Notice of Reassessment" },
+          { id: "tfsa-room", label: "TFSA contribution room 记录和当年交易记录" },
+          { id: "rrsp-limit", label: "RRSP deduction limit 和未使用额度" },
+          { id: "fhsa-eligibility", label: "FHSA eligibility、开户年份和供款记录（如适用）" }
+        ]
+      },
+      {
+        id: "account-statements",
+        title: "已有账户资料",
+        items: [
+          { id: "tfsa-statements", label: "TFSA statements" },
+          { id: "rrsp-statements", label: "RRSP statements" },
+          { id: "fhsa-statements", label: "FHSA statements（如已有）" },
+          { id: "nonregistered-statements", label: "非注册投资账户 statements（如适用）" },
+          { id: "contribution-withdrawal-log", label: "当年供款、提款、转账和大额入账记录" }
+        ]
+      },
+      {
+        id: "goals-cashflow",
+        title: "资金用途与现金流",
+        items: [
+          { id: "use-timeline", label: "这笔资金预计使用时间：短期、买房、退休或长期投资" },
+          { id: "emergency-fund", label: "应急金和短期现金需求" },
+          { id: "debt-summary", label: "信用卡、贷款、line of credit 等债务余额" },
+          { id: "goal-notes", label: "买房、教育、退休或其他目标草稿" }
+        ]
+      }
+    ]
+  },
+  {
     slug: "new-to-canada",
     scenarioSlug: "new-to-canada",
     title: "新移民金融起步清单",
@@ -207,6 +252,49 @@ export const documentChecklists: DocumentChecklist[] = [
     ]
   },
   {
+    slug: "young-family-insurance",
+    scenarioSlug: "young-family-insurance",
+    title: "家庭保险准备清单",
+    description: "用于年轻家庭、有房贷或有收入依赖者，在讨论人寿、重疾、伤残和雇主福利前整理风险缺口。",
+    advisorQuestions: [
+      "如果主要收入中断，家庭现金流缺口会在哪里？",
+      "现有雇主福利可以覆盖哪些风险，不能覆盖哪些？",
+      "现有保单的 owner、beneficiary 和 coverage 是否还符合家庭安排？"
+    ],
+    groups: [
+      {
+        id: "household-cashflow",
+        title: "家庭现金流与责任",
+        items: [
+          { id: "income-summary", label: "家庭收入来源和每月税后收入估算" },
+          { id: "monthly-expenses", label: "房贷、房租、托儿、教育、生活费等每月支出" },
+          { id: "dependants", label: "孩子、父母或其他收入依赖者信息" },
+          { id: "emergency-fund", label: "应急金余额和可动用现金" }
+        ]
+      },
+      {
+        id: "existing-coverage",
+        title: "已有保障资料",
+        items: [
+          { id: "life-policy", label: "现有人寿保险 policy summary" },
+          { id: "ci-disability-policy", label: "重疾、伤残或意外保险资料（如有）" },
+          { id: "employer-benefits", label: "雇主福利 booklet 和 coverage summary" },
+          { id: "waiting-period", label: "福利 waiting period、免赔期和离职后变化说明" }
+        ]
+      },
+      {
+        id: "debts-beneficiaries",
+        title: "债务与受益人安排",
+        items: [
+          { id: "mortgage-statement", label: "房贷 statement 或贷款余额" },
+          { id: "debt-list", label: "车贷、学生贷款、信用额度和信用卡余额" },
+          { id: "beneficiary-records", label: "保单和账户 beneficiary 记录" },
+          { id: "will-poa", label: "遗嘱、授权文件或监护安排草稿（如已有）" }
+        ]
+      }
+    ]
+  },
+  {
     slug: "pre-retirement",
     scenarioSlug: "pre-retirement",
     title: "退休前准备清单",
@@ -245,6 +333,50 @@ export const documentChecklists: DocumentChecklist[] = [
           { id: "poa", label: "Power of Attorney / Representation Agreement" },
           { id: "beneficiaries", label: "账户和保单受益人记录" },
           { id: "insurance", label: "现有保险或长期照护安排" }
+        ]
+      }
+    ]
+  },
+  {
+    slug: "high-income-accounts",
+    scenarioSlug: "high-income-accounts",
+    title: "高收入账户与税务顺序清单",
+    description: "用于收入提高后比较 RRSP、TFSA、非注册账户和税务顺序前，整理收入、room、投资和流动性资料。",
+    advisorQuestions: [
+      "现在税率和未来税率可能有什么差异？",
+      "账户选择会怎样影响流动性、提款税和投资时间？",
+      "哪些税务问题需要会计师或税务专业人士先确认？"
+    ],
+    groups: [
+      {
+        id: "income-tax",
+        title: "收入与税务记录",
+        items: [
+          { id: "latest-noa", label: "最近 Notice of Assessment / Notice of Reassessment" },
+          { id: "t4-t1", label: "T4、T1 General 或自雇收入记录" },
+          { id: "income-change", label: "未来 1-3 年收入变化、bonus 或 RSU/stock option 记录（如适用）" },
+          { id: "rrsp-limit", label: "RRSP deduction limit 和可结转 deduction 记录" }
+        ]
+      },
+      {
+        id: "accounts-investments",
+        title: "账户与投资资料",
+        items: [
+          { id: "tfsa-statements", label: "TFSA statements 和当年供款/提款记录" },
+          { id: "rrsp-statements", label: "RRSP statements 和供款记录" },
+          { id: "nonregistered-statements", label: "非注册投资账户 statements" },
+          { id: "acb-gains", label: "ACB、realized gains/losses 和 T3/T5 资料（如适用）" },
+          { id: "fees-summary", label: "投资费用、MER、advisor fee 或交易费用摘要" }
+        ]
+      },
+      {
+        id: "liquidity-goals",
+        title: "流动性与目标",
+        items: [
+          { id: "cashflow-budget", label: "每月现金流、固定支出和可投资金额估算" },
+          { id: "large-expenses", label: "买房、创业、教育、赡养或其他大额支出时间表" },
+          { id: "debt-summary", label: "贷款、line of credit、信用卡和其他负债" },
+          { id: "professional-questions", label: "需要向会计师、税务或投资专业人士确认的问题清单" }
         ]
       }
     ]

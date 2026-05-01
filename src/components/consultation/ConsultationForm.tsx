@@ -3,7 +3,6 @@
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { AppIcon } from "@/components/icons/AppIcon";
-import { documentChecklists } from "@/data/document-checklists";
 import { scenarios } from "@/data/scenarios";
 
 const timeOptions = [
@@ -13,14 +12,11 @@ const timeOptions = [
   "只是先确认资料缺口"
 ];
 
-const scenarioOptions = documentChecklists.map((checklist) => {
-  const scenario = scenarios.find((item) => item.slug === checklist.scenarioSlug);
-  return {
-    slug: checklist.slug,
-    title: scenario?.shortTitle ?? checklist.title,
-    label: scenario?.stageLabel ?? "资料准备"
-  };
-});
+const scenarioOptions = scenarios.map((scenario) => ({
+  slug: scenario.slug,
+  title: scenario.shortTitle,
+  label: scenario.stageLabel
+}));
 
 export function ConsultationForm() {
   const router = useRouter();
@@ -130,12 +126,18 @@ function iconForScenario(slug: string) {
       return "compass";
     case "kids-education":
       return "graduationCap";
+    case "account-differences":
+      return "fileText";
     case "mortgage-renewal":
       return "fileText";
+    case "young-family-insurance":
+      return "shieldCheck";
     case "pre-retirement":
       return "wallet";
     case "business-owner":
       return "briefcase";
+    case "high-income-accounts":
+      return "wallet";
     default:
       return "clipboard";
   }

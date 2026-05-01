@@ -4,6 +4,7 @@ import { topicMetadata } from "../src/data/topic-metadata";
 import { learningPath } from "../src/data/learning-path";
 import { scenarios } from "../src/data/scenarios";
 import { caseStudies } from "../src/data/case-studies";
+import { documentChecklists } from "../src/data/document-checklists";
 
 async function main() {
   const errors: string[] = [];
@@ -37,10 +38,31 @@ async function main() {
     if (scenario.relatedArticles.length < 3) {
       errors.push(`Scenario '${scenario.slug}' must link at least 3 articles/resources`);
     }
+    const checklist = documentChecklists.find(
+      (documentChecklist) => documentChecklist.scenarioSlug === scenario.slug
+    );
+    if (!checklist) {
+      errors.push(`Scenario '${scenario.slug}' must have a matching document checklist`);
+    }
     for (const slug of scenario.relatedArticles) {
       if (!articleSlugs.has(slug)) {
         errors.push(`Scenario '${scenario.slug}' references missing article '${slug}'`);
       }
+    }
+  }
+
+  for (const checklist of documentChecklists) {
+    if (!scenarios.some((scenario) => scenario.slug === checklist.scenarioSlug)) {
+      errors.push(`Document checklist '${checklist.slug}' references missing scenario '${checklist.scenarioSlug}'`);
+    }
+    if (checklist.slug !== checklist.scenarioSlug) {
+      errors.push(`Document checklist '${checklist.slug}' slug must match scenarioSlug '${checklist.scenarioSlug}'`);
+    }
+    if (checklist.groups.length === 0) {
+      errors.push(`Document checklist '${checklist.slug}' must include at least one group`);
+    }
+    if (checklist.advisorQuestions.length < 3) {
+      errors.push(`Document checklist '${checklist.slug}' must include at least 3 advisor questions`);
     }
   }
 

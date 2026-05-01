@@ -83,8 +83,9 @@ export function DocumentChecklistApp({
 
   function selectChecklist(slug: string) {
     setActiveSlug(slug);
+    const selectedChecklist = checklists.find((checklist) => checklist.slug === slug);
     const nextUrl = new URL(window.location.href);
-    nextUrl.searchParams.set("scenario", slug);
+    nextUrl.searchParams.set("scenario", selectedChecklist?.scenarioSlug ?? slug);
     window.history.replaceState({}, "", nextUrl);
   }
 
@@ -198,7 +199,7 @@ export function DocumentChecklistApp({
             <div className="document-rail__actions">
               <Link
                 className="button button--primary button--full"
-                href={`/consultation?scenario=${activeChecklist.slug}`}
+                href={`/consultation?scenario=${activeChecklist.scenarioSlug}`}
               >
                 <AppIcon name="phone" />
                 预约准备会

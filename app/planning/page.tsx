@@ -122,7 +122,7 @@ export default function PlanningPage() {
       <RevealGroup className="planning-grid" ariaLabel="开始规划场景">
         {priorityScenarios.map((scenario, index) => {
           const checklist = getChecklistByScenarioSlug(scenario.slug);
-          const documentsHref = checklist ? `/documents?scenario=${checklist.slug}` : "/documents";
+          const documentsHref = checklist ? `/documents?scenario=${checklist.scenarioSlug}` : "/documents";
 
           return (
             <RevealItem className="planning-card" key={scenario.slug}>
