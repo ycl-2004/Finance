@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { usePathname } from "next/navigation";
 
 function scrollToRouteTarget() {
@@ -18,32 +18,39 @@ function scrollToRouteTarget() {
 }
 
 function scheduleScrollReset() {
-  let timeout = 0;
+  const timeouts: number[] = [];
   const frame = window.requestAnimationFrame(() => {
     scrollToRouteTarget();
-    timeout = window.setTimeout(scrollToRouteTarget, 80);
+    [80, 240, 600].forEach((delay) => {
+      timeouts.push(window.setTimeout(scrollToRouteTarget, delay));
+    });
   });
 
   return () => {
     window.cancelAnimationFrame(frame);
-    window.clearTimeout(timeout);
+    timeouts.forEach(window.clearTimeout);
   };
 }
 
 export function ScrollRestoration() {
   const pathname = usePathname();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
     }
-  }, []);
+    scrollToRouteTarget();
+  }, [pathname]);
 
   useEffect(() => scheduleScrollReset(), [pathname]);
 
   useEffect(() => {
+    window.addEventListener("pageshow", scrollToRouteTarget);
     window.addEventListener("hashchange", scrollToRouteTarget);
-    return () => window.removeEventListener("hashchange", scrollToRouteTarget);
+    return () => {
+      window.removeEventListener("pageshow", scrollToRouteTarget);
+      window.removeEventListener("hashchange", scrollToRouteTarget);
+    };
   }, []);
 
   return null;
