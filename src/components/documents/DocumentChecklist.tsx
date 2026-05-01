@@ -93,10 +93,9 @@ export function DocumentChecklistApp({
       <div className="document-workspace__intro">
         <div>
           <p className="eyebrow">Document Preparation</p>
-          <h2 id="document-checklist-title">选择场景，生成你的准备清单</h2>
+          <h2 id="document-checklist-title">生成准备清单</h2>
           <p>
-            勾选状态只保存在你的浏览器 localStorage，不上传文件、不收集资料内容。
-            完成后可以导出 PDF，或预约 15 分钟准备会确认缺口。
+            勾选只保存在本机，不上传资料。完成后可导出 PDF，或预约准备会确认缺口。
           </p>
         </div>
         <div className="document-score" aria-label="完成进度">
@@ -193,8 +192,8 @@ export function DocumentChecklistApp({
             <h3>{isComplete ? "资料准备已完成" : "准备到 50% 后，建议确认缺口"}</h3>
             <p>
               {isReadyForConsultation
-                ? "你已经整理出一份可讨论的准备包。下一步可以下载 PDF，或预约准备会确认还缺哪些资料。"
-                : "先完成至少一半清单。系统会保留进度，你可以之后继续补齐。"}
+                ? "你已经有一份可讨论的准备包。下一步可下载 PDF，或预约确认缺口。"
+                : "先完成一半清单。进度会保存在本机，之后可继续补齐。"}
             </p>
             <div className="document-rail__actions">
               <Link

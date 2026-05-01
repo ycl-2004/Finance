@@ -98,24 +98,24 @@ export function ConsultationForm() {
         <span>你最想先确认的问题</span>
         <textarea
           name="question"
-          placeholder="例如：我准备买房，但不确定首付、收入证明和 FHSA 资料要先整理哪些。"
+          placeholder="例如：我准备买房，想确认首付和收入资料。"
           rows={4}
         />
       </label>
 
       <div className="consultation-disclaimer">
         <AppIcon name="shieldCheck" />
-        <span>请不要填写完整 SIN、银行账号、CRA/银行/保险密码或信用卡 CVV。</span>
+        <span>不要填写完整 SIN、银行账号、登录密码或信用卡 CVV。</span>
       </div>
 
       <div className="actions">
         <button className="button button--primary" type="submit">
           <AppIcon name="checkCircle" />
-          生成预约确认
+          生成确认页
         </button>
         <a className="button" href="tel:+17789299942">
           <AppIcon name="phone" />
-          直接致电
+          致电
         </a>
       </div>
     </form>

@@ -19,7 +19,7 @@ export default async function DocumentsPage() {
         <p className="eyebrow">Document Preparation</p>
         <h1>资料准备</h1>
         <p className="lead">
-          选择你的场景，勾选需要准备的资料，生成一份可以带进顾问会议的准备清单。
+          选择场景，勾选资料，生成可带进会议的准备清单。
         </p>
         <BoundaryNotice compact />
       </Reveal>

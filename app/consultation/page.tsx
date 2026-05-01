@@ -32,19 +32,19 @@ export default function ConsultationPage() {
     <>
       <Reveal as="header" className="page-hero consultation-hero">
         <p className="eyebrow">Consultation</p>
-        <h1>预约 15 分钟准备会</h1>
+        <h1>预约准备会</h1>
         <p className="lead">
-          先把你的场景、时间状态和核心问题整理清楚。准备会用于确认资料缺口和下一步问题，
+          先整理场景、时间和核心问题。准备会用于确认资料缺口，
           不替代投资、保险、税务、法律或贷款建议。
         </p>
         <div className="actions">
           <a className="button button--primary" href="tel:+17789299942">
             <AppIcon name="phone" />
-            直接致电 +1 778 929 9942
+            致电 +1 778 929 9942
           </a>
           <Link className="button" href="/documents">
             <AppIcon name="clipboard" />
-            先做资料清单
+            资料清单
           </Link>
         </div>
         <BoundaryNotice compact />
@@ -55,7 +55,7 @@ export default function ConsultationPage() {
           <p className="eyebrow">Book A Prep Call</p>
           <h2 id="consultation-form-title">填写预约意向</h2>
           <p>
-            当前版本会把预约草稿保存在你的浏览器，用来生成确认页。正式发送前，请通过电话确认时间。
+            预约草稿只保存在本机。正式安排请电话确认。
           </p>
           <Suspense fallback={<div className="form-loading">正在载入预约表单...</div>}>
             <ConsultationForm />
@@ -75,7 +75,7 @@ export default function ConsultationPage() {
                 </span>
                 <div>
                   <strong>完成资料清单</strong>
-                  <span>先把能找到的资料勾选出来</span>
+                  <span>勾选可找到的资料</span>
                 </div>
                 <span className="step-tag">准备</span>
               </div>
@@ -83,15 +83,15 @@ export default function ConsultationPage() {
                 <span className="step-dot">2</span>
                 <div>
                   <strong>预约准备会</strong>
-                  <span>确认缺口和下一步要问的问题</span>
+                  <span>确认缺口和问题</span>
                 </div>
                 <span className="step-tag">确认</span>
               </div>
               <div className="journey-step">
                 <span className="step-dot">3</span>
                 <div>
-                  <strong>进入正式会议</strong>
-                  <span>带着资料和问题与专业人士讨论</span>
+                  <strong>正式会议</strong>
+                  <span>带资料和问题讨论</span>
                 </div>
                 <span className="step-tag">行动</span>
               </div>
