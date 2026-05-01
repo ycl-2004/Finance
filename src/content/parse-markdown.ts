@@ -4,16 +4,50 @@ import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
+import type { Root } from "hast";
+import type { Plugin } from "unified";
 import { articleFrontmatterSchema, type Article } from "./schema";
 import { estimateReadingMinutes } from "./reading-time";
 
 const sourceUrlRegex = /https?:\/\/[^\s)]+/g;
+
+type ResponsiveNode = {
+  type?: string;
+  tagName?: string;
+  properties?: Record<string, unknown>;
+  children?: ResponsiveNode[];
+  [key: string]: unknown;
+};
+
+function wrapResponsiveTables(node: ResponsiveNode): void {
+  if (!Array.isArray(node.children)) return;
+
+  node.children = node.children.map((child) => {
+    wrapResponsiveTables(child);
+
+    if (child.type === "element" && child.tagName === "table") {
+      return {
+        type: "element",
+        tagName: "div",
+        properties: { className: ["article-table-scroll"] },
+        children: [child]
+      };
+    }
+
+    return child;
+  });
+}
+
+const rehypeResponsiveTables: Plugin<[], Root> = () => (tree) => {
+  wrapResponsiveTables(tree as ResponsiveNode);
+};
 
 export async function markdownToHtml(markdown: string): Promise<string> {
   const processed = await unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype)
+    .use(rehypeResponsiveTables)
     .use(rehypeStringify)
     .process(markdown);
 

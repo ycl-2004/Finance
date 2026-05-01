@@ -32,6 +32,13 @@
   box-sizing: border-box;
 }
 
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+}
+
 html {
   background: var(--bg);
   color: var(--text);
@@ -171,6 +178,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1px;
+  min-width: 0;
 }
 
 .brand strong {
@@ -238,6 +246,11 @@ p {
   align-items: start;
 }
 
+.page-grid > *,
+.article-layout > * {
+  min-width: 0;
+}
+
 .sidebar,
 .right-rail,
 .panel,
@@ -252,6 +265,8 @@ p {
 .right-rail {
   position: sticky;
   top: 104px;
+  max-width: 100%;
+  min-width: 0;
   padding: 18px;
   backdrop-filter: blur(14px);
 }
@@ -270,10 +285,18 @@ p {
 }
 
 .sidebar a {
+  min-width: 0;
   border-radius: var(--radius-sm);
   color: var(--muted);
   font-size: 0.9rem;
+  overflow-wrap: anywhere;
   padding: 8px 10px;
+}
+
+.right-rail a,
+.right-rail p,
+.right-rail li {
+  overflow-wrap: anywhere;
 }
 
 .sidebar a:hover {
@@ -398,6 +421,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
   min-height: 44px;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -1468,15 +1492,23 @@ p {
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  overflow-wrap: anywhere;
   padding: 30px;
 }
 
-.table-surface {
+.table-surface,
+.article-table-scroll {
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.72);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
   padding: 18px;
+}
+
+.article-table-scroll {
+  margin: 18px 0;
 }
 
 .article-body h2 {
@@ -1499,18 +1531,28 @@ p {
 }
 
 .article-body table {
-  display: block;
   width: 100%;
-  margin: 18px 0;
   border-collapse: collapse;
-  overflow-x: auto;
   font-size: 0.94rem;
 }
 
-.table-surface table {
-  width: 100%;
+.article-body > table {
+  display: block;
+  max-width: 100%;
+  margin: 18px 0;
+  overflow-x: auto;
+}
+
+.table-surface table,
+.article-table-scroll table {
+  width: max-content;
+  min-width: 100%;
   border-collapse: collapse;
   font-size: 0.94rem;
+}
+
+.article-table-scroll table {
+  margin: 0;
 }
 
 .table-surface th,
@@ -1783,13 +1825,23 @@ p {
     min-width: 0;
   }
 
+  .brand strong {
+    overflow-wrap: anywhere;
+  }
+
   .main-nav {
+    flex-wrap: wrap;
     gap: 4px;
+    overflow-x: visible;
+    padding-bottom: 0;
   }
 
   .main-nav a {
+    flex: 1 1 calc(33.333% - 4px);
     font-size: 0.86rem;
     padding: 9px 10px;
+    text-align: center;
+    white-space: normal;
   }
 
   .home-hero {
@@ -1807,12 +1859,17 @@ p {
   }
 
   h1 {
-    font-size: 2.05rem;
+    font-size: clamp(1.82rem, 9vw, 2.05rem);
     line-height: 1.08;
   }
 
+  h2 {
+    font-size: clamp(1.28rem, 6vw, 1.6rem);
+  }
+
   .lead {
-    font-size: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.78;
   }
 
   .actions,
@@ -1897,6 +1954,18 @@ p {
 
   .scroll-cue {
     display: none;
+  }
+
+  .table-surface,
+  .article-table-scroll {
+    margin-inline: -4px;
+    padding: 12px;
+  }
+
+  .table-surface table,
+  .article-table-scroll table {
+    font-size: 0.88rem;
+    min-width: 560px;
   }
 }
 
