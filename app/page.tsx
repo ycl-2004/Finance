@@ -1,179 +1,172 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
-import { LearningAtlas, type LearningAtlasStage } from "@/components/home/LearningAtlas";
-import { ScenarioExplorer, type ScenarioExplorerItem } from "@/components/home/ScenarioExplorer";
-import { HeroTitle } from "@/components/motion/HeroTitle";
-import { Reveal } from "@/components/motion/Reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getAllArticles } from "@/content/load-knowledge";
-import type { Scenario } from "@/data/scenarios";
+import { getChecklistByScenarioSlug } from "@/data/document-checklists";
 import { learningPath } from "@/data/learning-path";
 import { scenarios } from "@/data/scenarios";
 import { topicMetadata } from "@/data/topic-metadata";
 import { articleRoute, scenarioRoute, topicRoute } from "@/lib/routes";
 
-function themesForScenario(scenario: Scenario): string[] {
-  const text = [
-    scenario.slug,
-    scenario.title,
-    scenario.userType,
-    scenario.problem,
-    ...scenario.whatToLearnFirst
-  ].join(" ");
-  const themes = new Set<string>();
+const homeScenarioSlugs = [
+  "new-to-canada",
+  "first-home",
+  "kids-education",
+  "mortgage-renewal",
+  "pre-retirement"
+];
 
-  if (/new|新移民|留学|加拿大/.test(text)) themes.add("新移民");
-  if (/home|house|mortgage|房|房贷|首付|FHSA|续约/.test(text)) themes.add("买房");
-  if (/TFSA|RRSP|FHSA|RESP|RDSP|账户|room/.test(text)) themes.add("账户");
-  if (/insurance|risk|保险|重疾|伤残|风险/.test(text)) themes.add("保险");
-  if (/retirement|estate|退休|遗嘱|传承|CPP|OAS|RRIF/.test(text)) themes.add("退休");
-  if (/business|企业|公司|自雇|owner|GST|payroll/.test(text)) themes.add("企业主");
-  if (/tax|税|deduction|credit|高收入/.test(text)) themes.add("税务");
-
-  return themes.size ? Array.from(themes) : ["账户"];
-}
+const valueProps = [
+  "明确需要准备的资料",
+  "知道应该问顾问什么",
+  "避免信息不对称",
+  "不再被产品带着走"
+];
 
 export default async function HomePage() {
   const articles = await getAllArticles();
-  const articleBySlug = new Map(articles.map((article) => [article.slug, article]));
-  const articleCountByTopic = new Map<string, number>();
-  articles.forEach((article) =>
-    articleCountByTopic.set(article.topic, (articleCountByTopic.get(article.topic) ?? 0) + 1)
-  );
+  const homeScenarios = homeScenarioSlugs
+    .map((slug) => scenarios.find((scenario) => scenario.slug === slug))
+    .filter((scenario): scenario is (typeof scenarios)[number] => Boolean(scenario));
   const firstStage = learningPath[0];
-  const primaryTopics = topicMetadata.filter((topic) => topic.order >= 10).slice(0, 8);
-  const heroArticles = firstStage.requiredArticles.slice(0, 3).map((slug) => ({
-    slug,
-    href: articleRoute(slug),
-    title: articleBySlug.get(slug)?.title ?? slug
-  }));
-  const atlasStages: LearningAtlasStage[] = learningPath.map((stage) => ({
-    id: stage.id,
-    order: stage.order,
-    title: stage.title,
-    goal: stage.goal,
-    audience: stage.audience,
-    href: `/learn#${stage.id}`,
-    primaryArticleTitle: articleBySlug.get(stage.requiredArticles[0])?.title ?? stage.requiredArticles[0],
-    primaryArticleHref: articleRoute(stage.requiredArticles[0]),
-    articleCount: stage.requiredArticles.length + stage.optionalArticles.length,
-    scenarioCount: stage.relatedScenarios.length,
-    checkQuestion: stage.checkQuestions[0] ?? "这个阶段的核心概念是否已经能用自己的话讲清楚？",
-    relatedScenarios: stage.relatedScenarios
-      .map((slug) => scenarios.find((scenario) => scenario.slug === slug)?.title)
-      .filter((title): title is string => Boolean(title))
-      .slice(0, 2)
-  }));
-  const scenarioItems: ScenarioExplorerItem[] = scenarios.map((scenario) => ({
-    slug: scenario.slug,
-    title: scenario.title,
-    userType: scenario.userType,
-    problem: scenario.problem,
-    href: scenarioRoute(scenario.slug),
-    themes: themesForScenario(scenario),
-    resourceCount: scenario.relatedArticles.length,
-    documentCount: scenario.documentsToPrepare.length,
-    questionCount: scenario.advisorQuestions.length
-  }));
+  const primaryTopics = topicMetadata.filter((topic) => topic.order >= 10).slice(0, 4);
 
   return (
     <>
-      <Reveal as="section" className="home-hero" ariaLabelledBy="home-hero-title">
+      <Reveal as="section" className="home-hero home-hero--planner" ariaLabelledBy="home-hero-title">
         <div className="home-hero__content">
           <div className="hero-copy">
-            <p className="eyebrow">Advisor-grade Financial Learning Atlas</p>
-            <HeroTitle
-              id="home-hero-title"
-              lines={["中文加拿大金融", "学习地图"]}
-            />
+            <p className="eyebrow">QM Financial Preparation Hub</p>
+            <h1 id="home-hero-title">帮你在见金融顾问前，准备好所有关键问题与资料</h1>
             <p className="lead">
-              从账户、买房、保险到退休和企业主财务，先看懂大方向，再带着更清楚的问题去确认。
+              适用于：新移民 / 买房 / 家庭 / 房贷续约 / 退休 / 企业主。
+              先选场景，再生成资料清单，最后带着清楚的问题进入顾问会议。
             </p>
             <div className="actions">
-              <Link className="button button--primary" href="/learn">
-                开始学习
+              <Link className="button button--primary" href="/planning">
+                开始规划
               </Link>
-              <Link className="button" href="/scenarios">
-                按生活问题进入
-              </Link>
-              <Link className="button button--quiet" href="/glossary">
-                查术语
+              <Link className="button" href="/documents">
+                查看资料清单
               </Link>
             </div>
-            <div className="hero-proof-grid" aria-label="学习中心概览">
+            <div className="hero-proof-grid" aria-label="网站内容统计">
               <span>
-                <strong>{learningPath.length}</strong>
-                学习阶段
+                <strong>{homeScenarios.length}</strong>
+                高优先级场景
               </span>
               <span>
                 <strong>{scenarios.length}</strong>
-                生活场景
+                总场景流程
               </span>
               <span>
                 <strong>{articles.length}</strong>
-                知识文章
+                辅助文章
               </span>
             </div>
+            <BoundaryNotice compact />
           </div>
 
-          <aside className="hero-brief" aria-label="今天从这里开始">
-            <p className="eyebrow">Start Here</p>
-            <h2>{firstStage.title}</h2>
-            <p>{firstStage.goal}</p>
-            <ol className="lesson-list">
-              {heroArticles.map((article, index) => (
-                <li key={article.slug}>
-                  <Link className="lesson-item" href={article.href}>
-                    <span>{article.title}</span>
-                    <em>{String(index + 1).padStart(2, "0")}</em>
-                  </Link>
-                </li>
+          <aside className="hero-quick-panel" aria-label="快速开始">
+            <h2>今天你想解决什么问题？</h2>
+            <nav aria-label="首页快速场景入口">
+              {homeScenarios.map((scenario) => (
+                <Link href={scenarioRoute(scenario.slug)} key={scenario.slug}>
+                  <span>{scenario.shortTitle}</span>
+                  <em>›</em>
+                </Link>
               ))}
-            </ol>
-            <BoundaryNotice compact />
+              <Link href={scenarioRoute("business-owner")}>
+                <span>我是企业主</span>
+                <em>›</em>
+              </Link>
+            </nav>
           </aside>
         </div>
-        <span className="scroll-cue" aria-hidden="true" />
       </Reveal>
 
-      <LearningAtlas stages={atlasStages} />
-
-      <ScenarioExplorer scenarios={scenarioItems} />
-
-      <Reveal as="section" className="section knowledge-index" ariaLabelledBy="knowledge-index-title">
+      <Reveal as="section" className="section stage-entry" ariaLabelledBy="stage-entry-title">
         <div className="section-header section-header--wide">
           <div>
-            <p className="eyebrow">Knowledge Index</p>
-            <h2 id="knowledge-index-title">已经知道想查什么？</h2>
-            <p>按主题快速回到相关概念、文章和资料准备重点。</p>
+            <p className="eyebrow">Start Here</p>
+            <h2 id="stage-entry-title">你现在处于哪个阶段？</h2>
+            <p>不要从知识库开始翻。先点一个场景，让页面带你走到资料清单。</p>
           </div>
-          <Link className="button" href="/topics">
-            全部主题
+          <Link className="button" href="/planning">
+            全部规划入口
           </Link>
         </div>
-        <div className="knowledge-grid">
-          {primaryTopics.map((topic) => (
-            <Link className="knowledge-topic" href={topicRoute(topic.slug)} key={topic.slug}>
-              <span>{topic.englishTitle}</span>
-              <strong>{topic.title}</strong>
-              <em>{articleCountByTopic.get(topic.slug) ?? 0} 篇</em>
-            </Link>
-          ))}
+
+        <div className="stage-grid" role="list">
+          {homeScenarios.map((scenario) => {
+            const checklist = getChecklistByScenarioSlug(scenario.slug);
+            return (
+              <Link className="stage-card" href={scenarioRoute(scenario.slug)} key={scenario.slug} role="listitem">
+                <span>{scenario.stageLabel}</span>
+                <h3>{scenario.shortTitle}</h3>
+                <p>{scenario.actionSummary}</p>
+                <em>
+                  {checklist ? "可生成资料清单" : "查看准备流程"} →
+                </em>
+              </Link>
+            );
+          })}
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section tool-strip" ariaLabel="常用工具">
-        <Link className="tool-link" href="/documents">
-          <span>资料清单</span>
-          <strong>先知道哪些资料要准备、通常可以去哪里找。</strong>
+      <RevealGroup className="section value-grid" ariaLabel="平台核心价值">
+        {valueProps.map((item, index) => (
+          <RevealItem className="value-card" key={item}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <strong>{item}</strong>
+          </RevealItem>
+        ))}
+      </RevealGroup>
+
+      <Reveal as="section" className="section trust-band" ariaLabelledBy="trust-band-title">
+        <div>
+          <p className="eyebrow">Trust Boundary</p>
+          <h2 id="trust-band-title">我们不提供投资建议。我们帮助你理解和准备。</h2>
+          <p>
+            这个网站的角色是会议前准备工具：帮你整理资料、建立问题清单、理解基本概念。
+            具体投资、保险、税务、法律或贷款决定，请由相应持牌或专业人士确认。
+          </p>
+        </div>
+        <Link className="button" href="/about">
+          了解我们的边界
         </Link>
-        <Link className="tool-link" href="/glossary">
-          <span>术语表</span>
-          <strong>把 TFSA、RRSP、KYC 这些词先弄明白。</strong>
-        </Link>
-        <Link className="tool-link" href="/cases">
-          <span>案例练习</span>
-          <strong>用小案例练习：先问什么、还缺什么。</strong>
-        </Link>
+      </Reveal>
+
+      <Reveal as="section" className="section learning-support" ariaLabelledBy="learning-support-title">
+        <div className="section-header section-header--wide">
+          <div>
+            <p className="eyebrow">Learning Center</p>
+            <h2 id="learning-support-title">学习中心是辅助，不是入口障碍</h2>
+            <p>当你在准备清单里遇到不懂的词，再回到学习中心补概念。</p>
+          </div>
+          <Link className="button" href="/learn">
+            进入学习中心
+          </Link>
+        </div>
+        <div className="support-grid">
+          <Link className="support-card" href={`/learn#${firstStage.id}`}>
+            <span>学习路径</span>
+            <strong>{firstStage.title}</strong>
+            <p>{firstStage.goal}</p>
+          </Link>
+          {primaryTopics.map((topic) => (
+            <Link className="support-card" href={topicRoute(topic.slug)} key={topic.slug}>
+              <span>{topic.englishTitle}</span>
+              <strong>{topic.title}</strong>
+              <p>{topic.primaryQuestion}</p>
+            </Link>
+          ))}
+          <Link className="support-card support-card--strong" href={articleRoute("client-document-source-map")}>
+            <span>资料地图</span>
+            <strong>每类文件通常在哪里找？</strong>
+            <p>如果你不知道 NOA、statement、room 这些资料从哪里来，从这里查。</p>
+          </Link>
+        </div>
       </Reveal>
     </>
   );

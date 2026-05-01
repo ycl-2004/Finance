@@ -8,9 +8,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
   return (
     <div className="site-shell">
       <ScrollRestoration />
-      <Header />
-      <MotionRoot>{children}</MotionRoot>
-      <Footer />
+      <div className="site-frame">
+        <Header />
+        <MotionRoot>{children}</MotionRoot>
+        <Footer />
+      </div>
     </div>
   );
 }

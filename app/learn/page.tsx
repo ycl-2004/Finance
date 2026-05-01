@@ -19,15 +19,18 @@ export default async function LearnPage() {
         <p className="eyebrow">Start Here</p>
         <h1>学习路线</h1>
         <p className="lead">
-          从最基础的地图和术语开始，一步一步看账户、买房、保险、税务和退休。
-          每个阶段都配好文章和检查问题。
+          学习中心现在是辅助工具：当你在资料准备或场景流程里遇到不懂的概念，
+          再回到这里按路径补基础。
         </p>
         <div className="actions">
-          <Link className="button button--primary" href={articleRoute(learningPath[0].requiredArticles[0])}>
-            从第一阶段开始
+          <Link className="button button--primary" href="/documents">
+            先完成资料准备
           </Link>
-          <Link className="button" href="/scenarios">
-            按问题学习
+          <Link className="button" href="/planning">
+            按场景开始规划
+          </Link>
+          <Link className="button button--quiet" href={articleRoute(learningPath[0].requiredArticles[0])}>
+            从第一阶段学习
           </Link>
         </div>
         <BoundaryNotice compact />

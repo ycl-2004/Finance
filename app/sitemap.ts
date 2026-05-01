@@ -16,7 +16,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.GITHUB_PAGES === "true" ? "https://ycl-2004.github.io/Finance" : "http://localhost:3000");
   const articles = await getAllArticles();
-  const staticRoutes = ["/", "/learn", "/topics", "/glossary", "/scenarios", "/cases", "/documents", "/boundaries"];
+  const staticRoutes = [
+    "/",
+    "/planning",
+    "/documents",
+    "/learn",
+    "/topics",
+    "/glossary",
+    "/scenarios",
+    "/cases",
+    "/about",
+    "/boundaries"
+  ];
   const routes = [
     ...staticRoutes,
     ...topicMetadata.map((topic) => topicRoute(topic.slug)),

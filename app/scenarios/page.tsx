@@ -3,18 +3,18 @@ import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { scenarios } from "@/data/scenarios";
 
 export const metadata = {
-  title: "生活场景"
+  title: "场景流程"
 };
 
 export default function ScenariosPage() {
   return (
     <>
       <Reveal as="header" className="page-hero">
-        <p className="eyebrow">Learn by Situation</p>
-        <h1>按问题学习</h1>
+        <p className="eyebrow">Scenario Flows</p>
+        <h1>按场景开始规划</h1>
         <p className="lead">
-          不确定该看哪个主题时，先从眼前的问题开始。每个场景都会帮你整理：
-          先看什么、准备什么、可以问什么。
+          每个场景都按“要做什么、常见错误、准备资料、顾问问题”组织。
+          先完成行动路径，再回到学习中心补概念。
         </p>
       </Reveal>
       <RevealGroup className="content-list content-list--split">

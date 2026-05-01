@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
 import { MotionListLink } from "@/components/motion/MotionListLink";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getArticlesBySlugs } from "@/content/load-knowledge";
+import { getChecklistByScenarioSlug } from "@/data/document-checklists";
 import { getScenarioBySlug, scenarios } from "@/data/scenarios";
 import { articleRoute } from "@/lib/routes";
 
@@ -29,46 +31,99 @@ export default async function ScenarioDetailPage({
   const scenario = getScenarioBySlug(slug);
   if (!scenario) notFound();
   const relatedArticles = await getArticlesBySlugs(scenario.relatedArticles);
+  const checklist = getChecklistByScenarioSlug(scenario.slug);
+  const documentsHref = checklist ? `/documents?scenario=${checklist.slug}` : "/documents";
 
   return (
     <div className="page-grid">
       <section>
         <Reveal as="header" className="page-hero detail-hero" layoutId={`scenario-${scenario.slug}`}>
-          <p className="eyebrow">生活场景 / 按问题学习</p>
+          <p className="eyebrow">开始规划 / {scenario.stageLabel}</p>
           <h1>{scenario.title}</h1>
           <p className="lead">{scenario.problem}</p>
           <div className="meta-row">
             <span className="tag tag--accent">适合：{scenario.userType}</span>
           </div>
+          <div className="actions">
+            <Link className="button button--primary" href={documentsHref}>
+              生成资料清单
+            </Link>
+            <Link className="button" href={`${documentsHref}#document-print-area`}>
+              下载 PDF
+            </Link>
+          </div>
           <BoundaryNotice compact />
         </Reveal>
 
-        <RevealGroup as="div" className="info-surface info-surface--two">
-          <RevealItem className="info-panel">
-            <h2>先理解这几件事</h2>
-            <ul className="check-list">
-              {scenario.whatToLearnFirst.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+        <RevealGroup as="div" className="scenario-flow">
+          <RevealItem className="scenario-step">
+            <span className="scenario-step__number">1</span>
+            <div>
+              <p className="eyebrow">你现在要做什么</p>
+              <h2>先把问题变成准备动作</h2>
+              <p>{scenario.actionSummary}</p>
+            </div>
           </RevealItem>
-          <RevealItem className="info-panel">
-            <h2>需要准备的资料</h2>
-            <ul className="check-list">
-              {scenario.documentsToPrepare.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+
+          <RevealItem className="scenario-step">
+            <span className="scenario-step__number">2</span>
+            <div>
+              <p className="eyebrow">常见错误</p>
+              <h2>先避开这些坑</h2>
+              <ul className="check-list check-list--spacious">
+                {scenario.commonMistakes.map((mistake) => (
+                  <li key={mistake}>{mistake}</li>
+                ))}
+              </ul>
+            </div>
+          </RevealItem>
+
+          <RevealItem className="scenario-step scenario-step--split">
+            <span className="scenario-step__number">3</span>
+            <div>
+              <p className="eyebrow">你需要准备什么</p>
+              <h2>资料先整理齐</h2>
+              <ul className="check-list">
+                {scenario.documentsToPrepare.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <div className="actions">
+                <Link className="button button--primary" href={documentsHref}>
+                  进入资料清单
+                </Link>
+              </div>
+            </div>
+          </RevealItem>
+
+          <RevealItem className="scenario-step">
+            <span className="scenario-step__number">4</span>
+            <div>
+              <p className="eyebrow">你应该问顾问什么</p>
+              <h2>带着问题去，而不是被产品带着走</h2>
+              <ul className="check-list check-list--spacious">
+                {scenario.advisorQuestions.map((question) => (
+                  <li key={question}>{question}</li>
+                ))}
+              </ul>
+            </div>
           </RevealItem>
         </RevealGroup>
 
-        <Reveal className="section info-panel">
-          <h2>可以问顾问的问题</h2>
-          <ul className="check-list check-list--spacious">
-            {scenario.advisorQuestions.map((question) => (
-              <li key={question}>{question}</li>
-            ))}
-          </ul>
+        <Reveal className="section scenario-cta">
+          <div>
+            <p className="eyebrow">Ready</p>
+            <h2>1 分钟生成你的准备清单</h2>
+            <p>勾选进度会保存在本机浏览器。准备好后可以打印或保存为 PDF。</p>
+          </div>
+          <div className="actions">
+            <Link className="button button--primary" href={documentsHref}>
+              生成资料清单
+            </Link>
+            <Link className="button" href="/documents">
+              查看全部清单
+            </Link>
+          </div>
         </Reveal>
 
         <Reveal as="section" className="section">
@@ -95,10 +150,16 @@ export default async function ScenarioDetailPage({
         </Reveal>
       </section>
       <Reveal as="aside" className="right-rail">
-        <h2>不直接下结论</h2>
+        <h2>边界</h2>
         <ul className="check-list">
           {scenario.boundaries.map((boundary) => (
             <li key={boundary}>{boundary}</li>
+          ))}
+        </ul>
+        <h2 style={{ marginTop: 18 }}>先理解</h2>
+        <ul className="check-list">
+          {scenario.whatToLearnFirst.map((item) => (
+            <li key={item}>{item}</li>
           ))}
         </ul>
       </Reveal>

@@ -112,7 +112,31 @@ export async function getSearchIndex(): Promise<SearchItem[]> {
     keywords: [term.term, term.chinese, term.category, ...term.aliases]
   }));
 
-  return [...topicItems, ...scenarioItems, ...articleItems, ...caseItems, ...glossaryItems].map(
+  const toolItems: SearchItem[] = [
+    {
+      title: "开始规划",
+      href: "/planning",
+      type: "tool",
+      summary: "按新移民、买房、家庭、房贷续约、退休和企业主场景进入准备流程。",
+      keywords: ["开始规划", "场景", "买房", "新移民", "退休", "企业主"]
+    },
+    {
+      title: "资料准备",
+      href: "/documents",
+      type: "tool",
+      summary: "可勾选资料清单，保存本机进度，并打印或保存为 PDF。",
+      keywords: ["资料清单", "checklist", "PDF", "NOA", "T4", "bank statements"]
+    },
+    {
+      title: "关于我们",
+      href: "/about",
+      type: "tool",
+      summary: "说明平台定位、信任边界、持牌说明和不提供的服务。",
+      keywords: ["关于我们", "信任", "持牌", "边界", "不提供建议"]
+    }
+  ];
+
+  return [...toolItems, ...topicItems, ...scenarioItems, ...articleItems, ...caseItems, ...glossaryItems].map(
     (item) => ({
       ...item,
       summary: item.summary.replace(/\s+/g, " ").slice(0, 180),

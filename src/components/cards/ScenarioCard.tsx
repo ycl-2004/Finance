@@ -6,12 +6,12 @@ export function ScenarioCard({ scenario, index = 0 }: { scenario: Scenario; inde
   return (
     <MotionListLink
       description={scenario.problem}
-      eyebrow="生活场景"
+      eyebrow={scenario.stageLabel}
       href={scenarioRoute(scenario.slug)}
       index={index}
       layoutId={`scenario-${scenario.slug}`}
       meta={[`${scenario.relatedArticles.length} 个资源`, `${scenario.documentsToPrepare.length} 类资料`]}
-      title={scenario.title}
+      title={scenario.shortTitle}
     />
   );
 }

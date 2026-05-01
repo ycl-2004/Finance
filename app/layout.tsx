@@ -7,10 +7,10 @@ export const metadata: Metadata = {
     default: "QM Financial Learning Hub",
     template: "%s | QM Financial Learning Hub"
   },
-  description: "中文加拿大金融学习中心，面向小白学习和客户教育场景。",
+  description: "中文加拿大金融顾问会前准备平台，帮助用户按场景整理资料、问题和学习内容。",
   openGraph: {
     title: "QM Financial Learning Hub",
-    description: "中文加拿大金融学习中心，按学习路线、生活场景和主题知识库组织。",
+    description: "中文加拿大金融顾问会前准备平台，按场景生成资料清单并整理顾问问题。",
     type: "website"
   }
 };
