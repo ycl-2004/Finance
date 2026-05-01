@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getAllArticles } from "@/content/load-knowledge";
 import { getChecklistByScenarioSlug } from "@/data/document-checklists";
@@ -17,11 +18,27 @@ const homeScenarioSlugs = [
 ];
 
 const valueProps = [
-  "明确需要准备的资料",
-  "知道应该问顾问什么",
-  "避免信息不对称",
-  "不再被产品带着走"
-];
+  { icon: "clipboard", label: "明确需要准备的资料" },
+  { icon: "compass", label: "知道应该问顾问什么" },
+  { icon: "shieldCheck", label: "避免信息不对称" },
+  { icon: "checkCircle", label: "不被产品节奏带着走" }
+] satisfies { icon: AppIconName; label: string }[];
+
+const stageIconBySlug: Record<string, AppIconName> = {
+  "new-to-canada": "compass",
+  "first-home": "home",
+  "kids-education": "graduationCap",
+  "mortgage-renewal": "fileText",
+  "pre-retirement": "wallet",
+  "business-owner": "briefcase"
+};
+
+const topicIconBySlug: Record<string, AppIconName> = {
+  "comprehensive-financial-planning": "compass",
+  "investment-planning-portfolio-strategy": "wallet",
+  "canadian-registered-accounts": "fileText",
+  "insurance-risk-management": "shieldCheck"
+};
 
 export default async function HomePage() {
   const articles = await getAllArticles();
@@ -39,15 +56,21 @@ export default async function HomePage() {
             <p className="eyebrow">QM Financial Preparation Hub</p>
             <h1 id="home-hero-title">帮你在见金融顾问前，准备好所有关键问题与资料</h1>
             <p className="lead">
-              适用于：新移民 / 买房 / 家庭 / 房贷续约 / 退休 / 企业主。
-              先选场景，再生成资料清单，最后带着清楚的问题进入顾问会议。
+              适用于新移民、买房、家庭保障、房贷续约、退休和企业主规划。
+              先选场景，生成资料清单，再带着明确问题进入会议。
             </p>
             <div className="actions">
               <Link className="button button--primary" href="/planning">
+                <AppIcon name="route" />
                 开始规划
               </Link>
               <Link className="button" href="/documents">
+                <AppIcon name="clipboard" />
                 查看资料清单
+              </Link>
+              <Link className="button" href="/consultation">
+                <AppIcon name="phone" />
+                预约准备会
               </Link>
             </div>
             <div className="hero-proof-grid" aria-label="网站内容统计">
@@ -72,13 +95,19 @@ export default async function HomePage() {
             <nav aria-label="首页快速场景入口">
               {homeScenarios.map((scenario) => (
                 <Link href={scenarioRoute(scenario.slug)} key={scenario.slug}>
-                  <span>{scenario.shortTitle}</span>
-                  <em>›</em>
+                  <span className="quick-link__label">
+                    <AppIcon name={stageIconBySlug[scenario.slug] ?? "compass"} />
+                    <span>{scenario.shortTitle}</span>
+                  </span>
+                  <AppIcon className="quick-link__arrow" name="arrowRight" />
                 </Link>
               ))}
               <Link href={scenarioRoute("business-owner")}>
-                <span>我是企业主</span>
-                <em>›</em>
+                <span className="quick-link__label">
+                  <AppIcon name="briefcase" />
+                  <span>我是企业主</span>
+                </span>
+                <AppIcon className="quick-link__arrow" name="arrowRight" />
               </Link>
             </nav>
           </aside>
@@ -102,7 +131,10 @@ export default async function HomePage() {
             const checklist = getChecklistByScenarioSlug(scenario.slug);
             return (
               <Link className="stage-card" href={scenarioRoute(scenario.slug)} key={scenario.slug} role="listitem">
-                <span>{scenario.stageLabel}</span>
+                <span className="card-icon">
+                  <AppIcon name={stageIconBySlug[scenario.slug] ?? "compass"} />
+                </span>
+                <span className="stage-card__label">{scenario.stageLabel}</span>
                 <h3>{scenario.shortTitle}</h3>
                 <p>{scenario.actionSummary}</p>
                 <em>
@@ -115,10 +147,12 @@ export default async function HomePage() {
       </Reveal>
 
       <RevealGroup className="section value-grid" ariaLabel="平台核心价值">
-        {valueProps.map((item, index) => (
-          <RevealItem className="value-card" key={item}>
-            <span>{String(index + 1).padStart(2, "0")}</span>
-            <strong>{item}</strong>
+        {valueProps.map((item) => (
+          <RevealItem className="value-card" key={item.label}>
+            <span className="value-card__icon">
+              <AppIcon name={item.icon} />
+            </span>
+            <strong>{item.label}</strong>
           </RevealItem>
         ))}
       </RevealGroup>
@@ -150,19 +184,28 @@ export default async function HomePage() {
         </div>
         <div className="support-grid">
           <Link className="support-card" href={`/learn#${firstStage.id}`}>
-            <span>学习路径</span>
+            <span className="card-icon">
+              <AppIcon name="bookOpen" />
+            </span>
+            <span className="support-card__label">学习路径</span>
             <strong>{firstStage.title}</strong>
             <p>{firstStage.goal}</p>
           </Link>
           {primaryTopics.map((topic) => (
             <Link className="support-card" href={topicRoute(topic.slug)} key={topic.slug}>
-              <span>{topic.englishTitle}</span>
+              <span className="card-icon">
+                <AppIcon name={topicIconBySlug[topic.slug] ?? "fileText"} />
+              </span>
+              <span className="support-card__label">{topic.englishTitle}</span>
               <strong>{topic.title}</strong>
               <p>{topic.primaryQuestion}</p>
             </Link>
           ))}
           <Link className="support-card support-card--strong" href={articleRoute("client-document-source-map")}>
-            <span>资料地图</span>
+            <span className="card-icon">
+              <AppIcon name="fileText" />
+            </span>
+            <span className="support-card__label">资料地图</span>
             <strong>每类文件通常在哪里找？</strong>
             <p>如果你不知道 NOA、statement、room 这些资料从哪里来，从这里查。</p>
           </Link>

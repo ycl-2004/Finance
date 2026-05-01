@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AppIcon } from "@/components/icons/AppIcon";
 
 const navItems = [
   { href: "/", label: "首页" },
@@ -15,7 +16,7 @@ export function Header() {
         <Link className="brand" href="/">
           <span className="brand-mark" aria-hidden="true">Q</span>
           <span className="brand-copy">
-            <strong>QM Financial</strong>
+            <strong>QM Financials</strong>
             <span>Learning Hub</span>
           </span>
         </Link>
@@ -27,7 +28,16 @@ export function Header() {
           ))}
         </nav>
         <div className="top-actions">
+          <Link
+            aria-label="致电 QM Financials：+1 778 929 9942"
+            className="phone-link"
+            href="tel:+17789299942"
+          >
+            <AppIcon name="phone" />
+            <span>+1 778 929 9942</span>
+          </Link>
           <Link className="button button--primary button--nav" href="/planning">
+            <AppIcon name="route" />
             开始规划
           </Link>
           <button className="lang-button" type="button">

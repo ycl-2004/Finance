@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getChecklistByScenarioSlug } from "@/data/document-checklists";
 import { scenarios } from "@/data/scenarios";
@@ -18,6 +19,48 @@ const priorityScenarioSlugs = [
   "business-owner"
 ];
 
+const stageIconBySlug: Record<string, AppIconName> = {
+  "first-home": "home",
+  "new-to-canada": "compass",
+  "kids-education": "graduationCap",
+  "pre-retirement": "wallet",
+  "mortgage-renewal": "fileText",
+  "business-owner": "briefcase"
+};
+
+const flowSteps = [
+  {
+    icon: "compass",
+    title: "选择场景",
+    body: "用真实生活问题开始，而不是先翻金融术语。",
+    output: "进入个人化路径"
+  },
+  {
+    icon: "clipboard",
+    title: "生成清单",
+    body: "按场景显示资料、问题和安全提醒。",
+    output: "知道还缺什么"
+  },
+  {
+    icon: "checkCircle",
+    title: "勾选进度",
+    body: "进度保存在本机浏览器，之后可以继续整理。",
+    output: "形成准备状态"
+  },
+  {
+    icon: "fileText",
+    title: "导出 PDF",
+    body: "把资料清单和问题打印或保存成 PDF。",
+    output: "带进顾问会议"
+  },
+  {
+    icon: "phone",
+    title: "预约确认",
+    body: "准备到一定程度后，再预约 15 分钟准备会确认缺口。",
+    output: "进入咨询转化"
+  }
+] satisfies { icon: AppIconName; title: string; body: string; output: string }[];
+
 export default function PlanningPage() {
   const priorityScenarios = priorityScenarioSlugs
     .map((slug) => scenarios.find((scenario) => scenario.slug === slug))
@@ -34,13 +77,46 @@ export default function PlanningPage() {
         </p>
         <div className="actions">
           <Link className="button button--primary" href="/documents">
+            <AppIcon name="clipboard" />
             直接做资料清单
           </Link>
           <Link className="button" href="/scenarios">
+            <AppIcon name="compass" />
             查看全部场景
+          </Link>
+          <Link className="button" href="/consultation">
+            <AppIcon name="phone" />
+            预约准备会
           </Link>
         </div>
         <BoundaryNotice compact />
+      </Reveal>
+
+      <Reveal as="section" className="section planning-flow" ariaLabelledBy="planning-flow-title">
+        <div className="section-header section-header--wide">
+          <div>
+            <p className="eyebrow">User Flow</p>
+            <h2 id="planning-flow-title">从看内容，到完成一份准备包</h2>
+            <p>主流程保持简单：先选场景，再整理资料，最后把准备成果带进顾问会议。</p>
+          </div>
+          <Link className="button" href="/documents">
+            <AppIcon name="arrowRight" />
+            开始生成
+          </Link>
+        </div>
+        <div className="flow-map" role="list">
+          {flowSteps.map((step, index) => (
+            <article className="flow-card" key={step.title} role="listitem">
+              <span className="flow-index">{index + 1}</span>
+              <span className="card-icon">
+                <AppIcon name={step.icon} />
+              </span>
+              <h3>{step.title}</h3>
+              <p>{step.body}</p>
+              <strong>{step.output}</strong>
+            </article>
+          ))}
+        </div>
       </Reveal>
 
       <RevealGroup className="planning-grid" ariaLabel="开始规划场景">
@@ -52,6 +128,9 @@ export default function PlanningPage() {
             <RevealItem className="planning-card" key={scenario.slug}>
               <article>
                 <div className="planning-card__top">
+                  <span className="card-icon">
+                    <AppIcon name={stageIconBySlug[scenario.slug] ?? "compass"} />
+                  </span>
                   <span className="tag tag--accent">{scenario.stageLabel}</span>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                 </div>
@@ -63,9 +142,11 @@ export default function PlanningPage() {
                 </div>
                 <div className="actions">
                   <Link className="button button--primary" href={scenarioRoute(scenario.slug)}>
+                    <AppIcon name="route" />
                     进入流程
                   </Link>
                   <Link className="button" href={documentsHref}>
+                    <AppIcon name="clipboard" />
                     资料清单
                   </Link>
                 </div>
@@ -99,6 +180,10 @@ export default function PlanningPage() {
           <div>
             <strong>4</strong>
             <span>带进顾问会议</span>
+          </div>
+          <div>
+            <strong>5</strong>
+            <span>预约确认</span>
           </div>
         </div>
       </Reveal>

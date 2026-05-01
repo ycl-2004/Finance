@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { AppIcon } from "@/components/icons/AppIcon";
 import { MotionListLink } from "@/components/motion/MotionListLink";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getArticlesBySlugs } from "@/content/load-knowledge";
@@ -46,10 +47,16 @@ export default async function ScenarioDetailPage({
           </div>
           <div className="actions">
             <Link className="button button--primary" href={documentsHref}>
+              <AppIcon name="clipboard" />
               生成资料清单
             </Link>
             <Link className="button" href={`${documentsHref}#document-print-area`}>
+              <AppIcon name="fileText" />
               下载 PDF
+            </Link>
+            <Link className="button" href={`/consultation?scenario=${scenario.slug}`}>
+              <AppIcon name="phone" />
+              预约准备会
             </Link>
           </div>
           <BoundaryNotice compact />
@@ -90,6 +97,7 @@ export default async function ScenarioDetailPage({
               </ul>
               <div className="actions">
                 <Link className="button button--primary" href={documentsHref}>
+                  <AppIcon name="clipboard" />
                   进入资料清单
                 </Link>
               </div>
@@ -118,10 +126,12 @@ export default async function ScenarioDetailPage({
           </div>
           <div className="actions">
             <Link className="button button--primary" href={documentsHref}>
+              <AppIcon name="clipboard" />
               生成资料清单
             </Link>
-            <Link className="button" href="/documents">
-              查看全部清单
+            <Link className="button" href={`/consultation?scenario=${scenario.slug}`}>
+              <AppIcon name="phone" />
+              预约准备会
             </Link>
           </div>
         </Reveal>

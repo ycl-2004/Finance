@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { AppIcon } from "@/components/icons/AppIcon";
 import {
   documentChecklists,
   universalSafetyWarnings,
@@ -60,6 +61,8 @@ export function DocumentChecklistApp({
   );
   const completedCount = allItems.filter((item) => checkedItems[item.id]).length;
   const percent = allItems.length ? Math.round((completedCount / allItems.length) * 100) : 0;
+  const isReadyForConsultation = percent >= 50;
+  const isComplete = percent === 100;
   const activeScenario = scenarios.find(
     (scenario) => scenario.slug === activeChecklist?.scenarioSlug
   );
@@ -93,7 +96,7 @@ export function DocumentChecklistApp({
           <h2 id="document-checklist-title">选择场景，生成你的准备清单</h2>
           <p>
             勾选状态只保存在你的浏览器 localStorage，不上传文件、不收集资料内容。
-            目标是在见顾问前把资料和问题先整理清楚。
+            完成后可以导出 PDF，或预约 15 分钟准备会确认缺口。
           </p>
         </div>
         <div className="document-score" aria-label="完成进度">
@@ -131,9 +134,11 @@ export function DocumentChecklistApp({
             </div>
             <div className="checklist-toolbar">
               <button className="button button--primary" onClick={() => window.print()} type="button">
+                <AppIcon name="fileText" />
                 下载 PDF
               </button>
               <button className="button" onClick={resetChecklist} type="button">
+                <AppIcon name="checkCircle" />
                 重置清单
               </button>
             </div>
@@ -178,6 +183,34 @@ export function DocumentChecklistApp({
         </div>
 
         <aside className="document-rail" aria-label="资料准备辅助信息">
+          <section
+            className={`document-panel document-conversion${isReadyForConsultation ? " document-conversion--ready" : ""}`}
+          >
+            <span className="card-icon">
+              <AppIcon name={isComplete ? "checkCircle" : "phone"} />
+            </span>
+            <p className="eyebrow">{isComplete ? "Ready" : "Next Step"}</p>
+            <h3>{isComplete ? "资料准备已完成" : "准备到 50% 后，建议确认缺口"}</h3>
+            <p>
+              {isReadyForConsultation
+                ? "你已经整理出一份可讨论的准备包。下一步可以下载 PDF，或预约准备会确认还缺哪些资料。"
+                : "先完成至少一半清单。系统会保留进度，你可以之后继续补齐。"}
+            </p>
+            <div className="document-rail__actions">
+              <Link
+                className="button button--primary button--full"
+                href={`/consultation?scenario=${activeChecklist.slug}`}
+              >
+                <AppIcon name="phone" />
+                预约准备会
+              </Link>
+              <a className="button button--full" href="tel:+17789299942">
+                <AppIcon name="phone" />
+                直接致电
+              </a>
+            </div>
+          </section>
+
           <section className="document-panel document-panel--danger">
             <h3>不要发送</h3>
             <ul className="document-warning-list">
@@ -205,9 +238,11 @@ export function DocumentChecklistApp({
             </ol>
             <div className="document-rail__actions">
               <Link className="button button--primary button--full" href={scenarioRoute(activeChecklist.scenarioSlug)}>
+                <AppIcon name="route" />
                 查看场景流程
               </Link>
               <Link className="button button--full" href="/learn">
+                <AppIcon name="bookOpen" />
                 补充学习
               </Link>
             </div>
