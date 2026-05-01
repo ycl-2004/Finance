@@ -14,9 +14,9 @@ export const learningPath: LearningStage[] = [
   {
     id: "map-and-terms",
     order: 1,
-    title: "金融地图和术语基础",
-    goal: "先知道加拿大金融规划有哪些模块，以及常见中英文术语是什么意思。",
-    audience: "完全小白、新移民、刚开始接触金融规划的人",
+    title: "金融地图和术语",
+    goal: "先看懂加拿大金融规划包含哪些模块，以及常见中英文术语是什么意思。",
+    audience: "新手、新移民、刚开始整理财务的人",
     requiredArticles: ["README", "glossary", "01-comprehensive-financial-planning/00-overview"],
     optionalArticles: ["00-registry", "company-profile"],
     checkQuestions: [
@@ -29,8 +29,8 @@ export const learningPath: LearningStage[] = [
     id: "planning-foundation",
     order: 2,
     title: "综合财务规划",
-    goal: "建立家庭财务快照，理解目标、现金流、资产负债、保障和税务之间的关系。",
-    audience: "想系统整理个人或家庭财务的人",
+    goal: "建立一张家庭财务快照，看清目标、现金流、资产负债、保障和税务的关系。",
+    audience: "想系统整理家庭财务的人",
     requiredArticles: [
       "01-comprehensive-financial-planning/00-overview",
       "01-comprehensive-financial-planning/01-client-data-map",
@@ -46,9 +46,9 @@ export const learningPath: LearningStage[] = [
   {
     id: "documents-and-process",
     order: 3,
-    title: "客户资料和规划流程",
-    goal: "知道客户资料从哪里取得、如何保护敏感信息、顾问为什么需要这些资料。",
-    audience: "准备见顾问或整理自己资料的人",
+    title: "资料准备和流程",
+    goal: "知道资料从哪里找、如何保护敏感信息，以及为什么规划前要先整理资料。",
+    audience: "准备见顾问或整理资料的人",
     requiredArticles: ["client-document-source-map"],
     optionalArticles: ["03-canadian-registered-accounts/06-room-check-workflow"],
     checkQuestions: [
@@ -61,7 +61,7 @@ export const learningPath: LearningStage[] = [
     id: "registered-accounts",
     order: 4,
     title: "注册账户",
-    goal: "理解 TFSA、RRSP、FHSA、RESP、RDSP 的基本用途、税务特点和 room 查询方式。",
+    goal: "看懂 TFSA、RRSP、FHSA、RESP、RDSP 的用途、税务特点和 room 查询。",
     audience: "想理解加拿大账户体系的人",
     requiredArticles: [
       "03-canadian-registered-accounts/00-overview-comparison",
@@ -102,7 +102,7 @@ export const learningPath: LearningStage[] = [
   {
     id: "insurance",
     order: 6,
-    title: "保险和风险管理",
+    title: "保险和风险",
     goal: "先识别不可承受的风险，再理解不同保险类型的功能和限制。",
     audience: "年轻家庭、有房贷、有依赖者或企业主",
     requiredArticles: [
@@ -140,8 +140,8 @@ export const learningPath: LearningStage[] = [
   {
     id: "tax-and-protection",
     order: 8,
-    title: "税务优化和资产保护",
-    goal: "理解合法税务规划、资产保护结构和需要专业确认的边界。",
+    title: "税务和资产保护",
+    goal: "理解税务规划、资产保护结构和需要专业确认的边界。",
     audience: "收入结构较复杂、有投资或企业的人",
     requiredArticles: [
       "06-tax-optimization-asset-protection/00-overview",
@@ -159,7 +159,7 @@ export const learningPath: LearningStage[] = [
   {
     id: "retirement-estate",
     order: 9,
-    title: "退休和财富传承",
+    title: "退休和传承",
     goal: "理解公共养老金、注册账户提款、年金、遗嘱、授权和传承资料。",
     audience: "临近退休、照顾父母、开始考虑遗产安排的人",
     requiredArticles: [
@@ -178,7 +178,7 @@ export const learningPath: LearningStage[] = [
   {
     id: "business-owner",
     order: 10,
-    title: "小企业 / 企业主财务咨询",
+    title: "企业主财务",
     goal: "区分个人和公司财务，理解现金流、税务、保障、退出和传承风险。",
     audience: "自雇人士、小企业主、公司股东",
     requiredArticles: [

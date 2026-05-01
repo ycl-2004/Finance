@@ -13,7 +13,7 @@ export default function CasesPage() {
         <p className="eyebrow">Practice Cases</p>
         <h1>案例练习</h1>
         <p className="lead">
-          用虚拟场景练习“先问什么、缺什么资料、哪些结论不能直接下”。案例只训练理解框架。
+          用虚拟小场景练习如何拆问题：先问什么、还缺什么、哪些结论需要专业人士确认。
         </p>
       </Reveal>
       <RevealGroup className="content-list content-list--split">

@@ -3,7 +3,7 @@
     "title": "知识库导览",
     "href": "/topics/knowledge-system",
     "type": "topic",
-    "summary": "了解这个学习中心如何组织内容、来源、边界和使用方式。",
+    "summary": "看看这个学习中心怎么用、内容从哪里来、边界在哪里。",
     "keywords": [
       "knowledge-system",
       "Knowledge System",
@@ -17,7 +17,7 @@
     "title": "公司基础资料",
     "href": "/topics/company-profile",
     "type": "topic",
-    "summary": "认识 QM Financials Inc. 的公开定位、服务线和内容边界。",
+    "summary": "了解 QM Financials 的公开服务方向和内容边界。",
     "keywords": [
       "company-profile",
       "Company Profile",
@@ -30,7 +30,7 @@
     "title": "资料准备流程",
     "href": "/topics/client-document-source-map",
     "type": "topic",
-    "summary": "客户如何安全取得税务、投资、保险、房贷、退休和企业资料。",
+    "summary": "整理常见资料从哪里找，以及敏感信息怎么保护。",
     "keywords": [
       "client-document-source-map",
       "Client Document Source Map",
@@ -46,7 +46,7 @@
     "title": "金融术语",
     "href": "/topics/glossary",
     "type": "topic",
-    "summary": "中英文金融术语快速查找入口。",
+    "summary": "快速查中英文金融词和常见缩写。",
     "keywords": [
       "glossary",
       "Glossary",
@@ -62,7 +62,7 @@
     "title": "综合财务规划",
     "href": "/topics/comprehensive-financial-planning",
     "type": "topic",
-    "summary": "把收入、支出、资产、负债、保险、税务、买房、退休和传承放在同一张图里看。",
+    "summary": "把收入、支出、资产、负债、保险和税务放到一张图里看。",
     "keywords": [
       "comprehensive-financial-planning",
       "Comprehensive Financial Planning",
@@ -77,7 +77,7 @@
     "title": "加拿大注册账户",
     "href": "/topics/canadian-registered-accounts",
     "type": "topic",
-    "summary": "理解 TFSA、RRSP、FHSA、RESP、RDSP 的用途、税务特点和资料查询流程。",
+    "summary": "看懂 TFSA、RRSP、FHSA 等账户的用途、税务特点和 room 查询。",
     "keywords": [
       "canadian-registered-accounts",
       "Canadian Registered Accounts",
@@ -91,10 +91,10 @@
     ]
   },
   {
-    "title": "投资规划和组合策略",
+    "title": "投资规划",
     "href": "/topics/investment-planning-portfolio-strategy",
     "type": "topic",
-    "summary": "从目标、时间、风险、费用和税务位置理解投资组合，而不是追逐短期预测。",
+    "summary": "先看目标、时间、风险、费用和税务位置，再谈投资产品。",
     "keywords": [
       "investment-planning-portfolio-strategy",
       "Investment Planning and Portfolio Strategy",
@@ -106,10 +106,10 @@
     ]
   },
   {
-    "title": "保险和风险管理",
+    "title": "保险和风险",
     "href": "/topics/insurance-risk-management",
     "type": "topic",
-    "summary": "先识别家庭或企业无法承受的风险，再理解人寿、重疾、伤残、意外和年金。",
+    "summary": "先找出家庭或企业承受不了的风险，再看保险能解决什么。",
     "keywords": [
       "insurance-risk-management",
       "Insurance and Risk Management",
@@ -121,10 +121,10 @@
     ]
   },
   {
-    "title": "房贷和贷款方案",
+    "title": "房贷和买房",
     "href": "/topics/mortgage-lending",
     "type": "topic",
-    "summary": "理解首次买房、续约、转贷、利率、还款和压力测试。",
+    "summary": "看懂首次买房、续约、转贷、利率、还款和压力测试。",
     "keywords": [
       "mortgage-lending",
       "Mortgage and Lending",
@@ -136,10 +136,10 @@
     ]
   },
   {
-    "title": "税务优化和资产保护",
+    "title": "税务和资产保护",
     "href": "/topics/tax-optimization-asset-protection",
     "type": "topic",
-    "summary": "理解合法税务规划、扣除、抵免、账户安排、资产隔离和法律边界。",
+    "summary": "理解税务规划、账户安排、资产保护和需要专业确认的边界。",
     "keywords": [
       "tax-optimization-asset-protection",
       "Tax Optimization and Asset Protection",
@@ -151,10 +151,10 @@
     ]
   },
   {
-    "title": "退休规划与财富传承",
+    "title": "退休和传承",
     "href": "/topics/retirement-estate-planning",
     "type": "topic",
-    "summary": "理解 CPP、OAS、RRSP/RRIF、年金、遗嘱、授权文件和财富转移。",
+    "summary": "看懂 CPP、OAS、RRSP/RRIF、遗嘱、授权和财富转移。",
     "keywords": [
       "retirement-estate-planning",
       "Retirement and Estate Planning",
@@ -167,14 +167,14 @@
     ]
   },
   {
-    "title": "小企业 / 企业主财务咨询",
+    "title": "企业主财务",
     "href": "/topics/small-business-owner-financial-consulting",
     "type": "topic",
-    "summary": "理解企业主的个人和公司现金流、税务、保障、退出和传承风险。",
+    "summary": "把个人和公司现金流、税务、保障、退出和传承风险分清楚。",
     "keywords": [
       "small-business-owner-financial-consulting",
       "Small Business Owner Financial Consulting",
-      "企业主的个人财务和公司财务怎么分清？",
+      "个人和公司财务怎么分清？",
       "GST/HST",
       "payroll",
       "salary",

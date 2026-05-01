@@ -15,7 +15,8 @@ export default async function GlossaryPage() {
         <p className="eyebrow">Glossary</p>
         <h1>金融术语表</h1>
         <p className="lead">
-          搜索英文缩写、中文译名或说明文字。术语解释用于学习，不代表任何产品或策略建议。
+          遇到看不懂的英文缩写或中文术语，可以先在这里查个大概。
+          这些解释只用于学习，不是产品或策略建议。
         </p>
       </Reveal>
       <GlossaryTable terms={terms} />

@@ -13,8 +13,8 @@ export default function ScenariosPage() {
         <p className="eyebrow">Learn by Situation</p>
         <h1>按问题学习</h1>
         <p className="lead">
-          不知道该看哪个主题？先从你的真实问题开始。每个场景会告诉你先理解什么、
-          准备什么资料、可以问顾问什么问题。
+          不确定该看哪个主题时，先从眼前的问题开始。每个场景都会帮你整理：
+          先看什么、准备什么、可以问什么。
         </p>
       </Reveal>
       <RevealGroup className="content-list content-list--split">

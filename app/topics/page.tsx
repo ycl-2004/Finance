@@ -20,8 +20,8 @@ export default async function TopicsPage() {
         <p className="eyebrow">Knowledge Topics</p>
         <h1>主题知识库</h1>
         <p className="lead">
-          这里保留顾问服务视角，适合已经知道自己要查注册账户、投资、保险、房贷、
-          税务、退休或企业主财务的人。
+          如果你已经知道要查账户、投资、保险、房贷、税务或退休，
+          可以直接从这里进入对应主题。
         </p>
       </Reveal>
       <RevealGroup className="content-list content-list--split">

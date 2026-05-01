@@ -34,7 +34,7 @@ export function LearningAtlas({ stages }: { stages: LearningAtlasStage[] }) {
   return (
     <motion.section
       className="section learning-atlas"
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 22 }}
+      initial={false}
       transition={{ duration: 0.56, ease }}
       viewport={{ once: true, amount: 0.16 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export function LearningAtlas({ stages }: { stages: LearningAtlasStage[] }) {
         <motion.ol className="atlas-list" aria-label="学习阶段">
           {stages.map((stage, index) => (
             <motion.li
-              initial={shouldReduceMotion ? false : { opacity: 0, y: 18 }}
+              initial={false}
               key={stage.id}
               transition={{ duration: 0.5, delay: shouldReduceMotion ? 0 : index * 0.06, ease }}
               viewport={{ once: true, amount: 0.2 }}

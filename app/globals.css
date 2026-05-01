@@ -271,6 +271,17 @@ p {
   backdrop-filter: blur(14px);
 }
 
+.sidebar {
+  display: grid;
+  gap: 18px;
+}
+
+.sidebar__section {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
 .sidebar h2,
 .right-rail h2 {
   margin: 0 0 10px;
@@ -279,7 +290,11 @@ p {
   text-transform: uppercase;
 }
 
-.sidebar nav {
+.sidebar h2 {
+  margin-bottom: 0;
+}
+
+.sidebar__nav {
   display: grid;
   gap: 6px;
 }
@@ -322,10 +337,10 @@ p {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 1px 1px, rgba(16, 47, 71, 0.08) 1px, transparent 0),
+    radial-gradient(circle at 1px 1px, rgba(16, 47, 71, 0.035) 1px, transparent 0),
     linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.16) 58%, rgba(247, 245, 239, 0.52)),
     linear-gradient(180deg, rgba(16, 47, 71, 0.06), rgba(16, 47, 71, 0));
-  background-size: 7px 7px, auto, auto;
+  background-size: 14px 14px, auto, auto;
   content: "";
 }
 
@@ -1811,14 +1826,18 @@ p {
 }
 
 @media (max-width: 700px) {
+  .site-header {
+    position: static;
+  }
+
   .page-shell {
-    width: min(100vw - 20px, var(--max-page));
+    width: min(100vw - 28px, var(--max-page));
     padding-top: 16px;
   }
 
   .site-header__inner,
   .site-footer__inner {
-    width: min(100vw - 20px, var(--max-page));
+    width: min(100vw - 28px, var(--max-page));
   }
 
   .brand {
@@ -1830,18 +1849,24 @@ p {
   }
 
   .main-nav {
-    flex-wrap: wrap;
-    gap: 4px;
-    overflow-x: visible;
-    padding-bottom: 0;
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
   }
 
   .main-nav a {
-    flex: 1 1 calc(33.333% - 4px);
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
     font-size: 0.86rem;
-    padding: 9px 10px;
+    padding: 0 12px;
     text-align: center;
-    white-space: normal;
+    white-space: nowrap;
   }
 
   .home-hero {
@@ -1889,11 +1914,27 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .content-list {
+    gap: 12px;
+    border-block: 0;
+  }
+
+  .motion-list-shell {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.76);
+    overflow: hidden;
+  }
+
   .content-list-item {
     grid-template-columns: 4px minmax(0, 1fr);
     gap: 14px;
     min-height: 0;
-    padding: 18px 0;
+    padding: 17px 16px;
+  }
+
+  .content-list-item::before {
+    display: none;
   }
 
   .content-list-item__meta,
@@ -1908,8 +1949,8 @@ p {
   }
 
   .learning-stage article {
-    gap: 10px;
-    padding: 24px 0;
+    gap: 14px;
+    padding: 18px;
   }
 
   .section-header {
@@ -1935,6 +1976,107 @@ p {
   .atlas-row__meta {
     grid-column: 2;
     justify-self: start;
+  }
+
+  .sidebar {
+    gap: 14px;
+    padding: 14px;
+    overflow: hidden;
+  }
+
+  .sidebar__section {
+    gap: 8px;
+  }
+
+  .sidebar h2 {
+    font-size: 0.72rem;
+  }
+
+  .sidebar__nav {
+    display: flex;
+    gap: 8px;
+    max-width: 100%;
+    margin-inline: -2px;
+    overflow-x: auto;
+    padding: 0 2px 8px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebar a {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    max-width: 78vw;
+    min-height: 44px;
+    border: 1px solid rgba(19, 32, 44, 0.11);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    overflow: hidden;
+    overflow-wrap: normal;
+    padding: 0 14px;
+    scroll-snap-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .learning-route {
+    gap: 14px;
+    border-top: 0;
+  }
+
+  .learning-stage {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+
+  .learning-stage__number {
+    padding-top: 0;
+  }
+
+  .learning-stage__main {
+    gap: 18px;
+  }
+
+  .learning-stage__intro h2 {
+    font-size: 1.44rem;
+    line-height: 1.22;
+    margin-bottom: 6px;
+  }
+
+  .learning-stage__intro p {
+    font-size: 0.98rem;
+    line-height: 1.72;
+  }
+
+  .learning-stage__grid {
+    gap: 18px;
+  }
+
+  .learning-stage__grid h3 {
+    margin-top: 4px;
+    font-size: 0.84rem;
+  }
+
+  .learning-stage .check-list,
+  .learning-stage .inline-link-list {
+    gap: 8px;
+  }
+
+  .learning-stage .check-list li,
+  .learning-stage .inline-link-list li {
+    font-size: 0.96rem;
+    line-height: 1.62;
+    padding-left: 16px;
+  }
+
+  .learning-stage .inline-link-list a {
+    font-size: 1rem;
+    line-height: 1.48;
   }
 
   .scenario-tile {

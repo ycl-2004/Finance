@@ -18,7 +18,7 @@ export default async function DocumentsPage() {
         <p className="eyebrow">Document Preparation</p>
         <h1>资料清单</h1>
         <p className="lead">
-          客户要提供的资料，到底去哪里拿、拿什么、怎么保护敏感信息。这个页面适合会议前预习。
+          会议前先看一眼：常见资料在哪里找、要注意哪些日期、敏感信息怎么保护。
         </p>
         <BoundaryNotice compact />
       </Reveal>

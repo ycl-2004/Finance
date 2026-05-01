@@ -12,7 +12,7 @@ export function HeroTitle({ id, lines }: { id?: string; lines: string[] }) {
       animate="visible"
       className="hero-title"
       id={id}
-      initial={shouldReduceMotion ? false : "hidden"}
+      initial={false}
       variants={{
         hidden: {},
         visible: {

@@ -19,8 +19,8 @@ export default async function LearnPage() {
         <p className="eyebrow">Start Here</p>
         <h1>学习路线</h1>
         <p className="lead">
-          不从文件夹开始，而从一个小白应该建立的理解顺序开始。每个阶段都有目标、必读文章、
-          检查问题和相关生活场景。
+          从最基础的地图和术语开始，一步一步看账户、买房、保险、税务和退休。
+          每个阶段都配好文章和检查问题。
         </p>
         <div className="actions">
           <Link className="button button--primary" href={articleRoute(learningPath[0].requiredArticles[0])}>
@@ -76,7 +76,7 @@ export default async function LearnPage() {
                     )}
                   </div>
                   <div>
-                    <h3>学完后检查自己</h3>
+                    <h3>看完后问问自己</h3>
                     <ul className="check-list">
                       {stage.checkQuestions.map((question) => (
                         <li key={question}>{question}</li>

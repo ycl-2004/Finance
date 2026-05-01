@@ -47,7 +47,7 @@ export function Reveal({
       aria-labelledby={ariaLabelledBy}
       className={className}
       id={id}
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 22 }}
+      initial={false}
       layoutId={layoutId}
       role={role}
       transition={{ duration: 0.56, delay, ease }}
@@ -74,7 +74,7 @@ export function RevealGroup({
       aria-label={ariaLabel}
       aria-labelledby={ariaLabelledBy}
       className={className}
-      initial={shouldReduceMotion ? false : "hidden"}
+      initial={false}
       variants={{
         hidden: {},
         visible: {

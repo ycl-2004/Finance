@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
-import { HomeHeroDotCanvas } from "@/components/home/HomeHeroDotCanvas";
 import { LearningAtlas, type LearningAtlasStage } from "@/components/home/LearningAtlas";
 import { ScenarioExplorer, type ScenarioExplorerItem } from "@/components/home/ScenarioExplorer";
 import { HeroTitle } from "@/components/motion/HeroTitle";
@@ -79,16 +78,15 @@ export default async function HomePage() {
   return (
     <>
       <Reveal as="section" className="home-hero" ariaLabelledBy="home-hero-title">
-        <HomeHeroDotCanvas />
         <div className="home-hero__content">
           <div className="hero-copy">
             <p className="eyebrow">Advisor-grade Financial Learning Atlas</p>
             <HeroTitle
               id="home-hero-title"
-              lines={["把加拿大金融问题，", "整理成可以一步步理解的", "学习地图。"]}
+              lines={["中文加拿大金融", "学习地图"]}
             />
             <p className="lead">
-              从账户、买房、保险、投资、税务到退休和企业主财务，先建立框架，再带着更好的问题去找专业人士确认。
+              从账户、买房、保险到退休和企业主财务，先看懂大方向，再带着更清楚的问题去确认。
             </p>
             <div className="actions">
               <Link className="button button--primary" href="/learn">
@@ -145,8 +143,8 @@ export default async function HomePage() {
         <div className="section-header section-header--wide">
           <div>
             <p className="eyebrow">Knowledge Index</p>
-            <h2 id="knowledge-index-title">知道主题时，直接进入知识库。</h2>
-            <p>主题页保留清晰的阅读结构，适合复习、查证和准备资料。</p>
+            <h2 id="knowledge-index-title">已经知道想查什么？</h2>
+            <p>按主题快速回到相关概念、文章和资料准备重点。</p>
           </div>
           <Link className="button" href="/topics">
             全部主题
@@ -166,15 +164,15 @@ export default async function HomePage() {
       <Reveal as="section" className="section tool-strip" ariaLabel="常用工具">
         <Link className="tool-link" href="/documents">
           <span>资料清单</span>
-          <strong>CRA、银行、保险、房贷、退休和企业资料从哪里取得。</strong>
+          <strong>先知道哪些资料要准备、通常可以去哪里找。</strong>
         </Link>
         <Link className="tool-link" href="/glossary">
           <span>术语表</span>
-          <strong>搜索中英文金融术语，先把语言障碍拆掉。</strong>
+          <strong>把 TFSA、RRSP、KYC 这些词先弄明白。</strong>
         </Link>
         <Link className="tool-link" href="/cases">
           <span>案例练习</span>
-          <strong>用虚拟场景练习先问什么、缺什么资料、边界在哪里。</strong>
+          <strong>用小案例练习：先问什么、还缺什么。</strong>
         </Link>
       </Reveal>
     </>

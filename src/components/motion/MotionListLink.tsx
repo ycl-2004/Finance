@@ -29,7 +29,7 @@ export function MotionListLink({
   return (
     <motion.div
       className="motion-list-shell"
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 18 }}
+      initial={false}
       layout
       layoutId={layoutId}
       transition={{ duration: 0.54, delay: shouldReduceMotion ? 0 : index * 0.07, ease }}

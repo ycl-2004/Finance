@@ -17,7 +17,7 @@ export function MotionRoot({ children }: { children: ReactNode }) {
             animate={{ opacity: 1, y: 0 }}
             className="page-shell"
             exit={{ opacity: 0, y: -10 }}
-            initial={{ opacity: 0, y: 14 }}
+            initial={false}
             key={pathname}
             transition={{ duration: 0.46, ease }}
           >

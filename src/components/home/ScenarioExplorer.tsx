@@ -31,7 +31,7 @@ export function ScenarioExplorer({ scenarios }: { scenarios: ScenarioExplorerIte
   return (
     <motion.section
       className="section scenario-explorer"
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 22 }}
+      initial={false}
       transition={{ duration: 0.56, ease }}
       viewport={{ once: true, amount: 0.16 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export function ScenarioExplorer({ scenarios }: { scenarios: ScenarioExplorerIte
       <div className="scenario-board" role="list">
         {filteredScenarios.slice(0, 6).map((scenario, index) => (
           <motion.div
-            initial={shouldReduceMotion ? false : { opacity: 0, y: 18 }}
+            initial={false}
             key={scenario.slug}
             layout
             layoutId={`scenario-${scenario.slug}`}
