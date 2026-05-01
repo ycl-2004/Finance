@@ -1,0 +1,1899 @@
+[
+  {
+    "title": "知识库导览",
+    "href": "/topics/knowledge-system",
+    "type": "topic",
+    "summary": "了解这个学习中心如何组织内容、来源、边界和使用方式。",
+    "keywords": [
+      "knowledge-system",
+      "Knowledge System",
+      "这个知识库怎么用？",
+      "registry",
+      "glossary",
+      "source"
+    ]
+  },
+  {
+    "title": "公司基础资料",
+    "href": "/topics/company-profile",
+    "type": "topic",
+    "summary": "认识 QM Financials Inc. 的公开定位、服务线和内容边界。",
+    "keywords": [
+      "company-profile",
+      "Company Profile",
+      "QM Financials 是谁，公开服务方向是什么？",
+      "financial advisor",
+      "wealth management"
+    ]
+  },
+  {
+    "title": "资料准备流程",
+    "href": "/topics/client-document-source-map",
+    "type": "topic",
+    "summary": "客户如何安全取得税务、投资、保险、房贷、退休和企业资料。",
+    "keywords": [
+      "client-document-source-map",
+      "Client Document Source Map",
+      "规划前需要准备哪些资料，去哪里拿？",
+      "NOA",
+      "CRA account",
+      "MSCA",
+      "policy",
+      "mortgage statement"
+    ]
+  },
+  {
+    "title": "金融术语",
+    "href": "/topics/glossary",
+    "type": "topic",
+    "summary": "中英文金融术语快速查找入口。",
+    "keywords": [
+      "glossary",
+      "Glossary",
+      "这些英文金融词是什么意思？",
+      "TFSA",
+      "RRSP",
+      "KYC",
+      "MER",
+      "mortgage"
+    ]
+  },
+  {
+    "title": "综合财务规划",
+    "href": "/topics/comprehensive-financial-planning",
+    "type": "topic",
+    "summary": "把收入、支出、资产、负债、保险、税务、买房、退休和传承放在同一张图里看。",
+    "keywords": [
+      "comprehensive-financial-planning",
+      "Comprehensive Financial Planning",
+      "财务规划到底规划什么？",
+      "cashflow",
+      "net worth",
+      "emergency fund",
+      "goals"
+    ]
+  },
+  {
+    "title": "加拿大注册账户",
+    "href": "/topics/canadian-registered-accounts",
+    "type": "topic",
+    "summary": "理解 TFSA、RRSP、FHSA、RESP、RDSP 的用途、税务特点和资料查询流程。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "Canadian Registered Accounts",
+      "不同注册账户有什么区别？",
+      "TFSA",
+      "RRSP",
+      "FHSA",
+      "RESP",
+      "RDSP",
+      "room"
+    ]
+  },
+  {
+    "title": "投资规划和组合策略",
+    "href": "/topics/investment-planning-portfolio-strategy",
+    "type": "topic",
+    "summary": "从目标、时间、风险、费用和税务位置理解投资组合，而不是追逐短期预测。",
+    "keywords": [
+      "investment-planning-portfolio-strategy",
+      "Investment Planning and Portfolio Strategy",
+      "投资前应该先理解什么？",
+      "asset allocation",
+      "diversification",
+      "risk tolerance",
+      "MER"
+    ]
+  },
+  {
+    "title": "保险和风险管理",
+    "href": "/topics/insurance-risk-management",
+    "type": "topic",
+    "summary": "先识别家庭或企业无法承受的风险，再理解人寿、重疾、伤残、意外和年金。",
+    "keywords": [
+      "insurance-risk-management",
+      "Insurance and Risk Management",
+      "保险是解决什么风险？",
+      "life insurance",
+      "critical illness",
+      "disability insurance",
+      "annuity"
+    ]
+  },
+  {
+    "title": "房贷和贷款方案",
+    "href": "/topics/mortgage-lending",
+    "type": "topic",
+    "summary": "理解首次买房、续约、转贷、利率、还款和压力测试。",
+    "keywords": [
+      "mortgage-lending",
+      "Mortgage and Lending",
+      "买房和房贷前要先准备什么？",
+      "mortgage",
+      "down payment",
+      "amortization",
+      "stress test"
+    ]
+  },
+  {
+    "title": "税务优化和资产保护",
+    "href": "/topics/tax-optimization-asset-protection",
+    "type": "topic",
+    "summary": "理解合法税务规划、扣除、抵免、账户安排、资产隔离和法律边界。",
+    "keywords": [
+      "tax-optimization-asset-protection",
+      "Tax Optimization and Asset Protection",
+      "税务规划和资产保护的边界在哪里？",
+      "deduction",
+      "credit",
+      "marginal tax rate",
+      "asset protection"
+    ]
+  },
+  {
+    "title": "退休规划与财富传承",
+    "href": "/topics/retirement-estate-planning",
+    "type": "topic",
+    "summary": "理解 CPP、OAS、RRSP/RRIF、年金、遗嘱、授权文件和财富转移。",
+    "keywords": [
+      "retirement-estate-planning",
+      "Retirement and Estate Planning",
+      "退休收入和遗产安排要先看哪些资料？",
+      "CPP",
+      "OAS",
+      "RRIF",
+      "will",
+      "probate"
+    ]
+  },
+  {
+    "title": "小企业 / 企业主财务咨询",
+    "href": "/topics/small-business-owner-financial-consulting",
+    "type": "topic",
+    "summary": "理解企业主的个人和公司现金流、税务、保障、退出和传承风险。",
+    "keywords": [
+      "small-business-owner-financial-consulting",
+      "Small Business Owner Financial Consulting",
+      "企业主的个人财务和公司财务怎么分清？",
+      "GST/HST",
+      "payroll",
+      "salary",
+      "dividend",
+      "shareholder agreement"
+    ]
+  },
+  {
+    "title": "我刚来加拿大，应该先了解什么金融基础？",
+    "href": "/scenarios/new-to-canada",
+    "type": "scenario",
+    "summary": "不知道加拿大金融规划有哪些模块，也不知道 TFSA、RRSP、信用、保险和税务之间的关系。",
+    "keywords": [
+      "新移民、留学生转工签、刚开始建立加拿大财务系统的人",
+      "不知道加拿大金融规划有哪些模块，也不知道 TFSA、RRSP、信用、保险和税务之间的关系。",
+      "金融术语",
+      "综合财务规划",
+      "现金流和应急金",
+      "信用和债务",
+      "注册账户基础",
+      "我目前最应该先整理哪几类资料？",
+      "哪些账户需要等有税务居民身份或报税记录后再确认？",
+      "我的短期现金流和长期目标应该如何排序？"
+    ]
+  },
+  {
+    "title": "我想买第一套房，应该先准备什么？",
+    "href": "/scenarios/first-home",
+    "type": "scenario",
+    "summary": "只知道想买房，但还没把首付账户、现金流、压力测试、保险和税务资料放在一起看。",
+    "keywords": [
+      "首次买房者、新移民家庭、正在比较首付和房贷的人",
+      "只知道想买房，但还没把首付账户、现金流、压力测试、保险和税务资料放在一起看。",
+      "首付和现金流",
+      "FHSA",
+      "RRSP HBP",
+      "房贷压力测试",
+      "保险和风险",
+      "我是否符合 FHSA 的基本条件？",
+      "首付资金现在在哪些账户？",
+      "房贷利率变化会如何影响现金流？"
+    ]
+  },
+  {
+    "title": "TFSA、RRSP、FHSA 到底有什么不同？",
+    "href": "/scenarios/account-differences",
+    "type": "scenario",
+    "summary": "知道这些账户名字，但不清楚账户用途、税务特点和 room 查询方式。",
+    "keywords": [
+      "准备开始储蓄、投资或买房的人",
+      "知道这些账户名字，但不清楚账户用途、税务特点和 room 查询方式。",
+      "账户和投资产品的区别",
+      "TFSA",
+      "RRSP",
+      "FHSA",
+      "room 查询",
+      "我的 contribution room 是否以 CRA 最新数据为准？",
+      "我的资金使用时间会如何影响账户选择？",
+      "哪些交易还没有反映在 CRA account？"
+    ]
+  },
+  {
+    "title": "我有孩子，RESP 要怎么理解？",
+    "href": "/scenarios/kids-education",
+    "type": "scenario",
+    "summary": "听说 RESP 有政府补助，但不清楚 beneficiary、subscriber、CESG 和孩子不上学时的处理。",
+    "keywords": [
+      "有孩子或计划教育储蓄的家庭",
+      "听说 RESP 有政府补助，但不清楚 beneficiary、subscriber、CESG 和孩子不上学时的处理。",
+      "RESP 基础",
+      "政府教育补助",
+      "教育目标时间",
+      "家庭现金流",
+      "多个 subscriber 是否需要合并计算？",
+      "孩子年龄是否影响补助条件？",
+      "如果未来不上学，有哪些一般处理方向需要了解？"
+    ]
+  },
+  {
+    "title": "我的房贷快续约了，要注意什么？",
+    "href": "/scenarios/mortgage-renewal",
+    "type": "scenario",
+    "summary": "只看续约利率，忽略现金流、penalty、摊还期、提前还款权利和压力测试。",
+    "keywords": [
+      "房贷 term 即将到期、正在考虑 refinance 或 switch 的房主",
+      "只看续约利率，忽略现金流、penalty、摊还期、提前还款权利和压力测试。",
+      "renewal",
+      "refinance",
+      "switch",
+      "固定和浮动利率",
+      "提前还款和 penalty",
+      "renewal、switch、refinance 对我的现金流有什么不同影响？",
+      "当前合同是否有 penalty 或提前还款限制？",
+      "如果利率变化，我的月供和长期成本会怎样变化？"
+    ]
+  },
+  {
+    "title": "我想了解保险，不知道从哪里开始。",
+    "href": "/scenarios/young-family-insurance",
+    "type": "scenario",
+    "summary": "不知道人寿、重疾、伤残和雇主福利分别解决什么风险。",
+    "keywords": [
+      "年轻家庭、有房贷、有孩子、有收入依赖者的人",
+      "不知道人寿、重疾、伤残和雇主福利分别解决什么风险。",
+      "风险缺口",
+      "人寿保险",
+      "重疾险",
+      "伤残险",
+      "雇主福利",
+      "如果主要收入中断，家庭现金流缺口在哪里？",
+      "现有雇主福利能覆盖哪些风险，不能覆盖哪些？",
+      "受益人和 owner 安排是否需要更新？"
+    ]
+  },
+  {
+    "title": "我快退休了，要先看哪些资料？",
+    "href": "/scenarios/pre-retirement",
+    "type": "scenario",
+    "summary": "不确定 CPP/OAS、RRSP/RRIF、TFSA、年金、税务和遗嘱文件如何一起看。",
+    "keywords": [
+      "临近退休、开始规划提款、养老金和遗产文件的人",
+      "不确定 CPP/OAS、RRSP/RRIF、TFSA、年金、税务和遗嘱文件如何一起看。",
+      "CPP/OAS",
+      "RRSP/RRIF",
+      "年金",
+      "退休现金流",
+      "遗嘱和授权文件",
+      "退休收入来源有哪些，税后现金流如何估算？",
+      "RRSP 转 RRIF 前需要了解哪些规则？",
+      "受益人、遗嘱和授权文件是否一致？"
+    ]
+  },
+  {
+    "title": "我是小企业主，个人和公司财务要分清什么？",
+    "href": "/scenarios/business-owner",
+    "type": "scenario",
+    "summary": "个人现金流、公司现金流、税务、保险、担保和退出安排容易混在一起。",
+    "keywords": [
+      "自雇人士、公司 owner、合伙人、小企业主",
+      "个人现金流、公司现金流、税务、保险、担保和退出安排容易混在一起。",
+      "企业现金流",
+      "owner compensation",
+      "GST/HST 和 payroll",
+      "企业保险",
+      "succession",
+      "个人和公司现金流有没有混用？",
+      "salary 和 dividend 的一般税务差异需要向会计师确认什么？",
+      "如果 owner 失能、死亡或退出，公司如何继续运作？"
+    ]
+  },
+  {
+    "title": "收入提高后，账户和税务顺序要怎么学习？",
+    "href": "/scenarios/high-income-accounts",
+    "type": "scenario",
+    "summary": "容易只看当年省税，忽略流动性、未来提款税、投资风险和费用。",
+    "keywords": [
+      "收入上升、开始比较 RRSP、TFSA、非注册账户和税务规划的人",
+      "容易只看当年省税，忽略流动性、未来提款税、投资风险和费用。",
+      "边际税率",
+      "RRSP",
+      "TFSA",
+      "非注册投资税务",
+      "投资费用",
+      "现在税率和未来税率可能有什么差异？",
+      "账户选择如何影响流动性和提款税？",
+      "投资费用和资产位置如何影响税后结果？"
+    ]
+  },
+  {
+    "title": "Knowledge Registry",
+    "href": "/articles/00-registry",
+    "type": "article",
+    "summary": "这个 registry 是中文金融知识库入口。当前主目标是学习 QM Financials 业务背后的金融知识，不是设计自动化产品，也不是给客户出个人建议。",
+    "keywords": [
+      "knowledge-system",
+      "Knowledge Registry",
+      "00-registry",
+      "https://qm-financials.com/",
+      "https://qm-financials.com/content/translations.json",
+      "https://www.canada.ca/en/revenue-agency/services/tax.html",
+      "https://www.canada.ca/en/financial-consumer-agency.html",
+      "https://www.canada.ca/en/services/benefits.html"
+    ]
+  },
+  {
+    "title": "综合财务规划总览",
+    "href": "/articles/01-comprehensive-financial-planning/00-overview",
+    "type": "article",
+    "summary": "综合财务规划是把一个人的收入、支出、资产、负债、保险、税务、买房、教育、退休和遗产安排放在同一张图里看。重点不是先买某个产品，而是先确认目标、资源、约束和风险。",
+    "keywords": [
+      "comprehensive-financial-planning",
+      "综合财务规划总览",
+      "01-comprehensive-financial-planning/00-overview",
+      "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/set-financial-goals.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/set-up-emergency-fund.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/debt.html"
+    ]
+  },
+  {
+    "title": "客户资料地图",
+    "href": "/articles/01-comprehensive-financial-planning/01-client-data-map",
+    "type": "article",
+    "summary": "优先从官方或原始机构取得资料，不用口头估计替代文件。",
+    "keywords": [
+      "comprehensive-financial-planning",
+      "客户资料地图",
+      "01-comprehensive-financial-planning/01-client-data-map",
+      "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/choose-financial-advisor.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/where-you-find-your-rrsp-prpp-deduction-limit.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html",
+      "https://www.canada.ca/myservicecanadaaccount",
+      "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html"
+    ]
+  },
+  {
+    "title": "财务规划流程",
+    "href": "/articles/01-comprehensive-financial-planning/02-planning-process",
+    "type": "article",
+    "summary": "目标需要具体到金额和时间。比如“想买房”不够，应该拆成“3 年内准备 12 万首付，地点在大温，目标房价区间 80 万到 110 万”。",
+    "keywords": [
+      "comprehensive-financial-planning",
+      "财务规划流程",
+      "01-comprehensive-financial-planning/02-planning-process",
+      "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/set-financial-goals.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/debt/limiting-debt.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning.html"
+    ]
+  },
+  {
+    "title": "投资规划和投资组合策略总览",
+    "href": "/articles/02-investment-planning-portfolio-strategy/00-overview",
+    "type": "article",
+    "summary": "投资规划是根据目标、时间、风险承受能力、现金流和税务位置，决定如何把可投资资产分配到不同类型的投资中。投资组合策略不是预测下个月涨跌，而是设计一个在不同市场环境下仍然能服务目标的结构。",
+    "keywords": [
+      "investment-planning-portfolio-strategy",
+      "投资规划和投资组合策略总览",
+      "02-investment-planning-portfolio-strategy/00-overview",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/investing-basics.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/investment-types.html",
+      "https://www.ciro.ca/office-investor/investing-basics/selecting-advisor",
+      "https://www.ciro.ca/office-investor/investing-basics/know-your-rights-investor"
+    ]
+  },
+  {
+    "title": "风险、收益和时间周期",
+    "href": "/articles/02-investment-planning-portfolio-strategy/01-risk-return-time-horizon",
+    "type": "article",
+    "summary": "投资风险包括：",
+    "keywords": [
+      "investment-planning-portfolio-strategy",
+      "风险、收益和时间周期",
+      "02-investment-planning-portfolio-strategy/01-risk-return-time-horizon",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/investing-basics.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/investment-types.html",
+      "https://www.ciro.ca/newsroom/publications/know-your-client-and-suitability-determination-retail-clients",
+      "https://www.securities-administrators.ca/investor-tools/"
+    ]
+  },
+  {
+    "title": "投资组合基础概念",
+    "href": "/articles/02-investment-planning-portfolio-strategy/02-portfolio-concepts",
+    "type": "article",
+    "summary": "资产配置是决定投资组合中股票、债券、现金和其他资产的比例。它通常比挑单个产品更重要，因为它决定大部分波动来源。",
+    "keywords": [
+      "investment-planning-portfolio-strategy",
+      "投资组合基础概念",
+      "02-investment-planning-portfolio-strategy/02-portfolio-concepts",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/investment-types.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/investing-basics.html",
+      "https://www.ciro.ca/office-investor/investing-basics/fees-and-costs",
+      "https://www.ciro.ca/newsroom/publications/know-your-product"
+    ]
+  },
+  {
+    "title": "费用、税务和行为风险",
+    "href": "/articles/02-investment-planning-portfolio-strategy/03-fees-taxes-behaviour-risks",
+    "type": "article",
+    "summary": "同一个投资放在不同账户，税后结果可能不同。",
+    "keywords": [
+      "investment-planning-portfolio-strategy",
+      "费用、税务和行为风险",
+      "02-investment-planning-portfolio-strategy/03-fees-taxes-behaviour-risks",
+      "https://www.ciro.ca/newsroom/publications/know-your-client-kyc-and-suitability",
+      "https://www.ciro.ca/newsroom/publications/know-your-client-and-suitability-determination-retail-clients",
+      "https://www.ciro.ca/office-investor/investing-basics/fees-and-costs",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains.html"
+    ]
+  },
+  {
+    "title": "加拿大注册账户总览",
+    "href": "/articles/03-canadian-registered-accounts/00-overview-comparison",
+    "type": "article",
+    "summary": "注册账户是受加拿大税务规则管理的特殊账户。它不是一种投资产品，而是一个税务外壳。账户里面可以持有的东西取决于金融机构和规则，可能包括现金、GIC、基金、ETF、股票、债券等合格投资。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "加拿大注册账户总览",
+      "03-canadian-registered-accounts/00-overview-comparison",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/registered-retirement-savings-plan-rrsp.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html",
+      "https://www.canada.ca/en/services/benefits/education/education-savings.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings.html"
+    ]
+  },
+  {
+    "title": "TFSA",
+    "href": "/articles/03-canadian-registered-accounts/01-tfsa",
+    "type": "article",
+    "summary": "TFSA 是 Tax-Free Savings Account，中文常叫免税储蓄账户。它是注册账户，不是单一投资产品。符合条件的人可以把钱放进 TFSA，账户内合规投资收益和合规提款一般不纳税。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "TFSA",
+      "03-canadian-registered-accounts/01-tfsa",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/withdraw.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/overcontribute.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html"
+    ]
+  },
+  {
+    "title": "RRSP",
+    "href": "/articles/03-canadian-registered-accounts/02-rrsp",
+    "type": "article",
+    "summary": "RRSP 是 Registered Retirement Savings Plan，中文常叫注册退休储蓄计划。它的核心是延税：符合条件的供款通常可以抵扣应税收入，账户内收益递延纳税，未来提款时通常作为收入纳税。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "RRSP",
+      "03-canadian-registered-accounts/02-rrsp",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/registered-retirement-savings-plan-rrsp.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/where-you-find-your-rrsp-prpp-deduction-limit.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/notice-assessment-understand.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/definitions-rrsps.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/home-buyers-plan-lifelong-learning-plan-withdrawals.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/lifelong-learning-plan.html"
+    ]
+  },
+  {
+    "title": "FHSA",
+    "href": "/articles/03-canadian-registered-accounts/03-fhsa",
+    "type": "article",
+    "summary": "FHSA 是 First Home Savings Account，中文可理解为首套房储蓄账户。它结合了 RRSP 和 TFSA 的部分特点：合格供款通常可抵税，合格买房提款通常免税。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "FHSA",
+      "03-canadian-registered-accounts/03-fhsa",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/reporting-fhsa-activities-income-benefit-return.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/notice-assessment-understand.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/definitions.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html"
+    ]
+  },
+  {
+    "title": "RESP",
+    "href": "/articles/03-canadian-registered-accounts/04-resp",
+    "type": "article",
+    "summary": "RESP 是 Registered Education Savings Plan，中文常叫注册教育储蓄计划。它用于为受益人未来的 post-secondary education 储蓄。subscriber 供款，beneficiary 未来上学时可获得教育相关付款。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "RESP",
+      "03-canadian-registered-accounts/04-resp",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/resp-contributions.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/canada-education-savings-programs-cesp/canada-education-savings-grant-cesg.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/canada-education-savings-programs-cesp/canada-learning-bond.html",
+      "https://www.canada.ca/en/services/benefits/education/education-savings.html",
+      "https://www.canada.ca/en/employment-social-development/programs/canada-education-savings/resp-promoters-list.html"
+    ]
+  },
+  {
+    "title": "RDSP",
+    "href": "/articles/03-canadian-registered-accounts/05-rdsp",
+    "type": "article",
+    "summary": "RDSP 是 Registered Disability Savings Plan，中文可理解为注册残障储蓄计划。它用于帮助符合 Disability Tax Credit 资格的人为长期财务安全储蓄。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "RDSP",
+      "03-canadian-registered-accounts/05-rdsp",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp/canada-disability-savings-grant-canada-disability-savings-bond.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp/payments-rules/what-types-payments-made-rdsp.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/review-decision-dtc.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings/rdsp.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings/issuers/videos/disability-savings-carry-forward-entitlements.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings/issuers/aha.html"
+    ]
+  },
+  {
+    "title": "注册账户 Room 查询和客户资料流程",
+    "href": "/articles/03-canadian-registered-accounts/06-room-check-workflow",
+    "type": "article",
+    "summary": "客户问“我还能放多少钱”时，不能只听客户口头估计，也不能只看某一家银行的 app。注册账户 room 通常是个人或 beneficiary 层面的总额度，可能跨多个金融机构、多个年份和多个账户。",
+    "keywords": [
+      "canadian-registered-accounts",
+      "注册账户 Room 查询和客户资料流程",
+      "03-canadian-registered-accounts/06-room-check-workflow",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/register-cra-sign-in-services.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/using-my-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/notice-assessment-understand.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/where-you-find-your-rrsp-prpp-deduction-limit.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/reporting-fhsa-activities-income-benefit-return.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/resp-contributions.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/canada-education-savings-programs-cesp/canada-education-savings-grant-cesg.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/canada-education-savings-programs-cesp/canada-learning-bond.html",
+      "https://www.canada.ca/en/services/benefits/education/education-savings.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/review-decision-dtc.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings/rdsp.html",
+      "https://www.canada.ca/en/employment-social-development/programs/disability/savings/issuers/videos/disability-savings-carry-forward-entitlements.html"
+    ]
+  },
+  {
+    "title": "保险和风险管理总览",
+    "href": "/articles/04-insurance-risk-management/00-overview",
+    "type": "article",
+    "summary": "风险管理是先识别家庭或企业承受不了的损失，再决定保留、降低、转移或避免这些风险。保险是转移风险的工具，不是所有风险都要买保险，也不是所有保险都适合每个人。",
+    "keywords": [
+      "insurance-risk-management",
+      "保险和风险管理总览",
+      "04-insurance-risk-management/00-overview",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/disability.html",
+      "https://lautorite.qc.ca/en/general-public/insurance/critical-illness-insurance",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/credit-loan.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning/annuities.html"
+    ]
+  },
+  {
+    "title": "人寿保险",
+    "href": "/articles/04-insurance-risk-management/01-life-insurance",
+    "type": "article",
+    "summary": "人寿保险在被保险人死亡时，按合同向受益人或遗产支付 death benefit。个人寿险死亡赔偿通常用于替代收入、还债、支付丧葬费用、照顾孩子或配偶、传承资产。",
+    "keywords": [
+      "insurance-risk-management",
+      "人寿保险",
+      "04-insurance-risk-management/01-life-insurance",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/credit-loan.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/optional-insurance-products.html"
+    ]
+  },
+  {
+    "title": "重疾、伤残和意外保险",
+    "href": "/articles/04-insurance-risk-management/02-critical-illness-disability-accident",
+    "type": "article",
+    "summary": "重疾险通常在被保险人被诊断出合同列明的重大疾病，并满足合同定义和 survival period 后，给付一笔 lump sum。",
+    "keywords": [
+      "insurance-risk-management",
+      "重疾、伤残和意外保险",
+      "04-insurance-risk-management/02-critical-illness-disability-accident",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/disability.html",
+      "https://lautorite.qc.ca/en/general-public/insurance/critical-illness-insurance",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/credit-loan.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/optional-insurance-products.html"
+    ]
+  },
+  {
+    "title": "年金",
+    "href": "/articles/04-insurance-risk-management/03-annuities",
+    "type": "article",
+    "summary": "Annuity 是用一笔钱或分期投入，换取未来定期收入的金融产品。它通常由保险公司提供，常用于退休收入规划。",
+    "keywords": [
+      "insurance-risk-management",
+      "年金",
+      "04-insurance-risk-management/03-annuities",
+      "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning/annuities.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/rrsp-options-when-you-turn-71/options-your-rrsps.html",
+      "https://assuris.ca/how-am-i-protected/assuris-protection/investments-savings/individual/payout-annuity/"
+    ]
+  },
+  {
+    "title": "保险需求分析和风险点",
+    "href": "/articles/04-insurance-risk-management/04-needs-analysis-risk-points",
+    "type": "article",
+    "summary": "客户不能只说“我有保险”，要拿到合同和当前有效资料。",
+    "keywords": [
+      "insurance-risk-management",
+      "保险需求分析和风险点",
+      "04-insurance-risk-management/04-needs-analysis-risk-points",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/disability.html",
+      "https://lautorite.qc.ca/en/general-public/insurance/critical-illness-insurance",
+      "https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2025/warning-cra-identified-aggressive-tax-schemes-involving-insurance-products.html"
+    ]
+  },
+  {
+    "title": "房贷和贷款方案总览",
+    "href": "/articles/05-mortgage-lending/00-overview",
+    "type": "article",
+    "summary": "Mortgage 是用房产作为抵押的贷款合同。借款人用贷款支付房屋购买价格的一部分，并按合同偿还本金和利息。如果不按合同付款，贷款机构可能有权处置抵押房产。",
+    "keywords": [
+      "mortgage-lending",
+      "房贷和贷款方案总览",
+      "05-mortgage-lending/00-overview",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/down-payment.html",
+      "https://www.osfi-bsif.gc.ca/en/supervision/financial-institutions/banks/minimum-qualifying-rate-uninsured-mortgages",
+      "https://www.bcfsa.ca/industry-resources/mortgage-broker-resources/msa-landing-page/mortgage-broker-knowledge-base/mortgage-services-regulatory-index/information-on-licensing"
+    ]
+  },
+  {
+    "title": "首次买房",
+    "href": "/articles/05-mortgage-lending/01-first-home-buyer",
+    "type": "article",
+    "summary": "操作步骤：",
+    "keywords": [
+      "mortgage-lending",
+      "首次买房",
+      "05-mortgage-lending/01-first-home-buyer",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/down-payment.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages.html",
+      "https://www.osfi-bsif.gc.ca/en/supervision/financial-institutions/banks/minimum-qualifying-rate-uninsured-mortgages",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/a-proof-income-statement-option-print.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html",
+      "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax/exemptions/first-time-home-buyers",
+      "https://ltsa.ca/property-owners/how-can-i/search-for-a-title/"
+    ]
+  },
+  {
+    "title": "Refinance、Renewal 和 Switching",
+    "href": "/articles/05-mortgage-lending/02-refinance-renewal-switching",
+    "type": "article",
+    "summary": "Renewal 是房贷 term 到期后，与原 lender 或新 lender 签新的 term。借款人通常还没有还完全部贷款，只是当前合同到期。",
+    "keywords": [
+      "mortgage-lending",
+      "Refinance、Renewal 和 Switching",
+      "05-mortgage-lending/02-refinance-renewal-switching",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/renew-mortgage.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/prepayment-penalties.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/pay-mortgage-faster.html",
+      "https://www.osfi-bsif.gc.ca/en/supervision/financial-institutions/banks/minimum-qualifying-rate-uninsured-mortgages",
+      "https://www.osfi-bsif.gc.ca/en/news/backgrounder-minimum-qualifying-rate-mqr",
+      "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html",
+      "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-assessment",
+      "https://ltsa.ca/property-owners/how-can-i/find-information-on-a-title/"
+    ]
+  },
+  {
+    "title": "利率、还款和压力测试",
+    "href": "/articles/05-mortgage-lending/03-rates-payments-stress-test",
+    "type": "article",
+    "summary": "固定利率在 term 内利率不变。",
+    "keywords": [
+      "mortgage-lending",
+      "利率、还款和压力测试",
+      "05-mortgage-lending/03-rates-payments-stress-test",
+      "https://www.osfi-bsif.gc.ca/en/supervision/financial-institutions/banks/minimum-qualifying-rate-uninsured-mortgages",
+      "https://www.osfi-bsif.gc.ca/en/news/backgrounder-minimum-qualifying-rate-mqr",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/prepayment-penalties.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/pay-mortgage-faster.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/renew-mortgage.html"
+    ]
+  },
+  {
+    "title": "税务优化和资产保护总览",
+    "href": "/articles/06-tax-optimization-asset-protection/00-overview",
+    "type": "article",
+    "summary": "税务优化是在法律允许范围内安排收入、扣除、抵免、账户、时点和结构，减少不必要税务摩擦。资产保护是降低资产因诉讼、债务、家庭变故、意外或经营风险受损的可能性。",
+    "keywords": [
+      "tax-optimization-asset-protection",
+      "税务优化和资产保护总览",
+      "06-tax-optimization-asset-protection/00-overview",
+      "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra/tax-alert/aggressive-tax-planning.html",
+      "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/how-combat-tax-evasion-avoidance/general-anti-avoidance-rule.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance.html"
+    ]
+  },
+  {
+    "title": "税务规划基础模块",
+    "href": "/articles/06-tax-optimization-asset-protection/01-tax-planning-building-blocks",
+    "type": "article",
+    "summary": "边际税率是下一加元收入适用的大致税率。税务规划通常看边际税率，而不只是平均税率。",
+    "keywords": [
+      "tax-optimization-asset-protection",
+      "税务规划基础模块",
+      "06-tax-optimization-asset-protection/01-tax-planning-building-blocks",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains/completing-schedule-3/qualified-small-business-corporation-shares.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax.html",
+      "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra/tax-alert/aggressive-tax-planning.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/a-copy-your-tax-slips.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/notice-assessment-understand.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/a-proof-income-statement-option-print.html"
+    ]
+  },
+  {
+    "title": "资产保护和法律结构",
+    "href": "/articles/06-tax-optimization-asset-protection/02-asset-protection-legal-structure",
+    "type": "article",
+    "summary": "资产保护不是事后把资产转走，而是事前用合理结构降低风险。已经有债务、诉讼或索赔风险时转移资产，可能被挑战。",
+    "keywords": [
+      "tax-optimization-asset-protection",
+      "资产保护和法律结构",
+      "06-tax-optimization-asset-protection/02-asset-protection-legal-structure",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html",
+      "https://www2.gov.bc.ca/gov/content/life-events/death/wills-estates",
+      "https://www2.gov.bc.ca/gov/content/health/managing-your-health/incapacity-planning"
+    ]
+  },
+  {
+    "title": "税务和资产保护风险点",
+    "href": "/articles/06-tax-optimization-asset-protection/03-risk-points",
+    "type": "article",
+    "summary": "听到以下说法要谨慎：",
+    "keywords": [
+      "tax-optimization-asset-protection",
+      "税务和资产保护风险点",
+      "06-tax-optimization-asset-protection/03-risk-points",
+      "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra/tax-alert/aggressive-tax-planning.html",
+      "https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2025/warning-cra-identified-aggressive-tax-schemes-involving-insurance-products.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/business-expenses.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
+    ]
+  },
+  {
+    "title": "退休规划与财富传承总览",
+    "href": "/articles/07-retirement-estate-planning/00-overview",
+    "type": "article",
+    "summary": "退休规划是把未来生活支出和收入来源对齐。核心问题不是“存多少钱才够”，而是退休后每年要花多少、钱从哪里来、能持续多久、税后剩多少、风险怎么处理。",
+    "keywords": [
+      "retirement-estate-planning",
+      "退休规划与财富传承总览",
+      "07-retirement-estate-planning/00-overview",
+      "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html",
+      "https://www2.gov.bc.ca/gov/content/life-events/death/wills-estates"
+    ]
+  },
+  {
+    "title": "退休收入来源",
+    "href": "/articles/07-retirement-estate-planning/01-retirement-income-sources",
+    "type": "article",
+    "summary": "Canada Pension Plan 是由雇员、雇主和自雇人士供款支持的公共养老金。它为符合条件的供款人和家庭提供退休、伤残、死亡和 survivor 相关福利。",
+    "keywords": [
+      "retirement-estate-planning",
+      "退休收入来源",
+      "07-retirement-estate-planning/01-retirement-income-sources",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/when-start.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/statement-contributions.html",
+      "https://www.canada.ca/en/employment-social-development/services/my-account/cpp.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security/recovery-tax.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html"
+    ]
+  },
+  {
+    "title": "RRIF、年金和提款策略",
+    "href": "/articles/07-retirement-estate-planning/02-rrif-annuity-withdrawal",
+    "type": "article",
+    "summary": "通常在年满 71 岁那年的 12 月 31 日前，RRSP 必须处理。常见选择：",
+    "keywords": [
+      "retirement-estate-planning",
+      "RRIF、年金和提款策略",
+      "07-retirement-estate-planning/02-rrif-annuity-withdrawal",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/rrsp-options-when-you-turn-71.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/rrsp-options-when-you-turn-71/options-your-rrsps.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning/annuities.html",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-benefit/when-start.html"
+    ]
+  },
+  {
+    "title": "BC 遗产和财富传承基础",
+    "href": "/articles/07-retirement-estate-planning/03-estate-wealth-transfer-bc",
+    "type": "article",
+    "summary": "Will 是遗嘱，说明死亡后资产如何分配，并通常指定 executor。BC 中，没有遗嘱时，资产会按 Wills, Estates and Succession Act 的规则分配。",
+    "keywords": [
+      "retirement-estate-planning",
+      "BC 遗产和财富传承基础",
+      "07-retirement-estate-planning/03-estate-wealth-transfer-bc",
+      "https://www2.gov.bc.ca/gov/content/life-events/death/wills-estates",
+      "https://www2.gov.bc.ca/gov/content/life-events/death/after-death/wills-estates",
+      "https://www2.gov.bc.ca/gov/content/justice/about-bcs-justice-system/legislation-policy/resources/wills-estates-succession-act-probate-rules",
+      "https://www2.gov.bc.ca/gov/content/health/managing-your-health/incapacity-planning",
+      "https://www2.gov.bc.ca/gov/content/family-social-supports/seniors/health-safety/advance-care-planning",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-someone-died.html",
+      "https://ltsa.ca/property-owners/how-can-i/search-for-a-title/",
+      "https://ltsa.ca/property-owners/how-can-i/find-information-on-a-title/"
+    ]
+  },
+  {
+    "title": "小企业/企业主财务咨询总览",
+    "href": "/articles/08-small-business-owner-financial-consulting/00-overview",
+    "type": "article",
+    "summary": "企业主的个人财务和企业财务经常绑在一起。收入可能不稳定，税务更复杂，保险和债务风险更高，退休资金也可能依赖企业出售或公司留存收益。",
+    "keywords": [
+      "small-business-owner-financial-consulting",
+      "小企业/企业主财务咨询总览",
+      "08-small-business-owner-financial-consulting/00-overview",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/business-expenses.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110/employee-self-employed.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html"
+    ]
+  },
+  {
+    "title": "企业税务和现金流基础",
+    "href": "/articles/08-small-business-owner-financial-consulting/01-business-tax-cashflow",
+    "type": "article",
+    "summary": "Sole proprietor 不是独立于个人的公司。商业收入通常在个人税表中申报，扣除合格费用后作为个人收入纳税。",
+    "keywords": [
+      "small-business-owner-financial-consulting",
+      "企业税务和现金流基础",
+      "08-small-business-owner-financial-consulting/01-business-tax-cashflow",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/business-expenses.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/about-business-account.html",
+      "https://www2.gov.bc.ca/gov/content?id=B75BE1375F084B138B60D62C0094D9E8"
+    ]
+  },
+  {
+    "title": "企业主取钱、福利和保障",
+    "href": "/articles/08-small-business-owner-financial-consulting/02-owner-compensation-benefits-protection",
+    "type": "article",
+    "summary": "Owner 从公司领 salary，通常公司可扣除，个人作为 employment income 纳税。",
+    "keywords": [
+      "small-business-owner-financial-consulting",
+      "企业主取钱、福利和保障",
+      "08-small-business-owner-financial-consulting/02-owner-compensation-benefits-protection",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4001/employers-guide-payroll-deductions-remittances.html",
+      "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110/employee-self-employed.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/where-you-find-your-rrsp-prpp-deduction-limit.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/disability.html"
+    ]
+  },
+  {
+    "title": "企业传承、退出和风险",
+    "href": "/articles/08-small-business-owner-financial-consulting/03-succession-exit-risk",
+    "type": "article",
+    "summary": "常见退出方式：",
+    "keywords": [
+      "small-business-owner-financial-consulting",
+      "企业传承、退出和风险",
+      "08-small-business-owner-financial-consulting/03-succession-exit-risk",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains/completing-schedule-3/qualified-small-business-corporation-shares.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html",
+      "https://www2.gov.bc.ca/gov/content?id=B75BE1375F084B138B60D62C0094D9E8"
+    ]
+  },
+  {
+    "title": "客户资料取得流程总表",
+    "href": "/articles/client-document-source-map",
+    "type": "article",
+    "summary": "这个文件用于回答：“客户要提供的资料，到底去哪里拿，拿什么，怎么核对。”",
+    "keywords": [
+      "client-document-source-map",
+      "客户资料取得流程总表",
+      "client-document-source-map",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/about-cra-sign-in-services.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/register-cra-sign-in-services.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/a-copy-your-tax-slips.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/notice-assessment-understand.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/a-proof-income-statement-option-print.html",
+      "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/about-business-account.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+      "https://www.canada.ca/myservicecanadaaccount",
+      "https://www.canada.ca/en/services/benefits/publicpensions/cpp/statement-contributions.html",
+      "https://www.canada.ca/en/employment-social-development/services/my-account/cpp.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/mortgages/prepayment-penalties.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/life.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/insurance/disability.html",
+      "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-assessment",
+      "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax/exemptions/first-time-home-buyers",
+      "https://ltsa.ca/property-owners/how-can-i/search-for-a-title/",
+      "https://ltsa.ca/property-owners/how-can-i/find-information-on-a-title/",
+      "https://www2.gov.bc.ca/gov/content?id=B75BE1375F084B138B60D62C0094D9E8"
+    ]
+  },
+  {
+    "title": "QM Financials Inc. 公司基础资料",
+    "href": "/articles/company-profile",
+    "type": "article",
+    "summary": "QM Financials Inc. 是面向个人、家庭和企业主的金融服务/财富规划团队。公开官网传达的核心定位是通过教育、透明沟通和长期关系，帮助客户理解并规划自己的财务决策。",
+    "keywords": [
+      "company-profile",
+      "QM Financials Inc. 公司基础资料",
+      "company-profile",
+      "https://qm-financials.com/",
+      "https://qm-financials.com/content/translations.json",
+      "https://www.canadacompanyregistry.com/companies/qm-financials-inc/"
+    ]
+  },
+  {
+    "title": "金融术语表",
+    "href": "/articles/glossary",
+    "type": "article",
+    "summary": "中文金融知识库文章。",
+    "keywords": [
+      "glossary",
+      "金融术语表",
+      "glossary",
+      "https://www.canada.ca/en/revenue-agency/services/tax.html",
+      "https://www.canada.ca/en/financial-consumer-agency.html",
+      "https://www.osfi-bsif.gc.ca/en/supervision/financial-institutions/banks/minimum-qualifying-rate-uninsured-mortgages",
+      "https://www2.gov.bc.ca/gov/content/life-events/death/wills-estates",
+      "https://www2.gov.bc.ca/gov/content/health/managing-your-health/incapacity-planning"
+    ]
+  },
+  {
+    "title": "QM Financials 中文金融知识库",
+    "href": "/articles/README",
+    "type": "article",
+    "summary": "这个目录现在以业务主题为主入口。每个主题都有独立资料夹，资料夹内用小型 Markdown 文件保存可检索的金融知识。",
+    "keywords": [
+      "knowledge-system",
+      "QM Financials 中文金融知识库",
+      "README",
+      "https://qm-financials.com/",
+      "https://qm-financials.com/content/translations.json",
+      "https://www.canada.ca/en/revenue-agency/services/tax.html",
+      "https://www.canada.ca/en/financial-consumer-agency.html",
+      "https://www.canada.ca/en/services/benefits.html"
+    ]
+  },
+  {
+    "title": "新移民家庭建立财务规划地图",
+    "href": "/cases/newcomer-family-map",
+    "type": "case",
+    "summary": "一家三口刚到加拿大，有工资收入、租房支出、少量存款，还没系统理解税务、账户和保险。",
+    "keywords": [
+      "beginner",
+      "画出家庭财务快照",
+      "列出优先资料清单",
+      "区分短期和长期目标",
+      "01-comprehensive-financial-planning/00-overview",
+      "client-document-source-map",
+      "glossary"
+    ]
+  },
+  {
+    "title": "首次买房者整理账户、现金流和房贷资料",
+    "href": "/cases/first-home-prep",
+    "type": "case",
+    "summary": "一对夫妻准备 12-18 个月内买房，听说 FHSA 和 RRSP HBP 可以用，但不知道先查什么。",
+    "keywords": [
+      "beginner",
+      "列出买房前资料清单",
+      "区分账户规则和房贷规则",
+      "写出要问顾问的问题",
+      "05-mortgage-lending/01-first-home-buyer",
+      "03-canadian-registered-accounts/03-fhsa",
+      "05-mortgage-lending/03-rates-payments-stress-test"
+    ]
+  },
+  {
+    "title": "年轻家庭保险需求和风险缺口",
+    "href": "/cases/young-family-protection-gap",
+    "type": "case",
+    "summary": "年轻家庭有房贷和孩子，主要收入来自一方工资，有雇主福利但没看过细节。",
+    "keywords": [
+      "beginner",
+      "识别风险缺口",
+      "整理保险资料",
+      "区分人寿、重疾、伤残功能",
+      "04-insurance-risk-management/00-overview",
+      "04-insurance-risk-management/01-life-insurance",
+      "04-insurance-risk-management/04-needs-analysis-risk-points"
+    ]
+  },
+  {
+    "title": "高收入家庭学习 TFSA / RRSP / 非注册账户差异",
+    "href": "/cases/high-income-account-order",
+    "type": "case",
+    "summary": "家庭收入提高后想做税务优化，同时开始投资非注册账户。",
+    "keywords": [
+      "intermediate",
+      "比较账户税务特点",
+      "列出流动性问题",
+      "整理要问税务和投资专业人士的问题",
+      "03-canadian-registered-accounts/00-overview-comparison",
+      "03-canadian-registered-accounts/02-rrsp",
+      "02-investment-planning-portfolio-strategy/03-fees-taxes-behaviour-risks"
+    ]
+  },
+  {
+    "title": "临近退休客户整理 CPP / OAS / RRSP / RRIF",
+    "href": "/cases/pre-retirement-income-map",
+    "type": "case",
+    "summary": "客户距离退休约 5 年，想知道公共养老金、注册账户提款和遗产文件如何一起整理。",
+    "keywords": [
+      "intermediate",
+      "列出退休资料清单",
+      "识别收入来源",
+      "写出需要专业确认的问题",
+      "07-retirement-estate-planning/00-overview",
+      "07-retirement-estate-planning/01-retirement-income-sources",
+      "07-retirement-estate-planning/03-estate-wealth-transfer-bc"
+    ]
+  },
+  {
+    "title": "小企业主区分个人、公司、税务和风险",
+    "href": "/cases/business-owner-boundaries",
+    "type": "case",
+    "summary": "企业主收入来自公司，个人支出和公司支出混杂，缺少退出和风险安排。",
+    "keywords": [
+      "intermediate",
+      "区分个人和公司资料",
+      "列出税务和法律确认点",
+      "识别 owner 风险",
+      "08-small-business-owner-financial-consulting/00-overview",
+      "08-small-business-owner-financial-consulting/01-business-tax-cashflow",
+      "08-small-business-owner-financial-consulting/03-succession-exit-risk"
+    ]
+  },
+  {
+    "title": "Financial advisor / 金融顾问",
+    "href": "/glossary?query=Financial%20advisor",
+    "type": "glossary",
+    "summary": "泛指帮助客户处理金融产品或财务决策的人；实际权限取决于牌照、注册和所在省份规则。",
+    "keywords": [
+      "Financial advisor",
+      "金融顾问",
+      "规划和顾问",
+      "financial advisor",
+      "金融顾问"
+    ]
+  },
+  {
+    "title": "Financial planner / 财务规划师",
+    "href": "/glossary?query=Financial%20planner",
+    "type": "glossary",
+    "summary": "侧重长期目标规划，例如退休、税务、保险、教育和传承。",
+    "keywords": [
+      "Financial planner",
+      "财务规划师",
+      "规划和顾问",
+      "financial planner",
+      "财务规划师"
+    ]
+  },
+  {
+    "title": "Wealth management / 财富管理",
+    "href": "/glossary?query=Wealth%20management",
+    "type": "glossary",
+    "summary": "综合管理资产、投资、保险、税务、退休和传承。",
+    "keywords": [
+      "Wealth management",
+      "财富管理",
+      "规划和顾问",
+      "wealth management",
+      "财富管理"
+    ]
+  },
+  {
+    "title": "AUM / 管理资产规模",
+    "href": "/glossary?query=AUM",
+    "type": "glossary",
+    "summary": "Assets under management，通常指顾问或机构管理的客户资产规模。",
+    "keywords": [
+      "AUM",
+      "管理资产规模",
+      "规划和顾问",
+      "aum",
+      "管理资产规模"
+    ]
+  },
+  {
+    "title": "KYC / 了解你的客户",
+    "href": "/glossary?query=KYC",
+    "type": "glossary",
+    "summary": "收集客户身份、目标、财务状况、投资经验、风险和时间周期。",
+    "keywords": [
+      "KYC",
+      "了解你的客户",
+      "规划和顾问",
+      "kyc",
+      "了解你的客户"
+    ]
+  },
+  {
+    "title": "KYP / 了解你的产品",
+    "href": "/glossary?query=KYP",
+    "type": "glossary",
+    "summary": "顾问或机构需要理解产品结构、费用、风险和适用场景。",
+    "keywords": [
+      "KYP",
+      "了解你的产品",
+      "规划和顾问",
+      "kyp",
+      "了解你的产品"
+    ]
+  },
+  {
+    "title": "Suitability / 适合性",
+    "href": "/glossary?query=Suitability",
+    "type": "glossary",
+    "summary": "某个产品或策略是否适合特定客户。",
+    "keywords": [
+      "Suitability",
+      "适合性",
+      "规划和顾问",
+      "suitability",
+      "适合性"
+    ]
+  },
+  {
+    "title": "Risk tolerance / 风险承受能力",
+    "href": "/glossary?query=Risk%20tolerance",
+    "type": "glossary",
+    "summary": "客户心理和财务上能承受投资波动或亏损的程度。",
+    "keywords": [
+      "Risk tolerance",
+      "风险承受能力",
+      "规划和顾问",
+      "risk tolerance",
+      "风险承受能力"
+    ]
+  },
+  {
+    "title": "Risk capacity / 风险承担能力",
+    "href": "/glossary?query=Risk%20capacity",
+    "type": "glossary",
+    "summary": "基于收入、资产、时间、责任和现金流的客观承受能力。",
+    "keywords": [
+      "Risk capacity",
+      "风险承担能力",
+      "规划和顾问",
+      "risk capacity",
+      "风险承担能力"
+    ]
+  },
+  {
+    "title": "Time horizon / 时间周期",
+    "href": "/glossary?query=Time%20horizon",
+    "type": "glossary",
+    "summary": "资金距离使用还有多久。",
+    "keywords": [
+      "Time horizon",
+      "时间周期",
+      "规划和顾问",
+      "time horizon",
+      "时间周期"
+    ]
+  },
+  {
+    "title": "Liquidity / 流动性",
+    "href": "/glossary?query=Liquidity",
+    "type": "glossary",
+    "summary": "资产能否快速、低成本地变成现金。",
+    "keywords": [
+      "Liquidity",
+      "流动性",
+      "规划和顾问",
+      "liquidity",
+      "流动性"
+    ]
+  },
+  {
+    "title": "TFSA / 免税储蓄账户",
+    "href": "/glossary?query=TFSA",
+    "type": "glossary",
+    "summary": "供款不抵税，合规收益和提款一般免税。",
+    "keywords": [
+      "TFSA",
+      "免税储蓄账户",
+      "注册账户",
+      "tfsa",
+      "免税储蓄账户"
+    ]
+  },
+  {
+    "title": "RRSP / 注册退休储蓄计划",
+    "href": "/glossary?query=RRSP",
+    "type": "glossary",
+    "summary": "供款通常可降低应税收入，提款通常纳税。",
+    "keywords": [
+      "RRSP",
+      "注册退休储蓄计划",
+      "注册账户",
+      "rrsp",
+      "注册退休储蓄计划"
+    ]
+  },
+  {
+    "title": "FHSA / 首套房储蓄账户",
+    "href": "/glossary?query=FHSA",
+    "type": "glossary",
+    "summary": "合格首次买房者使用；合格供款可抵税，合格买房提款免税。",
+    "keywords": [
+      "FHSA",
+      "首套房储蓄账户",
+      "注册账户",
+      "fhsa",
+      "首套房储蓄账户"
+    ]
+  },
+  {
+    "title": "RESP / 注册教育储蓄计划",
+    "href": "/glossary?query=RESP",
+    "type": "glossary",
+    "summary": "为受益人未来高等教育储蓄，可关联政府教育补助。",
+    "keywords": [
+      "RESP",
+      "注册教育储蓄计划",
+      "注册账户",
+      "resp",
+      "注册教育储蓄计划"
+    ]
+  },
+  {
+    "title": "RDSP / 注册残障储蓄计划",
+    "href": "/glossary?query=RDSP",
+    "type": "glossary",
+    "summary": "为符合 Disability Tax Credit 资格人士长期储蓄，可关联政府补助和债券。",
+    "keywords": [
+      "RDSP",
+      "注册残障储蓄计划",
+      "注册账户",
+      "rdsp",
+      "注册残障储蓄计划"
+    ]
+  },
+  {
+    "title": "RRIF / 注册退休收入基金",
+    "href": "/glossary?query=RRIF",
+    "type": "glossary",
+    "summary": "RRSP 退休后常见转换形式，需按规则每年最低提款。",
+    "keywords": [
+      "RRIF",
+      "注册退休收入基金",
+      "注册账户",
+      "rrif",
+      "注册退休收入基金"
+    ]
+  },
+  {
+    "title": "HBP / 首次购房者计划",
+    "href": "/glossary?query=HBP",
+    "type": "glossary",
+    "summary": "Home Buyers' Plan，符合条件时可从 RRSP 提款用于买房，并按规则还款。",
+    "keywords": [
+      "HBP",
+      "首次购房者计划",
+      "注册账户",
+      "hbp",
+      "首次购房者计划"
+    ]
+  },
+  {
+    "title": "LLP / 终身学习计划",
+    "href": "/glossary?query=LLP",
+    "type": "glossary",
+    "summary": "Lifelong Learning Plan，符合条件时可从 RRSP 提款用于本人或配偶教育培训，并按规则还款。",
+    "keywords": [
+      "LLP",
+      "终身学习计划",
+      "注册账户",
+      "llp",
+      "终身学习计划"
+    ]
+  },
+  {
+    "title": "Asset allocation / 资产配置",
+    "href": "/glossary?query=Asset%20allocation",
+    "type": "glossary",
+    "summary": "股票、债券、现金和其他资产的比例安排。",
+    "keywords": [
+      "Asset allocation",
+      "资产配置",
+      "投资",
+      "asset allocation",
+      "资产配置"
+    ]
+  },
+  {
+    "title": "Diversification / 分散投资",
+    "href": "/glossary?query=Diversification",
+    "type": "glossary",
+    "summary": "降低单一公司、行业、地区、货币或资产类别风险。",
+    "keywords": [
+      "Diversification",
+      "分散投资",
+      "投资",
+      "diversification",
+      "分散投资"
+    ]
+  },
+  {
+    "title": "Rebalancing / 再平衡",
+    "href": "/glossary?query=Rebalancing",
+    "type": "glossary",
+    "summary": "把投资组合比例调回目标配置。",
+    "keywords": [
+      "Rebalancing",
+      "再平衡",
+      "投资",
+      "rebalancing",
+      "再平衡"
+    ]
+  },
+  {
+    "title": "GIC / 保本存款证",
+    "href": "/glossary?query=GIC",
+    "type": "glossary",
+    "summary": "Guaranteed Investment Certificate，通常有固定期限和利率。",
+    "keywords": [
+      "GIC",
+      "保本存款证",
+      "投资",
+      "gic",
+      "保本存款证"
+    ]
+  },
+  {
+    "title": "ETF / 交易所交易基金",
+    "href": "/glossary?query=ETF",
+    "type": "glossary",
+    "summary": "在交易所买卖的基金，可追踪指数或策略。",
+    "keywords": [
+      "ETF",
+      "交易所交易基金",
+      "投资",
+      "etf",
+      "交易所交易基金"
+    ]
+  },
+  {
+    "title": "Mutual fund / 共同基金",
+    "href": "/glossary?query=Mutual%20fund",
+    "type": "glossary",
+    "summary": "集合投资产品，通常由基金经理管理。",
+    "keywords": [
+      "Mutual fund",
+      "共同基金",
+      "投资",
+      "mutual fund",
+      "共同基金"
+    ]
+  },
+  {
+    "title": "MER / 管理费用率",
+    "href": "/glossary?query=MER",
+    "type": "glossary",
+    "summary": "Management expense ratio，基金每年的总管理费用比例。",
+    "keywords": [
+      "MER",
+      "管理费用率",
+      "投资",
+      "mer",
+      "管理费用率"
+    ]
+  },
+  {
+    "title": "Capital gain / 资本利得",
+    "href": "/glossary?query=Capital%20gain",
+    "type": "glossary",
+    "summary": "资本资产卖出价格高于成本时产生的收益。",
+    "keywords": [
+      "Capital gain",
+      "资本利得",
+      "投资",
+      "capital gain",
+      "资本利得"
+    ]
+  },
+  {
+    "title": "ACB / 调整后成本基础",
+    "href": "/glossary?query=ACB",
+    "type": "glossary",
+    "summary": "Adjusted cost base，用于计算资本利得或亏损。",
+    "keywords": [
+      "ACB",
+      "调整后成本基础",
+      "投资",
+      "acb",
+      "调整后成本基础"
+    ]
+  },
+  {
+    "title": "Term life / 定期寿险",
+    "href": "/glossary?query=Term%20life",
+    "type": "glossary",
+    "summary": "固定期限的人寿保障。",
+    "keywords": [
+      "Term life",
+      "定期寿险",
+      "保险",
+      "term life",
+      "定期寿险"
+    ]
+  },
+  {
+    "title": "Whole life / 终身寿险",
+    "href": "/glossary?query=Whole%20life",
+    "type": "glossary",
+    "summary": "永久寿险，通常有现金价值。",
+    "keywords": [
+      "Whole life",
+      "终身寿险",
+      "保险",
+      "whole life",
+      "终身寿险"
+    ]
+  },
+  {
+    "title": "Universal life / 万能寿险",
+    "href": "/glossary?query=Universal%20life",
+    "type": "glossary",
+    "summary": "结合人寿保障和投资/现金价值组件的永久寿险。",
+    "keywords": [
+      "Universal life",
+      "万能寿险",
+      "保险",
+      "universal life",
+      "万能寿险"
+    ]
+  },
+  {
+    "title": "Critical illness / 重疾险",
+    "href": "/glossary?query=Critical%20illness",
+    "type": "glossary",
+    "summary": "符合合同定义的重大疾病发生后给付。",
+    "keywords": [
+      "Critical illness",
+      "重疾险",
+      "保险",
+      "critical illness",
+      "重疾险"
+    ]
+  },
+  {
+    "title": "Disability insurance / 伤残险",
+    "href": "/glossary?query=Disability%20insurance",
+    "type": "glossary",
+    "summary": "因疾病或意外无法工作时替代部分收入。",
+    "keywords": [
+      "Disability insurance",
+      "伤残险",
+      "保险",
+      "disability insurance",
+      "伤残险"
+    ]
+  },
+  {
+    "title": "Annuity / 年金",
+    "href": "/glossary?query=Annuity",
+    "type": "glossary",
+    "summary": "用本金换取定期收入，常用于退休现金流。",
+    "keywords": [
+      "Annuity",
+      "年金",
+      "保险",
+      "annuity",
+      "年金"
+    ]
+  },
+  {
+    "title": "Underwriting / 核保",
+    "href": "/glossary?query=Underwriting",
+    "type": "glossary",
+    "summary": "保险公司评估健康、职业、生活方式和风险。",
+    "keywords": [
+      "Underwriting",
+      "核保",
+      "保险",
+      "underwriting",
+      "核保"
+    ]
+  },
+  {
+    "title": "Beneficiary / 受益人",
+    "href": "/glossary?query=Beneficiary",
+    "type": "glossary",
+    "summary": "保单或账户指定接收利益的人。",
+    "keywords": [
+      "Beneficiary",
+      "受益人",
+      "保险",
+      "beneficiary",
+      "受益人"
+    ]
+  },
+  {
+    "title": "Exclusion / 不保事项",
+    "href": "/glossary?query=Exclusion",
+    "type": "glossary",
+    "summary": "合同列明不会赔付的情况。",
+    "keywords": [
+      "Exclusion",
+      "不保事项",
+      "保险",
+      "exclusion",
+      "不保事项"
+    ]
+  },
+  {
+    "title": "Mortgage / 房贷/按揭",
+    "href": "/glossary?query=Mortgage",
+    "type": "glossary",
+    "summary": "以房产作为抵押的贷款。",
+    "keywords": [
+      "Mortgage",
+      "房贷/按揭",
+      "房贷",
+      "mortgage",
+      "房贷/按揭"
+    ]
+  },
+  {
+    "title": "Down payment / 首付",
+    "href": "/glossary?query=Down%20payment",
+    "type": "glossary",
+    "summary": "买房时借款人先支付的金额。",
+    "keywords": [
+      "Down payment",
+      "首付",
+      "房贷",
+      "down payment",
+      "首付"
+    ]
+  },
+  {
+    "title": "Amortization / 摊还期",
+    "href": "/glossary?query=Amortization",
+    "type": "glossary",
+    "summary": "按当前还款安排预计还清贷款的总年限。",
+    "keywords": [
+      "Amortization",
+      "摊还期",
+      "房贷",
+      "amortization",
+      "摊还期"
+    ]
+  },
+  {
+    "title": "Fixed rate / 固定利率",
+    "href": "/glossary?query=Fixed%20rate",
+    "type": "glossary",
+    "summary": "term 内利率不变。",
+    "keywords": [
+      "Fixed rate",
+      "固定利率",
+      "房贷",
+      "fixed rate",
+      "固定利率"
+    ]
+  },
+  {
+    "title": "Variable rate / 浮动利率",
+    "href": "/glossary?query=Variable%20rate",
+    "type": "glossary",
+    "summary": "利率会随基准变化。",
+    "keywords": [
+      "Variable rate",
+      "浮动利率",
+      "房贷",
+      "variable rate",
+      "浮动利率"
+    ]
+  },
+  {
+    "title": "Renewal / 续约",
+    "href": "/glossary?query=Renewal",
+    "type": "glossary",
+    "summary": "term 到期后重新签新 term。",
+    "keywords": [
+      "Renewal",
+      "续约",
+      "房贷",
+      "renewal",
+      "续约"
+    ]
+  },
+  {
+    "title": "Refinance / 再融资",
+    "href": "/glossary?query=Refinance",
+    "type": "glossary",
+    "summary": "重新安排贷款，可能增加贷款、取 equity 或改变 amortization。",
+    "keywords": [
+      "Refinance",
+      "再融资",
+      "房贷",
+      "refinance",
+      "再融资"
+    ]
+  },
+  {
+    "title": "Prepayment privilege / 提前还款权利",
+    "href": "/glossary?query=Prepayment%20privilege",
+    "type": "glossary",
+    "summary": "不触发罚金时可额外还本金的额度或规则。",
+    "keywords": [
+      "Prepayment privilege",
+      "提前还款权利",
+      "房贷",
+      "prepayment privilege",
+      "提前还款权利"
+    ]
+  },
+  {
+    "title": "Stress test / 压力测试",
+    "href": "/glossary?query=Stress%20test",
+    "type": "glossary",
+    "summary": "用高于合同利率的 qualifying rate 测试借款人承受能力。",
+    "keywords": [
+      "Stress test",
+      "压力测试",
+      "房贷",
+      "stress test",
+      "压力测试"
+    ]
+  },
+  {
+    "title": "Deduction / 扣除",
+    "href": "/glossary?query=Deduction",
+    "type": "glossary",
+    "summary": "减少应税收入的项目。",
+    "keywords": [
+      "Deduction",
+      "扣除",
+      "税务和企业",
+      "deduction",
+      "扣除"
+    ]
+  },
+  {
+    "title": "Credit / 税务抵免",
+    "href": "/glossary?query=Credit",
+    "type": "glossary",
+    "summary": "减少税额的项目。",
+    "keywords": [
+      "Credit",
+      "税务抵免",
+      "税务和企业",
+      "credit",
+      "税务抵免"
+    ]
+  },
+  {
+    "title": "Marginal tax rate / 边际税率",
+    "href": "/glossary?query=Marginal%20tax%20rate",
+    "type": "glossary",
+    "summary": "下一加元收入适用的大致税率。",
+    "keywords": [
+      "Marginal tax rate",
+      "边际税率",
+      "税务和企业",
+      "marginal tax rate",
+      "边际税率"
+    ]
+  },
+  {
+    "title": "GST/HST / 商品及服务税/统一销售税",
+    "href": "/glossary?query=GST%2FHST",
+    "type": "glossary",
+    "summary": "企业可能需要注册、收取和申报的销售税。",
+    "keywords": [
+      "GST/HST",
+      "商品及服务税/统一销售税",
+      "税务和企业",
+      "gst/hst",
+      "商品及服务税/统一销售税"
+    ]
+  },
+  {
+    "title": "Payroll remittance / 工资代扣代缴",
+    "href": "/glossary?query=Payroll%20remittance",
+    "type": "glossary",
+    "summary": "雇主向 CRA 缴纳所得税、CPP、EI 等扣款。",
+    "keywords": [
+      "Payroll remittance",
+      "工资代扣代缴",
+      "税务和企业",
+      "payroll remittance",
+      "工资代扣代缴"
+    ]
+  },
+  {
+    "title": "Salary / 工资",
+    "href": "/glossary?query=Salary",
+    "type": "glossary",
+    "summary": "公司支付给 owner 或员工的就业收入。",
+    "keywords": [
+      "Salary",
+      "工资",
+      "税务和企业",
+      "salary",
+      "工资"
+    ]
+  },
+  {
+    "title": "Dividend / 股息",
+    "href": "/glossary?query=Dividend",
+    "type": "glossary",
+    "summary": "公司向股东分配税后利润。",
+    "keywords": [
+      "Dividend",
+      "股息",
+      "税务和企业",
+      "dividend",
+      "股息"
+    ]
+  },
+  {
+    "title": "Shareholder agreement / 股东协议",
+    "href": "/glossary?query=Shareholder%20agreement",
+    "type": "glossary",
+    "summary": "约定股东权利、退出、死亡、伤残、买卖安排的法律文件。",
+    "keywords": [
+      "Shareholder agreement",
+      "股东协议",
+      "税务和企业",
+      "shareholder agreement",
+      "股东协议"
+    ]
+  },
+  {
+    "title": "Will / 遗嘱",
+    "href": "/glossary?query=Will",
+    "type": "glossary",
+    "summary": "死亡后资产分配和 executor 安排的法律文件。",
+    "keywords": [
+      "Will",
+      "遗嘱",
+      "传承",
+      "will",
+      "遗嘱"
+    ]
+  },
+  {
+    "title": "Executor / 遗嘱执行人",
+    "href": "/glossary?query=Executor",
+    "type": "glossary",
+    "summary": "执行遗嘱、处理债务税款并分配遗产的人。",
+    "keywords": [
+      "Executor",
+      "遗嘱执行人",
+      "传承",
+      "executor",
+      "遗嘱执行人"
+    ]
+  },
+  {
+    "title": "Probate / 遗嘱认证",
+    "href": "/glossary?query=Probate",
+    "type": "glossary",
+    "summary": "法院确认遗嘱有效和 executor 权限的程序。",
+    "keywords": [
+      "Probate",
+      "遗嘱认证",
+      "传承",
+      "probate",
+      "遗嘱认证"
+    ]
+  },
+  {
+    "title": "Enduring Power of Attorney / 持久授权书",
+    "href": "/glossary?query=Enduring%20Power%20of%20Attorney",
+    "type": "glossary",
+    "summary": "指定人在本人失能时处理财务和法律事务。",
+    "keywords": [
+      "Enduring Power of Attorney",
+      "持久授权书",
+      "传承",
+      "enduring power of attorney",
+      "持久授权书"
+    ]
+  },
+  {
+    "title": "Representation Agreement / 代表协议",
+    "href": "/glossary?query=Representation%20Agreement",
+    "type": "glossary",
+    "summary": "在 BC 用于指定健康、个人护理等决定代表的文件。",
+    "keywords": [
+      "Representation Agreement",
+      "代表协议",
+      "传承",
+      "representation agreement",
+      "代表协议"
+    ]
+  },
+  {
+    "title": "Advance Directive / 预先医疗指示",
+    "href": "/glossary?query=Advance%20Directive",
+    "type": "glossary",
+    "summary": "对未来医疗处理表达预先决定的文件。",
+    "keywords": [
+      "Advance Directive",
+      "预先医疗指示",
+      "传承",
+      "advance directive",
+      "预先医疗指示"
+    ]
+  }
+]

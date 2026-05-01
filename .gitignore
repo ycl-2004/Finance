@@ -1,0 +1,12 @@
+.next/
+node_modules/
+tsconfig.tsbuildinfo
+.DS_Store
+npm-debug.log*
+.env
+.env*
+!.env.example
+coverage/
+.vercel/
+out/
+docs/superpowers/
