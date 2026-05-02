@@ -7,15 +7,15 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export const motionPresets = {
   sectionReveal: {
-    hidden: { opacity: 0, y: 28 },
+    hidden: { opacity: 1, y: 0 },
     visible: { opacity: 1, y: 0 }
   },
   softScale: {
-    hidden: { opacity: 0, scale: 0.97 },
+    hidden: { opacity: 1, scale: 1 },
     visible: { opacity: 1, scale: 1 }
   },
   listItem: {
-    hidden: { opacity: 0, y: 18 },
+    hidden: { opacity: 1, y: 0 },
     visible: { opacity: 1, y: 0 }
   }
 };
@@ -55,9 +55,6 @@ export function Reveal({
 }: RevealProps) {
   const shouldReduceMotion = useReducedMotion();
   const Component = components[as];
-  const revealInitial = shouldReduceMotion
-    ? motionPresets.sectionReveal.visible
-    : motionPresets.sectionReveal.hidden;
 
   return (
     <Component
@@ -65,7 +62,7 @@ export function Reveal({
       aria-labelledby={ariaLabelledBy}
       className={className}
       id={id}
-      initial={revealInitial}
+      initial={false}
       layoutId={layoutId}
       role={role}
       transition={{ duration: shouldReduceMotion ? 0 : 0.68, delay, ease }}
@@ -92,7 +89,7 @@ export function RevealGroup({
       aria-label={ariaLabel}
       aria-labelledby={ariaLabelledBy}
       className={className}
-      initial={shouldReduceMotion ? false : "hidden"}
+      initial={false}
       variants={{
         hidden: {},
         visible: {
@@ -115,6 +112,7 @@ export function RevealItem({ children, className }: { children: ReactNode; class
   return (
     <motion.div
       className={className}
+      initial={false}
       variants={{
         hidden: shouldReduceMotion ? motionPresets.listItem.visible : motionPresets.listItem.hidden,
         visible: { opacity: 1, y: 0, transition: { duration: 0.52, ease } }
