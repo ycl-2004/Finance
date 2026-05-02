@@ -5,6 +5,21 @@ import { motion, useReducedMotion } from "motion/react";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
+export const motionPresets = {
+  sectionReveal: {
+    hidden: { opacity: 0, y: 28 },
+    visible: { opacity: 1, y: 0 }
+  },
+  softScale: {
+    hidden: { opacity: 0, scale: 0.97 },
+    visible: { opacity: 1, scale: 1 }
+  },
+  listItem: {
+    hidden: { opacity: 0, y: 18 },
+    visible: { opacity: 1, y: 0 }
+  }
+};
+
 type RevealElement = "section" | "div" | "header" | "article" | "aside";
 
 type RevealProps = {
@@ -40,6 +55,9 @@ export function Reveal({
 }: RevealProps) {
   const shouldReduceMotion = useReducedMotion();
   const Component = components[as];
+  const revealInitial = shouldReduceMotion
+    ? motionPresets.sectionReveal.visible
+    : motionPresets.sectionReveal.hidden;
 
   return (
     <Component
@@ -47,12 +65,12 @@ export function Reveal({
       aria-labelledby={ariaLabelledBy}
       className={className}
       id={id}
-      initial={false}
+      initial={revealInitial}
       layoutId={layoutId}
       role={role}
-      transition={{ duration: 0.56, delay, ease }}
+      transition={{ duration: shouldReduceMotion ? 0 : 0.68, delay, ease }}
       viewport={{ once: true, amount: 0.18 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      whileInView={motionPresets.sectionReveal.visible}
     >
       {children}
     </Component>
@@ -74,7 +92,7 @@ export function RevealGroup({
       aria-label={ariaLabel}
       aria-labelledby={ariaLabelledBy}
       className={className}
-      initial={false}
+      initial={shouldReduceMotion ? false : "hidden"}
       variants={{
         hidden: {},
         visible: {
@@ -98,7 +116,7 @@ export function RevealItem({ children, className }: { children: ReactNode; class
     <motion.div
       className={className}
       variants={{
-        hidden: shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 },
+        hidden: shouldReduceMotion ? motionPresets.listItem.visible : motionPresets.listItem.hidden,
         visible: { opacity: 1, y: 0, transition: { duration: 0.52, ease } }
       }}
     >

@@ -25,7 +25,7 @@ export function Header({ searchItems }: { searchItems: SearchItem[] }) {
           <span className="brand-mark" aria-hidden="true">Q</span>
           <span className="brand-copy">
             <strong>QM Financials</strong>
-            <span>{isEnglish ? "Learning Hub" : "准备中心"}</span>
+            <span>{isEnglish ? "Preparation Hub" : "顾问会前准备中心"}</span>
           </span>
         </Link>
         <nav className="main-nav" aria-label={isEnglish ? "Main navigation" : "主导航"}>
@@ -39,18 +39,6 @@ export function Header({ searchItems }: { searchItems: SearchItem[] }) {
           <SearchBox items={searchItems} />
         </div>
         <div className="top-actions">
-          <Link
-            aria-label={
-              isEnglish
-                ? "Call QM Financials: +1 778 929 9942"
-                : "致电 QM Financials：+1 778 929 9942"
-            }
-            className="phone-link"
-            href="tel:+17789299942"
-          >
-            <AppIcon name="phone" />
-            <span>+1 778 929 9942</span>
-          </Link>
           <Link className="button button--primary button--nav" href="/planning">
             <AppIcon name="route" />
             {isEnglish ? "Start planning" : "开始规划"}

@@ -8,7 +8,7 @@ export function Footer() {
         <span>
           <Link href="/about">关于我们</Link> · <Link href="/boundaries">教育边界</Link> ·{" "}
           <Link href="/privacy">隐私说明</Link> · <Link href="/documents">资料准备</Link> ·{" "}
-          <Link href="/consultation">预约准备会</Link>
+          <Link href="/consultation">预约准备会</Link> · <a href="tel:+17789299942">+1 778 929 9942</a>
         </span>
       </div>
     </footer>
