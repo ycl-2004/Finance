@@ -39,6 +39,64 @@ export const scenarios: Scenario[] = [
     boundaries: ["不判断移民身份、税务居民身份或具体账户适合性。"]
   },
   {
+    slug: "tax-season-prep",
+    title: "我第一次或今年要报税，应该先准备什么？",
+    shortTitle: "报税准备",
+    stageLabel: "Tax Season",
+    userType: "第一次在加拿大报税、新移民、工资收入者、自雇人士或收到 CRA 信件的人",
+    problem: "不知道 T4、T5、RRSP receipt、NOA、CRA account 和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
+    actionSummary: "先按收入、税单、扣除/抵免、注册账户和 CRA 记录整理资料，再把不确定的问题交给报税或税务专业人士确认。",
+    commonMistakes: [
+      "只等雇主给 T4，没有检查银行、投资平台、学校、CRA account 和 RRSP receipt。",
+      "把 CRA 登录密码发给别人，或把完整 SIN、银行账号无保护发送。",
+      "没有保留 receipts、学费单、搬家/托儿/医疗等可能相关资料，之后补证据很困难。"
+    ],
+    whatToLearnFirst: ["CRA account", "NOA/NOR", "tax slips", "RRSP receipts", "扣除和抵免"],
+    documentsToPrepare: ["T4/T4A/T5/T3 等税单", "NOA/NOR", "RRSP/FHSA receipts", "学费、托儿、医疗或捐款收据", "自雇收入和费用记录"],
+    advisorQuestions: [
+      "我今年是否还有缺失 tax slips 或 receipts？",
+      "哪些扣除或抵免需要会计师确认资格和证据？",
+      "报税后我应该如何保存 NOA、room 和 tax package？"
+    ],
+    relatedArticles: [
+      "client-document-source-map",
+      "06-tax-optimization-asset-protection/04-tax-season-prep",
+      "06-tax-optimization-asset-protection/01-tax-planning-building-blocks",
+      "03-canadian-registered-accounts/06-room-check-workflow",
+      "08-small-business-owner-financial-consulting/01-business-tax-cashflow"
+    ],
+    boundaries: ["不替代报税服务、税务意见或 CRA 个案判断。"]
+  },
+  {
+    slug: "cashflow-reset",
+    title: "我想整理每月财务和债务，要从哪里开始？",
+    shortTitle: "现金流整理",
+    stageLabel: "现金流 / 债务",
+    userType: "刚开始理财、有信用卡债务、收入变化、想建立预算和应急金的人",
+    problem: "每月钱进钱出不清楚，只看账户余额，无法判断能存多少、先还什么债、是否有足够缓冲。",
+    actionSummary: "先把 3 个月收入、固定支出、债务最低还款、利率和应急金放在一起，再决定下一步问顾问、银行或信用辅导机构什么。",
+    commonMistakes: [
+      "只看银行当前余额，没有下载 statements 看真实现金流。",
+      "只看债务总额，没有看利率、最低还款、到期日和是否 secured。",
+      "一边投资一边滚高息信用卡债，却没有先确认现金缓冲和债务成本。"
+    ],
+    whatToLearnFirst: ["现金流", "应急金", "信用卡和 LOC", "债务利率", "短期目标排序"],
+    documentsToPrepare: ["近 3 个月银行 statements", "信用卡 statements", "贷款和 LOC statements", "固定支出清单", "收入和工资单"],
+    advisorQuestions: [
+      "我每月真正可支配现金流是多少？",
+      "哪些债务利率最高、现金流压力最大？",
+      "应急金、还债、储蓄和投资应该如何排序讨论？"
+    ],
+    relatedArticles: [
+      "01-comprehensive-financial-planning/00-overview",
+      "01-comprehensive-financial-planning/03-cashflow-debt-basics",
+      "01-comprehensive-financial-planning/01-client-data-map",
+      "01-comprehensive-financial-planning/02-planning-process",
+      "client-document-source-map"
+    ],
+    boundaries: ["不提供债务重组、贷款申请、投资或信用修复的个人化建议。"]
+  },
+  {
     slug: "first-home",
     title: "我想买第一套房，应该先准备什么？",
     shortTitle: "准备买房",

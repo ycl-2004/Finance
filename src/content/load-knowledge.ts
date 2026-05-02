@@ -133,6 +133,13 @@ export async function getSearchIndex(): Promise<SearchItem[]> {
       type: "tool",
       summary: "说明平台定位、信任边界、持牌说明和不提供的服务。",
       keywords: ["关于我们", "信任", "持牌", "边界", "不提供建议"]
+    },
+    {
+      title: "隐私说明",
+      href: "/privacy",
+      type: "tool",
+      summary: "说明资料清单、预约摘要和本机保存方式，提醒不要发送敏感信息。",
+      keywords: ["隐私", "localStorage", "本机保存", "SIN", "密码", "资料安全"]
     }
   ];
 

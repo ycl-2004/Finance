@@ -12,8 +12,8 @@ async function main() {
   const articleSlugs = new Set(articles.map((article) => article.slug));
   const topicSlugs = new Set(topicMetadata.map((topic) => topic.slug));
 
-  if (articles.length !== 40) {
-    errors.push(`Expected 40 knowledge Markdown files, found ${articles.length}`);
+  if (articles.length !== 42) {
+    errors.push(`Expected 42 knowledge Markdown files, found ${articles.length}`);
   }
 
   for (const article of articles) {

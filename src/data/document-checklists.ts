@@ -127,6 +127,92 @@ export const documentChecklists: DocumentChecklist[] = [
     ]
   },
   {
+    slug: "tax-season-prep",
+    scenarioSlug: "tax-season-prep",
+    title: "报税准备清单",
+    description: "用于第一次报税、年度报税或收到 CRA 信件前，先整理收入、税单、扣除/抵免、注册账户和安全问题。",
+    advisorQuestions: [
+      "我今年还缺哪些 tax slips、receipts 或 CRA 记录？",
+      "哪些扣除、抵免或自雇费用需要税务专业人士确认？",
+      "报税完成后，我应该保存哪些资料给未来贷款、账户 room 或规划使用？"
+    ],
+    groups: [
+      {
+        id: "identity-cra",
+        title: "身份与 CRA 资料",
+        items: [
+          { id: "sin-record", label: "SIN 记录", helper: "只在必要时现场出示，不要无保护发送完整号码。" },
+          { id: "cra-account", label: "CRA account 可登入和查看邮件/税务资料的准备信息" },
+          { id: "latest-noa", label: "最近 Notice of Assessment / Reassessment（如已有）" },
+          { id: "address-status", label: "当年地址、婚姻状态、子女或身份变化记录" }
+        ]
+      },
+      {
+        id: "income-slips",
+        title: "收入和税单",
+        items: [
+          { id: "t4", label: "T4 / T4A / T4E / T4A(P) 等收入税单" },
+          { id: "investment-slips", label: "T3 / T5 / T5008 / T5013 等投资税单（如适用）" },
+          { id: "rrsp-fhsa", label: "RRSP contribution receipts / T4FHSA / FHSA statements" },
+          { id: "self-employed-income", label: "自雇或 side income 收入记录、发票和平台报表（如适用）" }
+        ]
+      },
+      {
+        id: "deductions-credits",
+        title: "扣除、抵免与收据",
+        items: [
+          { id: "tuition", label: "T2202 学费单和 student loan interest 记录（如适用）" },
+          { id: "childcare-medical", label: "托儿、医疗、捐款、专业会费等 receipts（如适用）" },
+          { id: "rent-property", label: "房租、property tax 或搬家相关资料（如适用）" },
+          { id: "business-expenses", label: "自雇费用、GST/HST、车辆或 home office 记录（如适用）" }
+        ]
+      }
+    ]
+  },
+  {
+    slug: "cashflow-reset",
+    scenarioSlug: "cashflow-reset",
+    title: "现金流与债务整理清单",
+    description: "用于建立预算、整理债务、准备应急金和判断下一步该向谁确认。",
+    advisorQuestions: [
+      "我的每月固定支出、最低还款和可储蓄金额分别是多少？",
+      "哪些债务利率、现金流压力或到期时间最需要优先讨论？",
+      "应急金、还债、注册账户和投资学习应该如何排序？"
+    ],
+    groups: [
+      {
+        id: "income-expenses",
+        title: "收入与支出",
+        items: [
+          { id: "paystubs", label: "最近 3 个月工资单、雇主信或收入证明" },
+          { id: "bank-statements", label: "最近 3 个月 chequing / savings statements" },
+          { id: "fixed-expenses", label: "房租/房贷、保险、交通、托儿、订阅等固定支出清单" },
+          { id: "irregular-expenses", label: "年度或不定期大额支出：property tax、学费、保险年费等" }
+        ]
+      },
+      {
+        id: "debts-credit",
+        title: "债务与信用",
+        items: [
+          { id: "credit-card-statements", label: "所有信用卡 statements：balance、limit、minimum payment、interest rate" },
+          { id: "loc-loans", label: "Line of credit、车贷、学生贷款或个人贷款 statements" },
+          { id: "payout-terms", label: "每笔债务利率、到期日、是否 secured、提前还款条件" },
+          { id: "credit-report", label: "Equifax 或 TransUnion credit report（如已有）" }
+        ]
+      },
+      {
+        id: "savings-goals",
+        title: "储蓄与目标",
+        items: [
+          { id: "emergency-fund", label: "应急金余额和可动用现金" },
+          { id: "short-term-goals", label: "未来 12 个月大额目标：买房、搬家、学费、旅行、创业等" },
+          { id: "account-statements", label: "TFSA / RRSP / FHSA / 非注册账户 statements（如已有）" },
+          { id: "questions", label: "不确定的问题清单：还债、储蓄、账户 room 或预算工具" }
+        ]
+      }
+    ]
+  },
+  {
     slug: "new-to-canada",
     scenarioSlug: "new-to-canada",
     title: "新移民金融起步清单",

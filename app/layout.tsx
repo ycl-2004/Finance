@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { getSearchIndex } from "@/content/load-knowledge";
 import { SiteShell } from "@/components/layout/SiteShell";
 
 export const metadata: Metadata = {
@@ -15,11 +16,13 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const searchItems = await getSearchIndex();
+
   return (
     <html lang="zh-Hans" data-scroll-behavior="smooth">
       <body>
-        <SiteShell>{children}</SiteShell>
+        <SiteShell searchItems={searchItems}>{children}</SiteShell>
       </body>
     </html>
   );

@@ -101,13 +101,13 @@ export function ConsultationForm() {
 
       <div className="consultation-disclaimer">
         <AppIcon name="shieldCheck" />
-        <span>不要填写完整 SIN、银行账号、登录密码或信用卡 CVV。</span>
+        <span>提交后仅保存本机草稿。不要填写完整 SIN、银行账号、登录密码或信用卡 CVV。</span>
       </div>
 
       <div className="actions">
         <button className="button button--primary" type="submit">
           <AppIcon name="checkCircle" />
-          生成确认页
+          保存本机摘要
         </button>
         <a className="button" href="tel:+17789299942">
           <AppIcon name="phone" />
@@ -124,6 +124,10 @@ function iconForScenario(slug: string) {
       return "home";
     case "new-to-canada":
       return "compass";
+    case "tax-season-prep":
+      return "fileText";
+    case "cashflow-reset":
+      return "wallet";
     case "kids-education":
       return "graduationCap";
     case "account-differences":

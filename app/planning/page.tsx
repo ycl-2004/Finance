@@ -11,6 +11,8 @@ export const metadata = {
 };
 
 const priorityScenarioSlugs = [
+  "tax-season-prep",
+  "cashflow-reset",
   "first-home",
   "new-to-canada",
   "kids-education",
@@ -21,6 +23,8 @@ const priorityScenarioSlugs = [
 
 const stageIconBySlug: Record<string, AppIconName> = {
   "first-home": "home",
+  "tax-season-prep": "fileText",
+  "cashflow-reset": "wallet",
   "new-to-canada": "compass",
   "kids-education": "graduationCap",
   "pre-retirement": "wallet",

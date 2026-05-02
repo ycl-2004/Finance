@@ -34,14 +34,15 @@ export const learningPath: LearningStage[] = [
     requiredArticles: [
       "01-comprehensive-financial-planning/00-overview",
       "01-comprehensive-financial-planning/01-client-data-map",
-      "01-comprehensive-financial-planning/02-planning-process"
+      "01-comprehensive-financial-planning/02-planning-process",
+      "01-comprehensive-financial-planning/03-cashflow-debt-basics"
     ],
     optionalArticles: ["client-document-source-map"],
     checkQuestions: [
       "一页式家庭财务快照应该包含哪些资料？",
       "多个目标冲突时，为什么要先排序而不是同时做所有事？"
     ],
-    relatedScenarios: ["new-to-canada", "young-family-insurance"]
+    relatedScenarios: ["new-to-canada", "cashflow-reset", "young-family-insurance"]
   },
   {
     id: "documents-and-process",
@@ -55,7 +56,7 @@ export const learningPath: LearningStage[] = [
       "为什么不能让客户发送 CRA 或银行密码？",
       "为什么所有余额、room、利率和 penalty 都要标明日期？"
     ],
-    relatedScenarios: ["first-home", "pre-retirement"]
+    relatedScenarios: ["tax-season-prep", "cashflow-reset", "first-home", "pre-retirement"]
   },
   {
     id: "registered-accounts",
@@ -147,14 +148,15 @@ export const learningPath: LearningStage[] = [
       "06-tax-optimization-asset-protection/00-overview",
       "06-tax-optimization-asset-protection/01-tax-planning-building-blocks",
       "06-tax-optimization-asset-protection/02-asset-protection-legal-structure",
-      "06-tax-optimization-asset-protection/03-risk-points"
+      "06-tax-optimization-asset-protection/03-risk-points",
+      "06-tax-optimization-asset-protection/04-tax-season-prep"
     ],
     optionalArticles: ["08-small-business-owner-financial-consulting/01-business-tax-cashflow"],
     checkQuestions: [
       "deduction 和 credit 有什么区别？",
       "资产保护为什么不能只靠某一种账户或保险？"
     ],
-    relatedScenarios: ["high-income-accounts", "business-owner"]
+    relatedScenarios: ["tax-season-prep", "high-income-accounts", "business-owner"]
   },
   {
     id: "retirement-estate",

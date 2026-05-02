@@ -30,4 +30,12 @@ describe("route helpers", () => {
       expect(checklist.slug).toBe(checklist.scenarioSlug);
     }
   });
+
+  it("keeps tax and cashflow beginner paths available as actionable scenarios", () => {
+    expect(scenarios.map((scenario) => scenario.slug)).toEqual(
+      expect.arrayContaining(["tax-season-prep", "cashflow-reset"])
+    );
+    expect(getChecklistByScenarioSlug("tax-season-prep")?.groups.length).toBeGreaterThan(0);
+    expect(getChecklistByScenarioSlug("cashflow-reset")?.groups.length).toBeGreaterThan(0);
+  });
 });

@@ -1,35 +1,50 @@
+"use client";
+
 import Link from "next/link";
 import { AppIcon } from "@/components/icons/AppIcon";
+import { SearchBox } from "@/components/search/SearchBox";
+import type { SearchItem } from "@/content/schema";
+import { useLocale } from "@/i18n/LocaleProvider";
 
 const navItems = [
-  { href: "/", label: "首页" },
-  { href: "/planning", label: "开始规划" },
-  { href: "/documents", label: "资料准备" },
-  { href: "/learn", label: "学习中心" },
-  { href: "/about", label: "关于我们" }
+  { href: "/", zh: "首页", en: "Home" },
+  { href: "/planning", zh: "开始规划", en: "Start planning" },
+  { href: "/documents", zh: "资料准备", en: "Documents" },
+  { href: "/learn", zh: "学习中心", en: "Learning" },
+  { href: "/about", zh: "关于我们", en: "About" }
 ];
 
-export function Header() {
+export function Header({ searchItems }: { searchItems: SearchItem[] }) {
+  const { locale, toggleLocale } = useLocale();
+  const isEnglish = locale === "en";
+
   return (
-    <header className="site-header">
+    <header className="site-header" data-no-translate>
       <div className="site-header__inner">
         <Link className="brand" href="/">
           <span className="brand-mark" aria-hidden="true">Q</span>
           <span className="brand-copy">
             <strong>QM Financials</strong>
-            <span>Learning Hub</span>
+            <span>{isEnglish ? "Learning Hub" : "准备中心"}</span>
           </span>
         </Link>
-        <nav className="main-nav" aria-label="主导航">
+        <nav className="main-nav" aria-label={isEnglish ? "Main navigation" : "主导航"}>
           {navItems.map((item) => (
             <Link href={item.href} key={item.href}>
-              {item.label}
+              {isEnglish ? item.en : item.zh}
             </Link>
           ))}
         </nav>
+        <div className="header-search">
+          <SearchBox items={searchItems} />
+        </div>
         <div className="top-actions">
           <Link
-            aria-label="致电 QM Financials：+1 778 929 9942"
+            aria-label={
+              isEnglish
+                ? "Call QM Financials: +1 778 929 9942"
+                : "致电 QM Financials：+1 778 929 9942"
+            }
             className="phone-link"
             href="tel:+17789299942"
           >
@@ -38,10 +53,15 @@ export function Header() {
           </Link>
           <Link className="button button--primary button--nav" href="/planning">
             <AppIcon name="route" />
-            开始规划
+            {isEnglish ? "Start planning" : "开始规划"}
           </Link>
-          <button className="lang-button" type="button">
-            EN
+          <button
+            aria-label={isEnglish ? "Switch to Chinese" : "切换到英文"}
+            className="lang-button"
+            onClick={toggleLocale}
+            type="button"
+          >
+            {isEnglish ? "ZH" : "EN"}
           </button>
         </div>
       </div>

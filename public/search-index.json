@@ -41,6 +41,20 @@
     ]
   },
   {
+    "title": "隐私说明",
+    "href": "/privacy",
+    "type": "tool",
+    "summary": "说明资料清单、预约摘要和本机保存方式，提醒不要发送敏感信息。",
+    "keywords": [
+      "隐私",
+      "localStorage",
+      "本机保存",
+      "SIN",
+      "密码",
+      "资料安全"
+    ]
+  },
+  {
     "title": "知识库导览",
     "href": "/topics/knowledge-system",
     "type": "topic",
@@ -239,6 +253,42 @@
       "我目前最应该先整理哪几类资料？",
       "哪些账户需要等有税务居民身份或报税记录后再确认？",
       "我的短期现金流和长期目标应该如何排序？"
+    ]
+  },
+  {
+    "title": "我第一次或今年要报税，应该先准备什么？",
+    "href": "/scenarios/tax-season-prep",
+    "type": "scenario",
+    "summary": "不知道 T4、T5、RRSP receipt、NOA、CRA account 和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
+    "keywords": [
+      "第一次在加拿大报税、新移民、工资收入者、自雇人士或收到 CRA 信件的人",
+      "不知道 T4、T5、RRSP receipt、NOA、CRA account 和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
+      "CRA account",
+      "NOA/NOR",
+      "tax slips",
+      "RRSP receipts",
+      "扣除和抵免",
+      "我今年是否还有缺失 tax slips 或 receipts？",
+      "哪些扣除或抵免需要会计师确认资格和证据？",
+      "报税后我应该如何保存 NOA、room 和 tax package？"
+    ]
+  },
+  {
+    "title": "我想整理每月财务和债务，要从哪里开始？",
+    "href": "/scenarios/cashflow-reset",
+    "type": "scenario",
+    "summary": "每月钱进钱出不清楚，只看账户余额，无法判断能存多少、先还什么债、是否有足够缓冲。",
+    "keywords": [
+      "刚开始理财、有信用卡债务、收入变化、想建立预算和应急金的人",
+      "每月钱进钱出不清楚，只看账户余额，无法判断能存多少、先还什么债、是否有足够缓冲。",
+      "现金流",
+      "应急金",
+      "信用卡和 LOC",
+      "债务利率",
+      "短期目标排序",
+      "我每月真正可支配现金流是多少？",
+      "哪些债务利率最高、现金流压力最大？",
+      "应急金、还债、储蓄和投资应该如何排序讨论？"
     ]
   },
   {
@@ -446,6 +496,24 @@
       "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/set-financial-goals.html",
       "https://www.canada.ca/en/financial-consumer-agency/services/debt/limiting-debt.html",
       "https://www.canada.ca/en/financial-consumer-agency/services/retirement-planning.html"
+    ]
+  },
+  {
+    "title": "现金流和债务整理基础",
+    "href": "/articles/01-comprehensive-financial-planning/03-cashflow-debt-basics",
+    "type": "article",
+    "summary": "现金流整理的目标不是把每一杯咖啡都记录到完美，而是看清楚每月钱从哪里来、花到哪里去、债务成本是多少、有没有足够缓冲。对小白来说，这一步通常比先讨论投资产品更重要。",
+    "keywords": [
+      "comprehensive-financial-planning",
+      "现金流和债务整理基础",
+      "01-comprehensive-financial-planning/03-cashflow-debt-basics",
+      "cash flow",
+      "emergency fund",
+      "debt",
+      "budget",
+      "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/debt/limiting-debt.html",
+      "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
     ]
   },
   {
@@ -850,6 +918,25 @@
       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/business-expenses.html",
       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
+    ]
+  },
+  {
+    "title": "报税季资料准备",
+    "href": "/articles/06-tax-optimization-asset-protection/04-tax-season-prep",
+    "type": "article",
+    "summary": "报税准备不是先问“能退多少税”，而是先确认收入、税单、收据、注册账户记录和 CRA 资料是否完整。对新移民、第一次报税、收入来源变化或有自雇收入的人来说，最重要的是把资料放在同一张清单里，再把不确定的问题交给报税或税务专业人士确认。",
+    "keywords": [
+      "tax-optimization-asset-protection",
+      "报税季资料准备",
+      "06-tax-optimization-asset-protection/04-tax-season-prep",
+      "CRA account",
+      "tax slips",
+      "Notice of Assessment",
+      "RRSP receipt",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/you-have-file-a-return.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/a-copy-your-tax-slips.html",
+      "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses.html"
     ]
   },
   {

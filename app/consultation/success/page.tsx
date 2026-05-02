@@ -32,7 +32,7 @@ export default function ConsultationSuccessPage() {
             <li>确认资料清单里还有哪些项目没准备。</li>
             <li>把想问的问题写在清单旁边。</li>
             <li>使用浏览器打印功能保存 PDF。</li>
-            <li>致电 QM Financials 确认准备会时间。</li>
+            <li>致电 QM Financials 确认时间，或发送邮件草稿。</li>
           </ol>
         </div>
 

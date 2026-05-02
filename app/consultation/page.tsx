@@ -55,7 +55,8 @@ export default function ConsultationPage() {
           <p className="eyebrow">Book A Prep Call</p>
           <h2 id="consultation-form-title">填写预约意向</h2>
           <p>
-            预约草稿只保存在本机。正式安排请电话确认。
+            这一步只会在本机生成预约摘要，不会自动上传资料或发送给团队。
+            正式安排请电话确认，或在确认页发送邮件草稿。
           </p>
           <Suspense fallback={<div className="form-loading">正在载入预约表单...</div>}>
             <ConsultationForm />

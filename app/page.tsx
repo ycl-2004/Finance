@@ -11,8 +11,9 @@ import { articleRoute, scenarioRoute, topicRoute } from "@/lib/routes";
 
 const homeScenarioSlugs = [
   "new-to-canada",
+  "tax-season-prep",
+  "cashflow-reset",
   "first-home",
-  "kids-education",
   "mortgage-renewal",
   "pre-retirement"
 ];
@@ -26,6 +27,8 @@ const valueProps = [
 
 const stageIconBySlug: Record<string, AppIconName> = {
   "new-to-canada": "compass",
+  "tax-season-prep": "fileText",
+  "cashflow-reset": "wallet",
   "first-home": "home",
   "kids-education": "graduationCap",
   "mortgage-renewal": "fileText",
@@ -39,6 +42,8 @@ const topicIconBySlug: Record<string, AppIconName> = {
   "canadian-registered-accounts": "fileText",
   "insurance-risk-management": "shieldCheck"
 };
+
+const assetBasePath = process.env.GITHUB_PAGES === "true" ? "/Finance" : "";
 
 export default async function HomePage() {
   const articles = await getAllArticles();
@@ -54,7 +59,7 @@ export default async function HomePage() {
         <div className="home-hero__content">
           <div className="hero-copy">
             <p className="eyebrow">QM Financial Preparation Hub</p>
-            <h1 id="home-hero-title">帮你在见金融顾问前，准备好所有关键问题与资料</h1>
+            <h1 id="home-hero-title">见金融顾问前，先把问题与资料准备好</h1>
             <p className="lead">
               适用于新移民、买房、家庭保障、房贷续约、退休和企业主规划。
               先选场景，生成资料清单，再带着明确问题进入会议。
@@ -90,27 +95,16 @@ export default async function HomePage() {
             <BoundaryNotice compact />
           </div>
 
-          <aside className="hero-quick-panel" aria-label="快速开始">
-            <h2>今天你想解决什么问题？</h2>
-            <nav aria-label="首页快速场景入口">
-              {homeScenarios.map((scenario) => (
-                <Link href={scenarioRoute(scenario.slug)} key={scenario.slug}>
-                  <span className="quick-link__label">
-                    <AppIcon name={stageIconBySlug[scenario.slug] ?? "compass"} />
-                    <span>{scenario.shortTitle}</span>
-                  </span>
-                  <AppIcon className="quick-link__arrow" name="arrowRight" />
-                </Link>
-              ))}
-              <Link href={scenarioRoute("business-owner")}>
-                <span className="quick-link__label">
-                  <AppIcon name="briefcase" />
-                  <span>我是企业主</span>
-                </span>
-                <AppIcon className="quick-link__arrow" name="arrowRight" />
-              </Link>
-            </nav>
-          </aside>
+          <figure className="hero-image-panel">
+            <img
+              alt="顾问会议前的资料准备工作台，包含规划面板、资料清单和文件夹"
+              className="hero-image-panel__image"
+              src={`${assetBasePath}/images/qm-meeting-prep-hero.png`}
+            />
+            <figcaption className="sr-only">
+              以资料准备、会议问题和教育边界为核心的金融顾问会前准备视觉。
+            </figcaption>
+          </figure>
         </div>
       </Reveal>
 

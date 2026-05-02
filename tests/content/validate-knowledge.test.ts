@@ -5,7 +5,7 @@ import { findAdviceLanguage } from "../../src/lib/content-guards";
 describe("knowledge loader", () => {
   it("loads the current knowledge base", async () => {
     const articles = await getAllArticles();
-    expect(articles).toHaveLength(40);
+    expect(articles).toHaveLength(42);
   });
 
   it("normalizes required metadata", async () => {

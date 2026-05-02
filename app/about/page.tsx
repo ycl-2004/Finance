@@ -17,11 +17,29 @@ const trustBlocks = [
   },
   {
     title: "持牌说明",
-    body: "本网站本身不是持牌主体，也不构成任何持牌声明。涉及具体投资、保险、贷款、税务或法律建议时，请以相关专业人士或机构的公开登记和书面披露为准。"
+    body: "本网站本身不是持牌主体，也不构成任何持牌声明。涉及具体投资、保险、贷款、税务或法律建议时，请以相关专业人士或机构的公开登记和书面披露为准。用户也应该学会自行核对专业人士资格。"
   },
   {
     title: "我们不提供什么",
     body: "不推荐具体证券、基金、保险产品、贷款机构、税务结构或法律文件；不收集真实客户文件；不要求用户上传敏感资料。"
+  }
+];
+
+const verificationLinks = [
+  {
+    title: "查顾问注册",
+    body: "投资相关服务应核对注册信息、公司名称、服务范围和披露文件。",
+    href: "https://www.aretheyregistered.ca/"
+  },
+  {
+    title: "了解如何选择顾问",
+    body: "先理解收费、资质、利益冲突和服务边界，再进入个人建议。",
+    href: "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/choose-financial-advisor.html"
+  },
+  {
+    title: "BC 投资者教育",
+    body: "BCSC 提供投资者保护和 registration check 的公开说明。",
+    href: "https://www.bcsc.bc.ca/industry/registrant-regulation/registration-basics/checking-registration"
   }
 ];
 
@@ -69,6 +87,29 @@ export default function AboutPage() {
         <Link className="button" href="/boundaries">
           查看教育边界
         </Link>
+      </Reveal>
+
+      <Reveal as="section" className="section verification-section" ariaLabelledBy="verification-title">
+        <div className="section-header section-header--wide">
+          <div>
+            <p className="eyebrow">Verify</p>
+            <h2 id="verification-title">如何验证专业人士，而不是只相信网页文案</h2>
+            <p>
+              金融相关决定进入个人建议前，用户应该确认对方身份、注册状态、服务边界和费用披露。
+            </p>
+          </div>
+          <Link className="button" href="/privacy">
+            隐私说明
+          </Link>
+        </div>
+        <div className="verification-list">
+          {verificationLinks.map((item) => (
+            <a href={item.href} key={item.title} rel="noreferrer" target="_blank">
+              <strong>{item.title}</strong>
+              <span>{item.body}</span>
+            </a>
+          ))}
+        </div>
       </Reveal>
     </>
   );
