@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
 import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
@@ -118,25 +119,24 @@ export default async function HomePage() {
             <BoundaryNotice compact />
           </div>
 
-          <figure className="advisor-console" aria-label="顾问会议准备控制台示例">
-            <div className="advisor-console__top">
-              <span>Meeting Readiness</span>
-              <strong>82%</strong>
-            </div>
-            <div className="advisor-console__score">
-              <span className="readiness-ring" aria-hidden="true">
-                <span>82</span>
-              </span>
+          <figure className="advisor-desk-visual" aria-label="顾问会议前的资料准备桌面">
+            <Image
+              alt=""
+              className="advisor-desk-visual__image"
+              height={864}
+              priority
+              src="/images/qm-meeting-prep-hero.png"
+              width={1536}
+            />
+            <div className="advisor-readiness-note" aria-label="会议准备状态示例">
+              <div className="advisor-readiness-note__top">
+                <span>Meeting Readiness</span>
+                <strong>82%</strong>
+              </div>
               <div>
-                <span className="advisor-console__label">Selected scenario</span>
+                <span className="advisor-readiness-note__label">Selected scenario</span>
                 <strong>{featuredScenario?.shortTitle ?? "准备见顾问"}</strong>
                 <p>资料、问题和风险边界先整理好，再进入具体讨论。</p>
-              </div>
-            </div>
-            <div className="advisor-console__section">
-              <div className="advisor-console__section-head">
-                <span>Document status</span>
-                <em>{featuredChecklist ? "Checklist ready" : "Process ready"}</em>
               </div>
               <ul className="console-checklist" aria-label="资料准备状态示例">
                 <li>
@@ -153,26 +153,8 @@ export default async function HomePage() {
                 </li>
               </ul>
             </div>
-            <div className="advisor-console__grid" aria-label="会议准备输出">
-              <span>
-                <strong>12</strong>
-                资料项目
-              </span>
-              <span>
-                <strong>7</strong>
-                会议问题
-              </span>
-              <span>
-                <strong>3</strong>
-                边界提醒
-              </span>
-            </div>
-            <div className="advisor-console__question">
-              <span>Next question</span>
-              <p>这次会议最需要专业人士确认的决定是什么？</p>
-            </div>
             <figcaption className="sr-only">
-              以准备分数、资料状态、会议问题和教育边界组成的顾问会前准备控制台。
+              一张包含加拿大地图、资料夹、纸本清单和平板规划界面的顾问会前准备桌面。
             </figcaption>
           </figure>
         </div>

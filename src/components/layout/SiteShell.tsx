@@ -16,6 +16,9 @@ export function SiteShell({
   return (
     <LocaleProvider>
       <div className="site-shell">
+        <a className="skip-link" href="#main-content">
+          跳到主要内容
+        </a>
         <ScrollRestoration />
         <div className="site-frame">
           <Header searchItems={searchItems} />

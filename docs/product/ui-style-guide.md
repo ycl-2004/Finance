@@ -4,7 +4,7 @@
 
 ## 1. 風格一句話
 
-本站目前是 **加拿大金融機構感的中文顧問會前準備平台**，不是行銷 landing page，也不是單純文檔站。
+本站目前是 **加拿大金融機構感的中文顧問會前準備工作台**，不是行銷 landing page，也不是單純文檔站。
 
 它的視覺目標是：
 
@@ -27,6 +27,7 @@
 - Knowledge-led
 - Warm neutral
 - Low-noise fintech
+- Advisor readiness desk
 
 ## 2. 不要變成什麼
 
@@ -56,6 +57,7 @@
 - 低噪音配色。
 - 專業、可信、清醒的產品語氣。
 - 真實資料準備工作台的視覺語言，而不是純卡片堆疊。
+- 像整理文件、勾選清單、建立會議問題，而不是瀏覽一組互相競爭的卡片。
 
 首頁主視覺使用生成資產 `public/images/qm-meeting-prep-hero.png`：
 
@@ -85,7 +87,7 @@
 
 ### 色彩性格
 
-整體是 **暖白紙感 + 深海軍藍綠 + 中性灰綠 + 少量金棕提示**。
+整體是 **暖白紙感 + 深海軍藍 / 沉穩藍綠 + 中性灰 + 少量金棕提示**。
 
 它不走傳統金融常見的：
 
@@ -156,7 +158,7 @@ Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 
 ### 首頁
 
-首頁是 dashboard，不是 marketing hero。
+首頁是 readiness desk，不是 marketing hero，也不是 dashboard card wall。
 
 目前首屏結構：
 
@@ -169,6 +171,7 @@ Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 - 使用者 10 秒內知道這是金融學習中心。
 - 使用者能選「開始學習」或「按問題學習」。
 - 不能只看到主題卡片。
+- 首屏必須像「資料準備桌面 / 會前工作台」，不是模擬 SaaS 控制台。
 
 ### 文章頁
 
@@ -197,15 +200,15 @@ Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 
 ## 7. Component Style / 元件語言
 
-### Card
+### Card / Surface
 
-卡片特徵：
+卡片不再是主要版面語言。新的預設是：
 
-- 8px radius。
-- 1px 淺邊框。
-- 白色 surface。
-- hover 時微微上浮 `translateY(-1px)`。
-- 低陰影，不做重投影。
+- 內容區塊優先使用分隔線、列表、步驟軌道、左右欄和留白。
+- 重複且可點擊的入口才使用卡片。
+- 卡片 radius 保持 6–8px。
+- 陰影極少使用；優先靠 border、色塊和 spacing 建立層級。
+- hover 可以微動，但不能讓所有 surface 都像浮起的 SaaS 卡片。
 
 卡片用途：
 
@@ -214,7 +217,7 @@ Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 - 案例。
 - 工具入口。
 
-不要用卡片包整個頁面 section；卡片應該是可點擊或重複資訊單位。
+不要用卡片包整個頁面 section；卡片應該是可點擊或重複資訊單位。首頁、planning、documents 這類核心流程頁應該更像工作台和清單，而不是卡片牆。
 
 ### Button
 

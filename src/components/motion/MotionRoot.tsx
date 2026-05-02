@@ -7,7 +7,7 @@ export function MotionRoot({ children }: { children: ReactNode }) {
   return (
     <MotionConfig reducedMotion="user">
       <LayoutGroup id="qm-layout">
-        <main className="page-shell">{children}</main>
+        <main className="page-shell" id="main-content">{children}</main>
       </LayoutGroup>
     </MotionConfig>
   );

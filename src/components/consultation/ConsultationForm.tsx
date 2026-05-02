@@ -47,7 +47,7 @@ export function ConsultationForm() {
   }
 
   return (
-    <form className="consultation-form" onSubmit={handleSubmit}>
+    <form className="consultation-form" data-no-translate onSubmit={handleSubmit}>
       <div className="scenario-picker" aria-label="选择咨询场景">
         {scenarioOptions.map((option) => (
           <button
