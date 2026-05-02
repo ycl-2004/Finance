@@ -3,7 +3,7 @@ topic: tax-optimization-asset-protection
 audience: beginner
 last_reviewed: 2026-05
 terms:
-  - CRA account
+  - CRA My Account
   - tax slips
   - Notice of Assessment
   - RRSP receipt
@@ -32,7 +32,7 @@ terms:
 - 注册账户资料：RRSP contribution receipts、T4RSP、T4RIF、T4FHSA 等。
 - 自雇或 side income：发票、平台报表、银行入账、费用 receipts。
 
-多数 T4、T4A 和 T5 通常在 2 月底前提供；T3 和 T5013 可能更晚；first 60 days RRSP/PRPP receipts 也可能更晚。不要只等一个来源，要同时检查雇主、金融机构、学校、CRA account 和 Service Canada。
+多数 T4、T4A 和 T5 通常在 2 月底前提供；T3 和 T5013 可能更晚；first 60 days RRSP/PRPP receipts 也可能更晚。不要只等一个来源，要同时检查雇主、金融机构、学校、CRA My Account 和 Service Canada。
 
 ## 再整理扣除、抵免和收据
 
@@ -48,7 +48,7 @@ terms:
 
 ## 如果税单缺失怎么办
 
-可以先向雇主、金融机构、学校、plan administrator 或 issuer 索取。CRA 只有在 issuer 已经报送后，才可能在 CRA account 中显示相应 tax slip。
+可以先向雇主、金融机构、学校、plan administrator 或 issuer 索取。CRA 只有在 issuer 已经报送后，才可能在 CRA My Account 中显示相应 tax slip。
 
 如果报税截止前仍拿不到 slip，可以用 pay stubs 或 financial statements 估算收入，并保留原始文件和说明。具体处理方式请向报税或税务专业人士确认。
 

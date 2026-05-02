@@ -84,15 +84,15 @@ Guaranteed Income Supplement 面向低收入 OAS 领取者。
 
 公开教育材料常用 60% 到 70% 退休前收入作为粗略参考，但真实需求取决于生活方式、住房状态、健康、家庭责任和地点。
 
-## 客户怎么取得退休资料
+## 怎么取得退休资料
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
 | CPP 记录 | My Service Canada Account | Statement of Contributions、benefit estimates |
 | OAS/GIS | My Service Canada Account、Service Canada、个人居住记录 | OAS eligibility、payment info、加拿大居住年限、海外居住记录 |
 | 雇主 pension | Employer pension portal、HR、pension administrator | Pension statement、retirement options、survivor options、indexing |
 | Group RRSP/DPSP | 雇主 plan provider、投资平台 | Account statement、matching、vesting、withdrawal/transfer rules |
-| 个人退休账户 | 金融机构、CRA account | RRSP、RRIF、TFSA、non-registered statements、room 和最低提款 |
+| 个人退休账户 | 金融机构、CRA My Account | RRSP、RRIF、TFSA、non-registered statements、room 和最低提款 |
 | 年金 | 保险公司、advisor | Quote、guarantee period、joint/survivor option、tax treatment |
 | 退休预算 | 银行 statements、客户目标 | 住房、食物、交通、医疗、保险、旅行、家庭支持、长期护理 |
 

@@ -17,7 +17,7 @@
 | --- | --- | --- |
 | `company-profile.md` | 公司基础资料 | 公司是谁、做什么、公开服务线是什么 |
 | `glossary.md` | 金融术语表 | 快速查中英文金融术语 |
-| `client-document-source-map.md` | 客户资料取得流程总表 | 客户要去哪里取得税务、投资、保险、房贷、退休、遗产和企业资料 |
+| `client-document-source-map.md` | 按资料类型查找资料来源 | 按资料类型找到税务、投资、保险、房贷、退休、遗产和企业资料来源 |
 | `01-comprehensive-financial-planning` | 综合财务规划 | 财务规划到底规划什么、怎么收集资料、怎么排优先级 |
 | `02-investment-planning-portfolio-strategy` | 投资规划和投资组合策略 | 风险、收益、时间周期、资产配置、费用和行为风险 |
 | `03-canadian-registered-accounts` | 加拿大注册账户规划 | TFSA、RRSP、FHSA、RESP、RDSP 的用途、规则、room 查询和客户资料流程 |

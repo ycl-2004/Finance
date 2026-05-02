@@ -29,7 +29,7 @@ terms:
 
 每笔债务至少整理：
 
-- lender 或发卡机构。
+-贷款机构或发卡机构。
 - balance。
 - interest rate。
 - minimum payment。

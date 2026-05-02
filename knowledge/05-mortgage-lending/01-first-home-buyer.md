@@ -16,18 +16,18 @@ last_reviewed: 2026-04
 - 买房目标：区域、房型、预算上限、入住时间。
 - 预留资金：closing costs 和买房后应急金。
 
-## 客户怎么取得买房资料
+## 怎么取得买房资料
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
 | 工资收入 | 雇主 HR/payroll portal | Employment letter、最近 pay stubs、T4、bonus/commission record |
-| 自雇收入 | 会计师、CRA My Account、bookkeeping software | 最近 2 年 T1、NOA、business income/expense、financial statements |
+| 自雇收入 | 会计师、CRA My Account、记账系统 | 最近 2 年 T1、NOA、business income/expense、financial statements |
 | 税务证明 | CRA My Account | NOA/NOR、proof of income statement、tax slips |
 | 首付资金 | 银行、投资平台、gift giver、卖房律师 | 90 天左右 bank statements、investment statements、gift letter、sale proceeds |
 | 信用记录 | Equifax、TransUnion | 免费 credit report，检查错误和遗漏 |
 | 现有债务 | Credit card、loan、LOC、student loan、CRA | Statements、balance、limit、rate、minimum payment |
 | 房产成本 | Municipality、listing、strata documents、insurance quote | Property tax、strata fee、home insurance、utilities、repair estimate |
-| 首次买房账户 | CRA account、issuer | FHSA/RRSP HBP/TFSA room、withdrawal forms、issuer statements |
+| 首次买房账户 | CRA My Account、issuer | FHSA/RRSP HBP/TFSA room、withdrawal forms、金融机构结单 |
 | BC 税费和 title | BC property transfer tax info、LTSA、律师/公证 | PTT 资格初查、title search、closing statement |
 
 操作步骤：
@@ -42,9 +42,9 @@ last_reviewed: 2026-04
 
 注意：
 
-- Pre-approval 不是最终批准。最终批准还要看房产、估值、首付来源、收入文件和 lender 条件。
+- Pre-approval 不是最终批准。最终批准还要看房产、估值、首付来源、收入文件和贷款机构条件。
 - 借来的首付通常会变成债务，可能影响审批。
-- Gift letter 要按 lender 要求准备，且大额入账要有可解释来源。
+- Gift letter 要按贷款机构要求准备，且大额入账要有可解释来源。
 - 自雇收入、现金收入、海外收入和公司留存收益需要更早准备。
 
 全局资料取得流程见 `../client-document-source-map.md`。
@@ -71,7 +71,7 @@ last_reviewed: 2026-04
 
 - 它不是 mortgage life insurance。
 - 它不替借款人还房贷。
-- 它保护 lender 免受借款人违约损失。
+- 它保护贷款机构免受借款人违约损失。
 
 ## First-Time Buyer 相关账户
 
@@ -121,7 +121,7 @@ TFSA：
 
   通用答案：加拿大联邦监管贷款机构通常用高于合同利率的 qualifying rate 测试还款能力。OSFI 当前未保险房贷 minimum qualifying rate 是较高者：合同利率加 2%，或 5.25%。stress test 不是实际付款额，而是审批中用来测试抗风险能力的利率。通过 stress test 不代表家庭预算一定舒服，还要做自己的现金流压力测试。
 
-- 我的首付来源是否符合 lender 要求。
+- 我的首付来源是否符合贷款机构要求。
 
   通用答案：贷款机构通常要确认首付金额、来源、历史记录和是否真实可用。常见来源包括储蓄、投资账户提款、FHSA、TFSA、RRSP HBP、赠与资金、卖房 proceeds。赠与通常需要 gift letter，借来的首付可能增加债务负担并影响审批。大额入账要能解释来源。
 

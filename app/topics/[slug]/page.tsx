@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { MotionListLink } from "@/components/motion/MotionListLink";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { getArticlesByTopic } from "@/content/load-knowledge";
@@ -43,7 +44,7 @@ export default async function TopicDetailPage({ params }: { params: Promise<{ sl
       <section>
         <Reveal as="header" className="page-hero detail-hero" layoutId={`topic-${topic.slug}`}>
           <p className="eyebrow">{topic.englishTitle}</p>
-          <h1>{topic.title}</h1>
+          <HeroTitle text={topic.title} />
           <p className="lead">{topic.description}</p>
           <div className="meta-row">
             <span className="tag tag--accent">{topic.primaryQuestion}</span>

@@ -66,8 +66,8 @@ FHSA maximum participation period 通常在以下最早事件发生年份的 12 
 3. 找最新 Notice of Assessment 或 Notice of Reassessment。
 4. 找 FHSA participation room statement。
 5. 如果 CRA 发过 Form T1028，也要提供。
-6. 登入 CRA account，查看 FHSA 相关 statement。
-7. 准备所有 FHSA issuer statements。
+6. 登入 CRA My Account，查看 FHSA 相关 statement。
+7. 准备所有 FHSA 金融机构结单。
 8. 准备 T4FHSA slip。T4FHSA 会显示当年各类 FHSA 交易总额。
 9. 检查报税时是否填了 Schedule 15，尤其是开户当年即使没有供款，也可能需要勾选 opened your first FHSA。
 
@@ -90,7 +90,7 @@ FHSA maximum participation period 通常在以下最早事件发生年份的 12 
 
 客户话术：
 
-“FHSA room 不是自动从 18 岁开始累计，是从你开第一个 FHSA 后才开始有 participation room。我们要先确认开户年份，再用 NOA、CRA account、T4FHSA 和 issuer statement 核对，尤其要确认有没有 RRSP 转入和 Schedule 15 漏报。”
+“FHSA room 不是自动从 18 岁开始累计，是从你开第一个 FHSA 后才开始有 participation room。我们要先确认开户年份，再用 NOA、CRA My Account、T4FHSA 和 issuer statement 核对，尤其要确认有没有 RRSP 转入和 Schedule 15 漏报。”
 
 ## 风险点
 

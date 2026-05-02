@@ -3,6 +3,7 @@ import type { Article } from "@/content/schema";
 import { scenarios } from "@/data/scenarios";
 import { getTopicTitle } from "@/data/topic-metadata";
 import { scenarioRoute, topicRoute } from "@/lib/routes";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { Reveal } from "@/components/motion/Reveal";
 import { BoundaryNotice } from "./BoundaryNotice";
 
@@ -16,7 +17,7 @@ export function ArticleHeader({ article }: { article: Article }) {
       <p className="eyebrow">
         <Link href={topicRoute(article.topic)}>{getTopicTitle(article.topic)}</Link>
       </p>
-      <h1>{article.title}</h1>
+      <HeroTitle text={article.title} />
       <p className="lead">{article.summary}</p>
       <div className="meta-row" aria-label="文章信息">
         <span className="tag tag--accent">{article.difficulty}</span>

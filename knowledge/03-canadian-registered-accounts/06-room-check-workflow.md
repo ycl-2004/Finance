@@ -17,18 +17,18 @@ last_reviewed: 2026-04
 
 | 账户 | 要查的核心数字 | 数字归属 | 主要查询来源 |
 | --- | --- | --- | --- |
-| TFSA | TFSA contribution room | 个人 | CRA account、客户自己的 TFSA 交易记录、所有 TFSA issuer statements |
-| RRSP | RRSP deduction limit、available contribution room、unused contributions | 个人 | Notice of Assessment、Notice of Reassessment、Form T1028、CRA account |
-| FHSA | FHSA participation room、unused FHSA contributions available for future deduction | 个人 | FHSA participation room statement、NOA/NOR、Form T1028、CRA account、T4FHSA |
+| TFSA | TFSA contribution room | 个人 | CRA My Account、客户自己的 TFSA 交易记录、所有 TFSA 金融机构结单 |
+| RRSP | RRSP deduction limit、available contribution room、unused contributions | 个人 | Notice of Assessment、Notice of Reassessment、Form T1028、CRA My Account |
+| FHSA | FHSA participation room、unused FHSA contributions available for future deduction | 个人 | FHSA participation room statement、NOA/NOR、Form T1028、CRA My Account、T4FHSA |
 | RESP | lifetime contribution used、remaining lifetime contribution capacity、CESG room、CLB eligibility | beneficiary | RESP promoter statements、subscriber records、ESDC/Canada Education Savings Program information |
-| RDSP | lifetime contribution used、grant/bond eligibility、unused grant/bond entitlements、assistance holdback amount | beneficiary | RDSP issuer statements、DTC status in CRA account、ESDC/Canada Disability Savings Program information |
+| RDSP | lifetime contribution used、grant/bond eligibility、unused grant/bond entitlements、assistance holdback amount | beneficiary | RDSP 金融机构结单、DTC status in CRA My Account、ESDC/Canada Disability Savings Program information |
 
 ## 客户会前准备清单
 
 让客户准备以下资料：
 
 - 最新 Notice of Assessment 或 Notice of Reassessment。
-- CRA account 登入能力。
+- CRA My Account 登入能力。
 - 所有金融机构的 TFSA、RRSP、FHSA、RESP、RDSP statements。
 - 当年已经做过但 CRA 可能还没更新的供款、提款、转账记录。
 - RRSP contribution receipts。
@@ -41,8 +41,8 @@ last_reviewed: 2026-04
 ## CRA Account 准备步骤
 
 1. 确认客户有 SIN。
-2. 确认客户已经有 current or previous tax year 的 assessed tax return。没有报过税的新移民，可能暂时不能完整使用 CRA account。
-3. 进入 CRA account 注册或登入页面。
+2. 确认客户已经有 current or previous tax year 的 assessed tax return。没有报过税的新移民，可能暂时不能完整使用 CRA My Account。
+3. 进入 CRA My Account 注册或登入页面。
 4. 选择登入方式：CRA user ID and password、Sign-In Partner，或 BC/Alberta provincial partner。
 5. 完成身份验证。选择 document verification 通常可更快获得 full access；选择邮寄 security code 时，在完成前可能只有 limited access。
 6. 登入后进入 My Account。
@@ -50,7 +50,7 @@ last_reviewed: 2026-04
 
 ## TFSA 查询流程
 
-1. 客户登入 CRA account。
+1. 客户登入 CRA My Account。
 2. 进入 Individual account。
 3. 进入 Savings and pension plans。
 4. 选择 View TFSA details。
@@ -69,13 +69,13 @@ TFSA 计算逻辑：
 重要提醒：
 
 - CRA 的 TFSA 信息通常一年更新一次，依赖 issuer 上报。
-- 金融机构通常在次年 2 月底向 CRA 上报上一年 TFSA 交易，CRA account 可能在春季更新。
+- 金融机构通常在次年 2 月底向 CRA 上报上一年 TFSA 交易，CRA My Account 可能在春季更新。
 - 当年已经发生的供款和提款，CRA 页面可能没有即时反映。
 - 如果 CRA 交易记录和金融机构记录不一致，客户应联系 TFSA issuer；如果 issuer 上报错误，需要 issuer 向 CRA 修正。
 
 客户话术：
 
-“CRA account 的数字是重要参考，但不是替代自己的交易记录。我们会用 CRA 数字加上你今年实际做过的供款和提款，再决定还能不能继续供款。”
+“CRA My Account 的数字是重要参考，但不是替代自己的交易记录。我们会用 CRA 数字加上你今年实际做过的供款和提款，再决定还能不能继续供款。”
 
 ## RRSP 查询流程
 
@@ -84,7 +84,7 @@ TFSA 计算逻辑：
 3. 记录 line A：RRSP deduction limit。
 4. 记录 line B：unused RRSP/PRPP contributions previously reported and available to deduct。
 5. 记录 statement 最后一行 available contribution room。
-6. 如果没有 NOA，客户登入 CRA account 查询 RRSP deduction limit。
+6. 如果没有 NOA，客户登入 CRA My Account 查询 RRSP deduction limit。
 7. 如果 CRA 发过 Form T1028，客户也应提供。
 8. 客户提供所有 RRSP contribution receipts，包括前 60 天供款收据。
 9. 如果客户参加过 HBP 或 LLP，查看 NOA 上的 HBP/LLP statement：remaining balance 和 minimum repayment。
@@ -107,8 +107,8 @@ RRSP 容易混淆的地方：
 2. 如果开过，确认开户年份，因为 maximum participation period 从开第一个 FHSA 开始。
 3. 客户提供最新 NOA/NOR 或 Form T1028。
 4. 找到 FHSA participation room statement。
-5. 客户登入 CRA account，查看 FHSA participation room statement。
-6. 客户提供所有 FHSA issuer statements 和 T4FHSA slips。
+5. 客户登入 CRA My Account，查看 FHSA participation room statement。
+6. 客户提供所有 FHSA 金融机构结单 和 T4FHSA slips。
 7. 如果客户开 FHSA 的年份没有供款，也要确认报税时是否填了 Schedule 15。
 
 FHSA 报税资料：
@@ -174,7 +174,7 @@ RDSP 也不是只看一个 room。它同时涉及 DTC、lifetime contribution、
 
 客户操作步骤：
 
-1. 客户登入 CRA account，查看 DTC information 或 DTC application status。
+1. 客户登入 CRA My Account，查看 DTC information 或 DTC application status。
 2. 客户提供 CRA notice of determination，确认 DTC approval 年份。
 3. 客户向 RDSP issuer 要完整 account statement。
 4. 要求 issuer 区分 contributions、grant、bond、investment income、rollover amounts 和 withdrawals。
@@ -199,15 +199,15 @@ RDSP 也不是只看一个 room。它同时涉及 DTC、lifetime contribution、
 
 | 项目 | 客户提供 | 顾问要核对 | 下一步 |
 | --- | --- | --- | --- |
-| TFSA | CRA room、issuer statements | 当年交易是否已反映、是否多机构 | 算 current available room |
+| TFSA | CRA room、金融机构结单 | 当年交易是否已反映、是否多机构 | 算 current available room |
 | RRSP | NOA/T1028、RRSP receipts | deduction limit、unused contributions、HBP/LLP | 算可供款、可扣除、是否 carry forward |
-| FHSA | NOA/T1028、T4FHSA、issuer statements | 是否已填 Schedule 15、participation room、开户年份 | 算本年可供款/转入和买房提款策略 |
+| FHSA | NOA/T1028、T4FHSA、金融机构结单 | 是否已填 Schedule 15、participation room、开户年份 | 算本年可供款/转入和买房提款策略 |
 | RESP | promoter statements、beneficiary info | 总供款、CESG、CLB、多个 subscriber | 算剩余 lifetime limit 和补助策略 |
-| RDSP | DTC status、issuer statements | lifetime contribution、grant/bond、AHA | 算供款、补助、提款和还款风险 |
+| RDSP | DTC status、金融机构结单 | lifetime contribution、grant/bond、AHA | 算供款、补助、提款和还款风险 |
 
 ## 资料来源
 
-- CRA: Register for a CRA account: https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/register-cra-sign-in-services.html
+- CRA: Register for a CRA My Account: https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/register-cra-sign-in-services.html
 - CRA: About My Account: https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html
 - CRA: Using My Account: https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/using-my-account.html
 - CRA: Calculate your TFSA contribution room: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html

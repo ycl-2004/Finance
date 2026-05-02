@@ -96,7 +96,7 @@ export function DocumentChecklistApp({
           <p className="eyebrow">Document Preparation</p>
           <h2 id="document-checklist-title">生成准备清单</h2>
           <p>
-            勾选只保存在本机，不上传资料。完成后可导出 PDF，或预约准备会确认缺口。
+            勾选只保存在本机，不上传资料。完成后可导出清单，也可预约准备会确认缺口。
           </p>
         </div>
         <div className="document-score" aria-label="完成进度">
@@ -186,10 +186,12 @@ export function DocumentChecklistApp({
           <section
             className={`document-panel document-conversion${isReadyForConsultation ? " document-conversion--ready" : ""}`}
           >
-            <span className="card-icon">
-              <AppIcon name={isComplete ? "checkCircle" : "phone"} />
-            </span>
-            <p className="eyebrow">{isComplete ? "Ready" : "Next Step"}</p>
+            <div className="document-conversion__label">
+              <span className="card-icon">
+                <AppIcon name={isComplete ? "checkCircle" : "phone"} />
+              </span>
+              <p className="eyebrow">{isComplete ? "准备完成" : "下一步建议"}</p>
+            </div>
             <h3>{isComplete ? "资料准备已完成" : "准备到 50% 后，建议确认缺口"}</h3>
             <p>
               {isReadyForConsultation

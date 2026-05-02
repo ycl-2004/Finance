@@ -47,18 +47,18 @@ last_reviewed: 2026-04
 - 是否可转换或续保。
 - 最近一次复盘日期。
 
-## 客户怎么取得保险资料
+## 怎么取得保险资料
 
 客户不能只说“我有保险”，要拿到合同和当前有效资料。
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
 | 个人寿险 | 保险公司 online portal、原 advisor、broker | Policy contract、policy summary、beneficiary designation |
 | 永久寿险现金价值 | 保险公司、advisor | In-force illustration、cash value、loan value、surrender value |
 | 重疾险 | 保险公司、advisor | Covered conditions、definitions、survival period、exclusions、riders |
 | 伤残险 | 保险公司、advisor、雇主福利 portal | Waiting period、benefit period、monthly benefit、own/any occupation definition |
 | 团体福利 | HR、benefits administrator、group benefits portal | Benefits booklet、coverage summary、conversion option |
-| 房贷附加保险 | Lender、insurance provider | Optional mortgage insurance certificate、coverage、exclusions、premium |
+| 房贷附加保险 | 贷款机构、insurance provider | Optional mortgage insurance certificate、coverage、exclusions、premium |
 | 企业保险 | Commercial broker、insurance company | CGL、professional liability、key person、buy-sell funding、business overhead expense |
 
 操作步骤：

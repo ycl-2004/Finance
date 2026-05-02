@@ -64,13 +64,13 @@ Estate freeze 是企业传承中可能使用的税务和股权规划工具。它
 
 它高度复杂，需要律师和税务专业人士设计。
 
-## 客户怎么取得企业退出和传承资料
+## 怎么取得企业退出和传承资料
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
 | 公司法律资料 | BC Registries、minute book、律师 | Articles、certificate、annual reports、directors/officers、share register |
 | 股权安排 | Minute book、律师 | Shareholder agreement、buy-sell clause、valuation method |
-| 财务表现 | 会计师、bookkeeping software | 3 到 5 年 financial statements、tax returns、AR/AP aging |
+| 财务表现 | 会计师、记账系统 | 3 到 5 年 financial statements、tax returns、AR/AP aging |
 | 税务资格 | CPA、CRA records | QSBC/LCGE 初步资料、passive assets、holding period、share history |
 | 商业合同 | 客户本人、律师 | Customer/vendor contracts、lease、loan、personal guarantees |
 | 保险和 funding | Insurance broker、insurer | Key person、life、disability、buy-sell funding policies |
@@ -82,7 +82,7 @@ Estate freeze 是企业传承中可能使用的税务和股权规划工具。它
 2. 从会计师取得至少 3 年财务报表和 T2。
 3. 从 bookkeeping system 导出收入、毛利、费用、AR/AP、客户集中度。
 4. 从律师取得 shareholder agreement 和 buy-sell 条款。
-5. 从 lender 和 landlord 取得 loan、lease、personal guarantee。
+5. 从贷款机构和 landlord 取得 loan、lease、personal guarantee。
 6. 从保险 broker 取得 key person 和 buy-sell funding 保单。
 7. 请 CPA 预先检查 LCGE/QSBC 资格和是否需要 purification planning。
 

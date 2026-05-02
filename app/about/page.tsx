@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 
 export const metadata = {
@@ -48,7 +49,7 @@ export default function AboutPage() {
     <>
       <Reveal as="header" className="page-hero">
         <p className="eyebrow">About</p>
-        <h1>我们帮助你准备，不替你下结论</h1>
+        <HeroTitle text="我们帮助你准备，不替你下结论" />
         <p className="lead">
           这个平台的价值不是给你一个答案，而是让你在进入专业咨询前，
           已经知道要准备什么、要问什么、哪些边界不能跨。

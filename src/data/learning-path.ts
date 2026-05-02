@@ -53,8 +53,8 @@ export const learningPath: LearningStage[] = [
     requiredArticles: ["client-document-source-map"],
     optionalArticles: ["03-canadian-registered-accounts/06-room-check-workflow"],
     checkQuestions: [
-      "为什么不能让客户发送 CRA 或银行密码？",
-      "为什么所有余额、room、利率和 penalty 都要标明日期？"
+      "为什么不应该发送 CRA 或银行密码？",
+      "为什么所有余额、账户额度、利率和罚金都要标明日期？"
     ],
     relatedScenarios: ["tax-season-prep", "cashflow-reset", "first-home", "pre-retirement"]
   },
@@ -62,7 +62,7 @@ export const learningPath: LearningStage[] = [
     id: "registered-accounts",
     order: 4,
     title: "注册账户",
-    goal: "看懂 TFSA、RRSP、FHSA、RESP、RDSP 的用途、税务特点和 room 查询。",
+    goal: "看懂 TFSA、RRSP、FHSA、RESP、RDSP 的用途、税务特点和额度查询。",
     audience: "想理解加拿大账户体系的人",
     requiredArticles: [
       "03-canadian-registered-accounts/00-overview-comparison",

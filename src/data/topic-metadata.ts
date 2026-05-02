@@ -42,7 +42,7 @@ export const topicMetadata: TopicMetadata[] = [
     difficulty: "beginner",
     order: 2,
     primaryQuestion: "规划前需要准备哪些资料，去哪里拿？",
-    relatedTerms: ["NOA", "CRA account", "MSCA", "policy", "mortgage statement"]
+    relatedTerms: ["NOA", "CRA 账户", "MSCA", "保单", "房贷结单"]
   },
   {
     slug: "glossary",
@@ -53,7 +53,7 @@ export const topicMetadata: TopicMetadata[] = [
     difficulty: "beginner",
     order: 3,
     primaryQuestion: "这些英文金融词是什么意思？",
-    relatedTerms: ["TFSA", "RRSP", "KYC", "MER", "mortgage"]
+    relatedTerms: ["TFSA", "RRSP", "开户资料", "MER", "mortgage"]
   },
   {
     slug: "comprehensive-financial-planning",
@@ -70,12 +70,12 @@ export const topicMetadata: TopicMetadata[] = [
     slug: "canadian-registered-accounts",
     title: "加拿大注册账户",
     englishTitle: "Canadian Registered Accounts",
-    description: "看懂 TFSA、RRSP、FHSA 等账户的用途、税务特点和 room 查询。",
+    description: "看懂 TFSA、RRSP、FHSA 等账户的用途、税务特点和额度查询。",
     audience: "beginner",
     difficulty: "beginner",
     order: 20,
     primaryQuestion: "不同注册账户有什么区别？",
-    relatedTerms: ["TFSA", "RRSP", "FHSA", "RESP", "RDSP", "room"]
+    relatedTerms: ["TFSA", "RRSP", "FHSA", "RESP", "RDSP", "可用额度"]
   },
   {
     slug: "investment-planning-portfolio-strategy",
@@ -141,7 +141,7 @@ export const topicMetadata: TopicMetadata[] = [
     difficulty: "beginner",
     order: 80,
     primaryQuestion: "个人和公司财务怎么分清？",
-    relatedTerms: ["GST/HST", "payroll", "salary", "dividend", "shareholder agreement"]
+    relatedTerms: ["GST/HST", "薪资记录", "工资", "分红", "股东协议"]
   }
 ];
 

@@ -91,10 +91,10 @@
       "Client Document Source Map",
       "规划前需要准备哪些资料，去哪里拿？",
       "NOA",
-      "CRA account",
+      "CRA 账户",
       "MSCA",
-      "policy",
-      "mortgage statement"
+      "保单",
+      "房贷结单"
     ]
   },
   {
@@ -108,7 +108,7 @@
       "这些英文金融词是什么意思？",
       "TFSA",
       "RRSP",
-      "KYC",
+      "开户资料",
       "MER",
       "mortgage"
     ]
@@ -132,7 +132,7 @@
     "title": "加拿大注册账户",
     "href": "/topics/canadian-registered-accounts",
     "type": "topic",
-    "summary": "看懂 TFSA、RRSP、FHSA 等账户的用途、税务特点和 room 查询。",
+    "summary": "看懂 TFSA、RRSP、FHSA 等账户的用途、税务特点和额度查询。",
     "keywords": [
       "canadian-registered-accounts",
       "Canadian Registered Accounts",
@@ -142,7 +142,7 @@
       "FHSA",
       "RESP",
       "RDSP",
-      "room"
+      "可用额度"
     ]
   },
   {
@@ -231,10 +231,10 @@
       "Small Business Owner Financial Consulting",
       "个人和公司财务怎么分清？",
       "GST/HST",
-      "payroll",
-      "salary",
-      "dividend",
-      "shareholder agreement"
+      "薪资记录",
+      "工资",
+      "分红",
+      "股东协议"
     ]
   },
   {
@@ -259,18 +259,18 @@
     "title": "我第一次或今年要报税，应该先准备什么？",
     "href": "/scenarios/tax-season-prep",
     "type": "scenario",
-    "summary": "不知道 T4、T5、RRSP receipt、NOA、CRA account 和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
+    "summary": "不知道 T4、T5、RRSP 供款收据、NOA、CRA 账户和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
     "keywords": [
       "第一次在加拿大报税、新移民、工资收入者、自雇人士或收到 CRA 信件的人",
-      "不知道 T4、T5、RRSP receipt、NOA、CRA account 和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
-      "CRA account",
+      "不知道 T4、T5、RRSP 供款收据、NOA、CRA 账户和扣税资料分别从哪里找，也不清楚哪些问题该问会计师。",
+      "CRA 账户",
       "NOA/NOR",
-      "tax slips",
-      "RRSP receipts",
+      "税单",
+      "RRSP 供款收据",
       "扣除和抵免",
-      "我今年是否还有缺失 tax slips 或 receipts？",
+      "我今年是否还有缺失税单或收据？",
       "哪些扣除或抵免需要会计师确认资格和证据？",
-      "报税后我应该如何保存 NOA、room 和 tax package？"
+      "报税后我应该如何保存 NOA、账户额度和税务文件包？"
     ]
   },
   {
@@ -313,33 +313,33 @@
     "title": "TFSA、RRSP、FHSA 到底有什么不同？",
     "href": "/scenarios/account-differences",
     "type": "scenario",
-    "summary": "知道这些账户名字，但不清楚账户用途、税务特点和 room 查询方式。",
+    "summary": "知道这些账户名字，但不清楚账户用途、税务特点和可用额度查询方式。",
     "keywords": [
       "准备开始储蓄、投资或买房的人",
-      "知道这些账户名字，但不清楚账户用途、税务特点和 room 查询方式。",
+      "知道这些账户名字，但不清楚账户用途、税务特点和可用额度查询方式。",
       "账户和投资产品的区别",
       "TFSA",
       "RRSP",
       "FHSA",
-      "room 查询",
-      "我的 contribution room 是否以 CRA 最新数据为准？",
+      "额度查询",
+      "我的可用额度是否以 CRA 最新数据为准？",
       "我的资金使用时间会如何影响账户选择？",
-      "哪些交易还没有反映在 CRA account？"
+      "哪些交易还没有反映在 CRA 账户？"
     ]
   },
   {
     "title": "我有孩子，RESP 要怎么理解？",
     "href": "/scenarios/kids-education",
     "type": "scenario",
-    "summary": "听说 RESP 有政府补助，但不清楚 beneficiary、subscriber、CESG 和孩子不上学时的处理。",
+    "summary": "听说 RESP 有政府补助，但不清楚受益人、供款人、CESG 和孩子不上学时的处理。",
     "keywords": [
       "有孩子或计划教育储蓄的家庭",
-      "听说 RESP 有政府补助，但不清楚 beneficiary、subscriber、CESG 和孩子不上学时的处理。",
+      "听说 RESP 有政府补助，但不清楚受益人、供款人、CESG 和孩子不上学时的处理。",
       "RESP 基础",
       "政府教育补助",
       "教育目标时间",
       "家庭现金流",
-      "多个 subscriber 是否需要合并计算？",
+      "多个供款人是否需要合并计算？",
       "孩子年龄是否影响补助条件？",
       "如果未来不上学，有哪些一般处理方向需要了解？"
     ]
@@ -348,17 +348,17 @@
     "title": "我的房贷快续约了，要注意什么？",
     "href": "/scenarios/mortgage-renewal",
     "type": "scenario",
-    "summary": "只看续约利率，忽略现金流、penalty、摊还期、提前还款权利和压力测试。",
+    "summary": "只看续约利率，忽略现金流、罚金、摊还期、提前还款权利和压力测试。",
     "keywords": [
-      "房贷 term 即将到期、正在考虑 refinance 或 switch 的房主",
-      "只看续约利率，忽略现金流、penalty、摊还期、提前还款权利和压力测试。",
-      "renewal",
-      "refinance",
-      "switch",
+      "房贷期限即将到期、正在考虑重新贷款或转到其他机构的房主",
+      "只看续约利率，忽略现金流、罚金、摊还期、提前还款权利和压力测试。",
+      "续约",
+      "重新贷款",
+      "转到其他机构",
       "固定和浮动利率",
-      "提前还款和 penalty",
-      "renewal、switch、refinance 对我的现金流有什么不同影响？",
-      "当前合同是否有 penalty 或提前还款限制？",
+      "提前还款和罚金",
+      "续约、转到其他机构或重新贷款对我的现金流有什么不同影响？",
+      "当前合同是否有罚金或提前还款限制？",
       "如果利率变化，我的月供和长期成本会怎样变化？"
     ]
   },
@@ -377,7 +377,7 @@
       "雇主福利",
       "如果主要收入中断，家庭现金流缺口在哪里？",
       "现有雇主福利能覆盖哪些风险，不能覆盖哪些？",
-      "受益人和 owner 安排是否需要更新？"
+      "受益人和保单持有人安排是否需要更新？"
     ]
   },
   {
@@ -404,16 +404,16 @@
     "type": "scenario",
     "summary": "个人现金流、公司现金流、税务、保险、担保和退出安排容易混在一起。",
     "keywords": [
-      "自雇人士、公司 owner、合伙人、小企业主",
+      "自雇人士、公司企业主、合伙人、小企业主",
       "个人现金流、公司现金流、税务、保险、担保和退出安排容易混在一起。",
       "企业现金流",
-      "owner compensation",
-      "GST/HST 和 payroll",
+      "企业主薪酬",
+      "GST/HST 和薪资记录",
       "企业保险",
-      "succession",
+      "传承安排",
       "个人和公司现金流有没有混用？",
       "salary 和 dividend 的一般税务差异需要向会计师确认什么？",
-      "如果 owner 失能、死亡或退出，公司如何继续运作？"
+      "如果企业主失能、死亡或退出，公司如何继续运作？"
     ]
   },
   {
@@ -466,13 +466,13 @@
     ]
   },
   {
-    "title": "客户资料地图",
+    "title": "会前资料地图",
     "href": "/articles/01-comprehensive-financial-planning/01-client-data-map",
     "type": "article",
     "summary": "优先从官方或原始机构取得资料，不用口头估计替代文件。",
     "keywords": [
       "comprehensive-financial-planning",
-      "客户资料地图",
+      "会前资料地图",
       "01-comprehensive-financial-planning/01-client-data-map",
       "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html",
       "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/choose-financial-advisor.html",
@@ -824,7 +824,7 @@
     "title": "Refinance、Renewal 和 Switching",
     "href": "/articles/05-mortgage-lending/02-refinance-renewal-switching",
     "type": "article",
-    "summary": "Renewal 是房贷 term 到期后，与原 lender 或新 lender 签新的 term。借款人通常还没有还完全部贷款，只是当前合同到期。",
+    "summary": "Renewal 是房贷合同期到期后，与原贷款机构或新的贷款机构签下一段合同期。借款人通常还没有还完全部贷款，只是当前合同到期。",
     "keywords": [
       "mortgage-lending",
       "Refinance、Renewal 和 Switching",
@@ -929,7 +929,7 @@
       "tax-optimization-asset-protection",
       "报税季资料准备",
       "06-tax-optimization-asset-protection/04-tax-season-prep",
-      "CRA account",
+      "CRA My Account",
       "tax slips",
       "Notice of Assessment",
       "RRSP receipt",
@@ -1076,13 +1076,13 @@
     ]
   },
   {
-    "title": "客户资料取得流程总表",
+    "title": "按资料类型查找资料来源",
     "href": "/articles/client-document-source-map",
     "type": "article",
-    "summary": "这个文件用于回答：“客户要提供的资料，到底去哪里拿，拿什么，怎么核对。”",
+    "summary": "这页帮助你确认每类资料通常从哪里取得、要保存哪些文件，以及准备会议前应该先核对什么。",
     "keywords": [
       "client-document-source-map",
-      "客户资料取得流程总表",
+      "按资料类型查找资料来源",
       "client-document-source-map",
       "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/about-cra-sign-in-services.html",
       "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/register-cra-sign-in-services.html",
@@ -1238,7 +1238,7 @@
       "intermediate",
       "区分个人和公司资料",
       "列出税务和法律确认点",
-      "识别 owner 风险",
+      "识别企业主风险",
       "08-small-business-owner-financial-consulting/00-overview",
       "08-small-business-owner-financial-consulting/01-business-tax-cashflow",
       "08-small-business-owner-financial-consulting/03-succession-exit-risk"

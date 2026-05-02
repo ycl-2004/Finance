@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { MotionListLink } from "@/components/motion/MotionListLink";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getArticlesBySlugs } from "@/content/load-knowledge";
@@ -31,7 +32,7 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
       <section>
         <Reveal as="header" className="page-hero detail-hero" layoutId={`case-${study.slug}`}>
           <p className="eyebrow">Case Study</p>
-          <h1>{study.title}</h1>
+          <HeroTitle text={study.title} />
           <p className="lead">{study.background}</p>
           <div className="meta-row">
             <span className="tag tag--accent">{study.level}</span>

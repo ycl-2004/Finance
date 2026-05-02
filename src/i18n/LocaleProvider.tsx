@@ -44,8 +44,15 @@ function syncTextNodes(locale: Locale) {
 
   let current = walker.nextNode() as Text | null;
   while (current) {
+    const currentValue = current.nodeValue ?? "";
     if (!textOriginals.has(current)) {
-      textOriginals.set(current, current.nodeValue ?? "");
+      textOriginals.set(current, currentValue);
+    } else {
+      const previousOriginal = textOriginals.get(current) ?? "";
+      const previousLocalized = localizeVisibleText(previousOriginal, locale);
+      if (currentValue !== previousOriginal && currentValue !== previousLocalized) {
+        textOriginals.set(current, currentValue);
+      }
     }
     const original = textOriginals.get(current) ?? "";
     const localized = localizeVisibleText(original, locale);
@@ -70,6 +77,11 @@ function syncAttributes(locale: Locale) {
       const current = element.getAttribute(attribute);
       if (!current) return;
       if (!originals.has(attribute)) originals.set(attribute, current);
+      const previousOriginal = originals.get(attribute) ?? current;
+      const previousLocalized = localizeVisibleText(previousOriginal, locale);
+      if (current !== previousOriginal && current !== previousLocalized) {
+        originals.set(attribute, current);
+      }
       const original = originals.get(attribute) ?? current;
       const localized = localizeVisibleText(original, locale);
       if (current !== localized) element.setAttribute(attribute, localized);

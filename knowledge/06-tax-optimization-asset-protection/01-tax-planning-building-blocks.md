@@ -99,16 +99,16 @@ Capital loss 可能用于抵消 capital gain，但不能随意抵工资收入。
 
 Timing 不是逃税，而是合法安排收入和扣除发生的年份。
 
-## 客户怎么取得税务规划资料
+## 怎么取得税务规划资料
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
 | 报税结果 | CRA My Account、报税软件、会计师 | 最近 2 到 3 年 NOA/NOR、T1 |
 | 收入税单 | CRA My Account、雇主、金融机构、学校、政府部门 | T4、T4A、T5、T3、T5008、T5013、T2202、T4RSP、T4RIF、T4FHSA |
-| RRSP/FHSA | CRA account、金融机构 | RRSP receipts、RRSP deduction limit、T4FHSA、FHSA participation room |
+| RRSP/FHSA | CRA My Account、金融机构 | RRSP receipts、RRSP deduction limit、T4FHSA、FHSA participation room |
 | 投资税务 | 投资平台、advisor、tax package | Realized gain/loss、ACB、T3/T5/T5008、return of capital |
 | 扣除和抵免 | 客户文件、慈善机构、医疗机构、学校、托儿机构 | Donation、medical、tuition、childcare、professional dues receipts |
-| 房产或租金 | Municipality、lender、property manager、tenant records | Property tax、mortgage interest、rent received、repairs、insurance |
+| 房产或租金 | Municipality、贷款机构、property manager、tenant records | Property tax、mortgage interest、rent received、repairs、insurance |
 | 自雇或企业 | Bookkeeping software、会计师、CRA My Business Account | Sales invoices、expenses、GST/HST、payroll、T2、financial statements |
 | 欠税或分期 | CRA My Account 或 My Business Account | Account balance、instalment reminders、payment arrangement、CRA mail |
 

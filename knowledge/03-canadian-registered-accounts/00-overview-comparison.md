@@ -24,11 +24,11 @@ last_reviewed: 2026-04
 
 | Account | 要查什么 | 客户主要去哪里查 | 顾问需要再核对什么 |
 | --- | --- | --- | --- |
-| TFSA | contribution room、transaction summary | CRA account 的 TFSA details、所有 TFSA issuer statements | CRA 数据是否已更新、当年供款和提款是否已手动加入 |
-| RRSP | deduction limit、available contribution room、unused contributions、HBP/LLP balance | 最新 NOA/NOR、Form T1028、CRA account | 前 60 天供款、雇主计划、spousal RRSP、HBP/LLP 还款 |
-| FHSA | participation room、unused FHSA contributions、开户年份 | NOA/NOR、Form T1028、CRA account、T4FHSA、issuer statements | 是否已填 Schedule 15、是否有 RRSP 转入、是否接近 closing deadline |
+| TFSA | contribution room、transaction summary | CRA My Account 的 TFSA details、所有 TFSA 金融机构结单 | CRA 数据是否已更新、当年供款和提款是否已手动加入 |
+| RRSP | deduction limit、available contribution room、unused contributions、HBP/LLP balance | 最新 NOA/NOR、Form T1028、CRA My Account | 前 60 天供款、雇主计划、spousal RRSP、HBP/LLP 还款 |
+| FHSA | participation room、unused FHSA contributions、开户年份 | NOA/NOR、Form T1028、CRA My Account、T4FHSA、金融机构结单 | 是否已填 Schedule 15、是否有 RRSP 转入、是否接近 closing deadline |
 | RESP | lifetime contribution、CESG、CLB、unused CESG room | RESP promoter statements、subscriber 记录、Canada Education Savings Program 信息 | 多个 subscriber 是否合并计算、beneficiary 是否接近 16/17 岁 CESG 条件 |
-| RDSP | DTC status、lifetime contribution、grant/bond、unused entitlement、assistance holdback amount | CRA account 的 DTC information、RDSP issuer statements、Canada Disability Savings Program 信息 | 是否有 10 年 carry-forward、提款是否触发 grant/bond repayment |
+| RDSP | DTC status、lifetime contribution、grant/bond、unused entitlement、assistance holdback amount | CRA My Account 的 DTC information、RDSP 金融机构结单、Canada Disability Savings Program 信息 | 是否有 10 年 carry-forward、提款是否触发 grant/bond repayment |
 
 详细客户操作流程见 `06-room-check-workflow.md`。
 

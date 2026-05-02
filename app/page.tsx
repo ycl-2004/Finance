@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
 import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getAllArticles } from "@/content/load-knowledge";
 import { getChecklistByScenarioSlug } from "@/data/document-checklists";
@@ -9,6 +10,7 @@ import { learningPath } from "@/data/learning-path";
 import { scenarios } from "@/data/scenarios";
 import { topicMetadata } from "@/data/topic-metadata";
 import { articleRoute, scenarioRoute, topicRoute } from "@/lib/routes";
+import { siteAssetPath } from "@/lib/site-assets";
 
 const homeScenarioSlugs = [
   "new-to-canada",
@@ -73,9 +75,9 @@ export default async function HomePage() {
     .map((slug) => scenarios.find((scenario) => scenario.slug === slug))
     .filter((scenario): scenario is (typeof scenarios)[number] => Boolean(scenario));
   const featuredScenario = homeScenarios.find((scenario) => scenario.slug === "first-home") ?? homeScenarios[0];
-  const featuredChecklist = featuredScenario ? getChecklistByScenarioSlug(featuredScenario.slug) : undefined;
   const homeLearningStages = learningPath.slice(0, 5);
   const primaryTopics = topicMetadata.filter((topic) => topic.order >= 10).slice(0, 4);
+  const heroImageSrc = siteAssetPath("/images/qm-meeting-prep-hero.png");
 
   return (
     <>
@@ -83,7 +85,7 @@ export default async function HomePage() {
         <div className="home-hero__content">
           <div className="hero-copy">
             <p className="eyebrow">QM Financial Preparation Hub</p>
-            <h1 id="home-hero-title">见金融顾问前，先把问题与资料准备好</h1>
+            <HeroTitle id="home-hero-title" text="见金融顾问前，先把问题与资料准备好" />
             <p className="lead">
               适用于新移民、买房、家庭保障、房贷续约、退休和企业主规划。
               先选场景，生成资料清单，再带着明确问题进入会议。
@@ -125,31 +127,39 @@ export default async function HomePage() {
               className="advisor-desk-visual__image"
               height={864}
               priority
-              src="/images/qm-meeting-prep-hero.png"
+              src={heroImageSrc}
               width={1536}
             />
-            <div className="advisor-readiness-note" aria-label="会议准备状态示例">
+            <div className="advisor-readiness-note" aria-label="从零选择会议准备场景">
               <div className="advisor-readiness-note__top">
-                <span>Meeting Readiness</span>
-                <strong>82%</strong>
+                <span>Readiness starts at</span>
+                <strong>0%</strong>
               </div>
               <div>
-                <span className="advisor-readiness-note__label">Selected scenario</span>
-                <strong>{featuredScenario?.shortTitle ?? "准备见顾问"}</strong>
-                <p>资料、问题和风险边界先整理好，再进入具体讨论。</p>
+                <span className="advisor-readiness-note__label">Choose a case</span>
+                <strong>先选你的生活场景</strong>
+                <p>不用先背金融术语。从一个真实场景开始，页面会带你生成资料清单和顾问问题。</p>
+              </div>
+              <div className="advisor-scenario-chooser" aria-label="可选准备场景">
+                {homeScenarios.map((scenario) => (
+                  <Link href={scenarioRoute(scenario.slug)} key={scenario.slug}>
+                    <span>{scenario.stageLabel}</span>
+                    <strong>{scenario.shortTitle}</strong>
+                  </Link>
+                ))}
               </div>
               <ul className="console-checklist" aria-label="资料准备状态示例">
                 <li>
-                  <span className="status-dot status-dot--done" aria-hidden="true" />
-                  NOA / tax room 已定位
-                </li>
-                <li>
                   <span className="status-dot status-dot--active" aria-hidden="true" />
-                  Mortgage statement 待补充
+                  选择场景后从 0% 开始
                 </li>
                 <li>
                   <span className="status-dot" aria-hidden="true" />
-                  Advisor questions 已生成
+                  清单和问题按场景生成
+                </li>
+                <li>
+                  <span className="status-dot" aria-hidden="true" />
+                  进度只保存在本机浏览器
                 </li>
               </ul>
             </div>
@@ -315,7 +325,7 @@ export default async function HomePage() {
             ))}
           </ol>
           <div className="learning-path-home__topics" aria-label="常用参考主题">
-            <span className="learning-path-home__topics-label">Reference stack</span>
+            <span className="learning-path-home__topics-label">关联资料</span>
             {primaryTopics.map((topic) => (
               <Link href={topicRoute(topic.slug)} key={topic.slug}>
                 <span aria-hidden="true">
@@ -330,7 +340,7 @@ export default async function HomePage() {
                 <AppIcon name="fileText" />
               </span>
               <strong>资料地图</strong>
-              <p>如果你不知道 NOA、statement、room 这些资料从哪里来，从这里查。</p>
+              <p>如果你不知道 NOA、账户结单、可用额度这些资料从哪里来，从这里查。</p>
             </Link>
           </div>
         </div>

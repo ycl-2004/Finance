@@ -80,7 +80,7 @@ RDSP 不是只查一个 contribution room。要同时确认 DTC、lifetime contr
 
 操作步骤：
 
-1. 客户登入 CRA account，查看 DTC information 或 DTC application status。
+1. 客户登入 CRA My Account，查看 DTC information 或 DTC application status。
 2. 准备 CRA 发出的 DTC notice of determination，确认批准年份和到期情况。
 3. 向 RDSP issuer 要最新 account statement。
 4. 要求 statement 区分 personal contributions、grant、bond、investment income、rollover amounts、withdrawals 和 fees。

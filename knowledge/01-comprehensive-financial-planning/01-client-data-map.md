@@ -5,7 +5,7 @@ audience: beginner
 last_reviewed: 2026-04
 ---
 
-# 客户资料地图
+# 会前资料地图
 
 ## 个人和家庭资料
 
@@ -45,7 +45,7 @@ last_reviewed: 2026-04
 
 - 信用卡余额和利率。
 - 学生贷款、车贷、个人贷款。
-- 房贷本金、利率、term、amortization、prepayment privilege。
+- 房贷本金、利率、合同期、摊还期、提前还款权利。
 - HELOC 或 secured line of credit。
 - 商业贷款和个人担保。
 - 税款欠款或 CRA payment arrangement。
@@ -70,28 +70,28 @@ last_reviewed: 2026-04
 
 - 只知道收入不知道支出，不能判断现金流。
 - 只知道资产不知道负债，不能判断净资产。
-- 只知道账户余额不知道 contribution room，不能判断注册账户空间。
+- 只知道账户余额不知道可用额度，不能判断注册账户空间。
 - 只知道保险名称不知道保额、期限、等待期、排除项，不能判断保障。
-- 只知道房贷月供不知道利率、term 和 penalty，不能判断 refinancing 风险。
+- 只知道房贷月供不知道利率、合同期和罚金，不能判断重新贷款风险。
 
-## 客户怎么取得这些资料
+## 怎么取得这些资料
 
 优先从官方或原始机构取得资料，不用口头估计替代文件。
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
-| 税务收入 | CRA My Account、报税软件、会计师 | NOA/NOR、T1、tax slips、proof of income |
-| 工资收入 | 雇主 HR portal、payroll provider | Employment letter、pay stubs、T4、bonus/commission record |
-| 自雇收入 | 报税软件、会计师、bookkeeping software | T1 自雇表、收入发票、费用收据、GST/HST 资料 |
-| 银行现金流 | 银行 app 或网银 | 最近 3 到 12 个月 chequing/savings/credit card statements |
-| 投资资产 | 投资平台、银行、advisor | Account statements、holdings、transaction history、fee report、tax package |
-| 注册账户 room | CRA account、issuer statements | TFSA/RRSP/FHSA room、RESP/RDSP statements、receipts |
-| 信用债务 | Equifax、TransUnion、lender | Credit report、loan statements、payout statement、interest rate |
-| 房贷房产 | Lender、municipality、BC Assessment、LTSA | Mortgage statement、property tax、assessment、title search |
-| 保险 | 保险公司、advisor、雇主福利 portal | Policy contract、policy summary、benefits booklet、beneficiary |
+| 税务收入 | CRA My Account、报税软件、会计师 | NOA/NOR、T1、税单、收入证明 |
+| 工资收入 | 雇主 HR 或薪资系统 | 雇佣证明、工资单、T4、奖金或佣金记录 |
+| 自雇收入 | 报税软件、会计师、记账系统 | T1 自雇表、收入发票、费用收据、GST/HST 资料 |
+| 银行现金流 | 银行 app 或网银 | 最近 3 到 12 个月支票、储蓄和信用卡结单 |
+| 投资资产 | 投资平台、银行、投资顾问 | 账户结单、持仓明细、交易记录、费用报告、税务文件包 |
+| 注册账户可用额度 | CRA My Account、金融机构结单 | TFSA/RRSP/FHSA 可用额度、RESP/RDSP 结单、收据 |
+| 信用债务 | Equifax、TransUnion、贷款机构 | 信用报告、贷款结单、还款结清说明、利率 |
+| 房贷房产 | 贷款机构、市政地税账户、BC Assessment、LTSA | 房贷结单、地税、估值、产权查询 |
+| 保险 | 保险公司、保险顾问、雇主福利账户 | 保单合同、保单摘要、福利手册、受益人指定 |
 | 退休 | My Service Canada Account、雇主 pension provider | CPP statement、CPP estimate、OAS 资料、pension statement |
-| 遗产文件 | 律师/公证、金融机构、保险公司 | Will、POA、Representation Agreement、beneficiary designations |
-| 企业主资料 | CRA My Business Account、会计师、BC Registries、银行 | T2、GST/HST、payroll、financial statements、company records |
+| 遗产文件 | 律师/公证、金融机构、保险公司 | 遗嘱、授权书、代表协议、受益人指定 |
+| 企业主资料 | CRA My Business Account、会计师、BC Registries、银行 | T2、GST/HST、薪资记录、财务报表、公司记录 |
 
 更完整的逐项流程见 `../client-document-source-map.md`。
 

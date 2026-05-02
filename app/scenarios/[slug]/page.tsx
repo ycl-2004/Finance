@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
 import { AppIcon } from "@/components/icons/AppIcon";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { MotionListLink } from "@/components/motion/MotionListLink";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getArticlesBySlugs } from "@/content/load-knowledge";
@@ -41,7 +42,7 @@ export default async function ScenarioDetailPage({
       <section>
         <Reveal as="header" className="page-hero detail-hero" layoutId={`scenario-${scenario.slug}`}>
           <p className="eyebrow">开始规划 / {scenario.stageLabel}</p>
-          <h1>{scenario.title}</h1>
+          <HeroTitle text={scenario.title} />
           <p className="lead">{scenario.problem}</p>
           <div className="meta-row">
             <span className="tag tag--accent">适合：{scenario.userType}</span>

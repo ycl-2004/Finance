@@ -88,14 +88,14 @@ Dividends 是公司用税后利润向股东分配。
 - 公司没有现金买回股份。
 - 家庭和商业利益冲突。
 
-## 客户怎么取得企业主取钱和保障资料
+## 怎么取得企业主取钱和保障资料
 
-| 资料 | 客户去哪里拿 | 要拿什么 |
+| 资料 | 可以从哪里取得 | 要拿什么 |
 | --- | --- | --- |
 | Salary | Payroll provider、CRA My Business Account、会计师 | T4、payroll summary、PD7A、source deductions |
 | Dividends | 会计师、minute book、公司记录 | Dividend slips、director resolutions、shareholder loan schedules |
 | RRSP room | CRA My Account、NOA | RRSP deduction limit、earned income history |
-| 房贷收入证明 | CRA My Account、会计师、lender | NOA、T1、T2、financial statements、employment letter if paid salary |
+| 房贷收入证明 | CRA My Account、会计师、贷款机构 | NOA、T1、T2、financial statements、employment letter if paid salary |
 | Owner benefits | 保险公司、broker、HR/benefits provider | Health/dental plan、disability、critical illness、life、BOE |
 | Key person risk | 公司管理层、保险 broker、财务报表 | Revenue dependency、fixed costs、key person policies |
 | Buy-sell funding | 律师、minute book、保险公司 | Shareholder agreement、valuation clause、insurance policies |

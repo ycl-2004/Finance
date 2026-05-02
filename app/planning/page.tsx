@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
 import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
+import { HeroTitle } from "@/components/motion/HeroTitle";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { getChecklistByScenarioSlug } from "@/data/document-checklists";
 import { scenarios } from "@/data/scenarios";
@@ -74,7 +75,7 @@ export default function PlanningPage() {
     <>
       <Reveal as="header" className="page-hero planning-hero">
         <p className="eyebrow">Start Planning</p>
-        <h1>开始规划，不是开始乱看文章</h1>
+        <HeroTitle text="开始规划，不是开始乱看文章" />
         <p className="lead">
           选择最接近你当前情况的场景。每个场景都会带你完成三件事：
           知道要准备什么、知道常见错误、知道应该问顾问什么。
@@ -111,10 +112,12 @@ export default function PlanningPage() {
         <div className="flow-map" role="list">
           {flowSteps.map((step, index) => (
             <article className="flow-card" key={step.title} role="listitem">
-              <span className="flow-index">{index + 1}</span>
-              <span className="card-icon">
-                <AppIcon name={step.icon} />
-              </span>
+              <div className="flow-card__marker">
+                <span className="flow-index">{index + 1}</span>
+                <span className="card-icon">
+                  <AppIcon name={step.icon} />
+                </span>
+              </div>
               <h3>{step.title}</h3>
               <p>{step.body}</p>
               <strong>{step.output}</strong>
@@ -136,14 +139,14 @@ export default function PlanningPage() {
                     <AppIcon name={stageIconBySlug[scenario.slug] ?? "compass"} />
                   </span>
                   <span className="tag tag--accent">{scenario.stageLabel}</span>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <span className="planning-card__index">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="planning-card__metric">{scenario.documentsToPrepare.length} 类资料</span>
+                  <span className="planning-card__metric">
+                    {scenario.advisorQuestions.length} 个顾问问题
+                  </span>
                 </div>
                 <h2>{scenario.shortTitle}</h2>
                 <p>{scenario.actionSummary}</p>
-                <div className="planning-card__meta">
-                  <span>{scenario.documentsToPrepare.length} 类资料</span>
-                  <span>{scenario.advisorQuestions.length} 个顾问问题</span>
-                </div>
                 <div className="actions">
                   <Link className="button button--primary" href={scenarioRoute(scenario.slug)}>
                     <AppIcon name="route" />

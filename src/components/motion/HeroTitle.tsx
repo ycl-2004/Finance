@@ -1,11 +1,21 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
+import { splitTitleOnComma } from "@/lib/title-format";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-export function HeroTitle({ id, lines }: { id?: string; lines: string[] }) {
+export function HeroTitle({
+  id,
+  lines,
+  text
+}: {
+  id?: string;
+  lines?: string[];
+  text?: string;
+}) {
   const shouldReduceMotion = useReducedMotion();
+  const titleLines = lines ?? splitTitleOnComma(text ?? "");
 
   return (
     <motion.h1
@@ -22,10 +32,10 @@ export function HeroTitle({ id, lines }: { id?: string; lines: string[] }) {
         }
       }}
     >
-      {lines.map((line) => (
+      {titleLines.map((line, index) => (
         <motion.span
           className="hero-title__line"
-          key={line}
+          key={`${line}-${index}`}
           variants={{
             hidden: shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 22 },
             visible: { opacity: 1, y: 0, transition: { duration: 0.62, ease } }

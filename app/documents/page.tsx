@@ -1,18 +1,13 @@
-import { notFound } from "next/navigation";
-import { ArticleBody } from "@/components/article/ArticleBody";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
 import { DocumentChecklistApp } from "@/components/documents/DocumentChecklist";
+import { DocumentSourceGuide } from "@/components/documents/DocumentSourceGuide";
 import { Reveal } from "@/components/motion/Reveal";
-import { getArticleBySlug } from "@/content/load-knowledge";
 
 export const metadata = {
   title: "资料清单"
 };
 
-export default async function DocumentsPage() {
-  const article = await getArticleBySlug(["client-document-source-map"]);
-  if (!article) notFound();
-
+export default function DocumentsPage() {
   return (
     <>
       <Reveal as="header" className="page-hero">
@@ -31,12 +26,12 @@ export default async function DocumentsPage() {
       <Reveal as="div" className="section">
         <div className="section-header">
           <div>
-            <p className="eyebrow">Reference</p>
-            <h2>详细资料来源说明</h2>
-            <p>下面保留原有资料地图，方便你继续查每类文件通常从哪里取得。</p>
+            <p className="eyebrow">资料来源</p>
+            <h2 id="document-source-guide-title">按资料类型找到资料来源</h2>
+            <p>选择你正在准备的资料类型，只看对应入口、常见文件、准备步骤和注意事项。</p>
           </div>
         </div>
-        <ArticleBody html={article.html} />
+        <DocumentSourceGuide />
       </Reveal>
     </>
   );

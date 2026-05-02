@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | 公司基础资料 | `company-profile.md` | `company-profile.md` | `QM Financials`, `company`, `service lines`, `team` |
 | 金融术语表 | `glossary.md` | `glossary.md` | `glossary`, `TFSA`, `RRSP`, `mortgage`, `insurance` |
-| 客户资料取得流程 | `client-document-source-map.md` | `client-document-source-map.md` | `client documents`, `NOA`, `tax slips`, `policy`, `mortgage statement`, `MSCA`, `CRA account`, `business records` |
+| 客户资料取得流程 | `client-document-source-map.md` | `client-document-source-map.md` | `client documents`, `NOA`, `tax slips`, `policy`, `mortgage statement`, `MSCA`, `CRA My Account`, `business records` |
 
 ## Service Topic Index
 
@@ -20,7 +20,7 @@
 | --- | --- | --- | --- |
 | 综合财务规划 | `01-comprehensive-financial-planning` | `00-overview.md` | `financial planning`, `cashflow`, `net worth`, `goals`, `budget` |
 | 投资规划和投资组合策略 | `02-investment-planning-portfolio-strategy` | `00-overview.md` | `investment`, `portfolio`, `risk tolerance`, `asset allocation`, `fees` |
-| 加拿大注册账户规划 | `03-canadian-registered-accounts` | `00-overview-comparison.md` | `TFSA`, `RRSP`, `FHSA`, `RESP`, `RDSP`, `room`, `CRA account`, `contribution limit` |
+| 加拿大注册账户规划 | `03-canadian-registered-accounts` | `00-overview-comparison.md` | `TFSA`, `RRSP`, `FHSA`, `RESP`, `RDSP`, `room`, `CRA My Account`, `contribution limit` |
 | 保险和风险管理 | `04-insurance-risk-management` | `00-overview.md` | `life insurance`, `critical illness`, `disability`, `annuity`, `risk` |
 | 房贷和贷款方案 | `05-mortgage-lending` | `00-overview.md` | `mortgage`, `first-time buyer`, `refinance`, `renewal`, `stress test` |
 | 税务优化和资产保护 | `06-tax-optimization-asset-protection` | `00-overview.md` | `tax planning`, `deduction`, `credit`, `asset protection`, `corporation` |
