@@ -24,7 +24,7 @@ export default async function DocumentsPage() {
         <BoundaryNotice compact />
       </Reveal>
 
-      <Reveal as="div">
+      <Reveal as="div" className="document-workspace-shell">
         <DocumentChecklistApp />
       </Reveal>
 

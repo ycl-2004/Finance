@@ -22,7 +22,7 @@ export function GlossaryTable({ terms }: { terms: GlossaryTerm[] }) {
   }, [terms, query, category]);
 
   return (
-    <section>
+    <section className="section glossary-section">
       <div className="filter-row">
         <input
           type="search"
