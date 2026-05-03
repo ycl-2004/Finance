@@ -1,14 +1,8 @@
 "use client";
 
-import { type PointerEvent, useMemo, useState } from "react";
+import { type PointerEvent, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-  useReducedMotion,
-  useSpring
-} from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -35,13 +29,11 @@ type HomeScenarioExplorerProps = {
 };
 
 export function HomeScenarioExplorer({ initialSlug, items }: HomeScenarioExplorerProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [activeSlug, setActiveSlug] = useState(initialSlug ?? items[0]?.slug ?? "");
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
+  const [previewPosition, setPreviewPosition] = useState({ x: 0, y: 0 });
   const shouldReduceMotion = useReducedMotion();
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const springX = useSpring(mouseX, { damping: 24, stiffness: 180 });
-  const springY = useSpring(mouseY, { damping: 24, stiffness: 180 });
 
   const activeItem = useMemo(
     () => items.find((item) => item.slug === activeSlug) ?? items[0],
@@ -56,8 +48,12 @@ export function HomeScenarioExplorer({ initialSlug, items }: HomeScenarioExplore
 
   const updateCursorPreview = (event: PointerEvent) => {
     if (event.pointerType === "touch") return;
-    mouseX.set(event.pageX - window.scrollX + 22);
-    mouseY.set(event.pageY - window.scrollY + 22);
+    const rect = containerRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    setPreviewPosition({
+      x: event.clientX - rect.left + 22,
+      y: event.clientY - rect.top + 22
+    });
   };
 
   return (
@@ -65,6 +61,7 @@ export function HomeScenarioExplorer({ initialSlug, items }: HomeScenarioExplore
       className="scenario-explorer"
       onPointerLeave={() => setHoveredSlug(null)}
       onPointerMove={updateCursorPreview}
+      ref={containerRef}
     >
       <div className="scenario-explorer__list" role="list">
         {items.map((item, index) => {
@@ -187,7 +184,7 @@ export function HomeScenarioExplorer({ initialSlug, items }: HomeScenarioExplore
             className="cursor-scenario-preview"
             exit={{ opacity: 0, scale: 0.96 }}
             initial={{ opacity: 0, scale: 0.94 }}
-            style={{ x: springX, y: springY }}
+            style={{ left: previewPosition.x, top: previewPosition.y }}
             transition={{ duration: 0.18, ease }}
           >
             <span>{hoveredItem.label}</span>

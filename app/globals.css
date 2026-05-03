@@ -1359,8 +1359,8 @@ table {
 }
 
 .cursor-scenario-preview {
-  position: fixed;
-  z-index: 130;
+  position: absolute;
+  z-index: 8;
   display: grid;
   width: 236px;
   gap: 4px;
