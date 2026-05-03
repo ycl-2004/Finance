@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BoundaryNotice } from "@/components/article/BoundaryNotice";
+import { HomeReadinessStory } from "@/components/home/HomeReadinessStory";
+import { HomeScenarioExplorer } from "@/components/home/HomeScenarioExplorer";
 import { AppIcon, type AppIconName } from "@/components/icons/AppIcon";
 import { HeroTitle } from "@/components/motion/HeroTitle";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
@@ -75,6 +77,25 @@ export default async function HomePage() {
     .map((slug) => scenarios.find((scenario) => scenario.slug === slug))
     .filter((scenario): scenario is (typeof scenarios)[number] => Boolean(scenario));
   const featuredScenario = homeScenarios.find((scenario) => scenario.slug === "first-home") ?? homeScenarios[0];
+  const scenarioExplorerItems = homeScenarios.map((scenario) => {
+    const checklist = getChecklistByScenarioSlug(scenario.slug);
+
+    return {
+      badge: checklist ? "资料清单" : "准备流程",
+      boundaries: scenario.boundaries.length,
+      documents: scenario.documentsToPrepare,
+      documentTotal: scenario.documentsToPrepare.length,
+      href: scenarioRoute(scenario.slug),
+      icon: stageIconBySlug[scenario.slug] ?? "compass",
+      label: scenario.stageLabel,
+      problem: scenario.problem,
+      questions: scenario.advisorQuestions,
+      questionTotal: scenario.advisorQuestions.length,
+      slug: scenario.slug,
+      summary: scenario.actionSummary,
+      title: scenario.shortTitle
+    };
+  });
   const homeLearningStages = learningPath.slice(0, 5);
   const primaryTopics = topicMetadata.filter((topic) => topic.order >= 10).slice(0, 4);
   const heroImageSrc = siteAssetPath("/images/qm-meeting-prep-hero.png");
@@ -130,6 +151,11 @@ export default async function HomePage() {
               src={heroImageSrc}
               width={1536}
             />
+            <div className="hero-floating-annotations" aria-hidden="true">
+              <span className="hero-annotation hero-annotation--one">NOA / T4 / T5</span>
+              <span className="hero-annotation hero-annotation--two">Advisor questions</span>
+              <span className="hero-annotation hero-annotation--three">Local checklist</span>
+            </div>
             <div className="advisor-readiness-note" aria-label="从零选择会议准备场景">
               <div className="advisor-readiness-note__top">
                 <span>Readiness starts at</span>
@@ -182,70 +208,10 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        <div className="scenario-navigator">
-          <div className="scenario-navigator__list" role="list">
-            {homeScenarios.map((scenario, index) => {
-              const checklist = getChecklistByScenarioSlug(scenario.slug);
-              return (
-                <Link
-                  className={[
-                    "scenario-nav-item",
-                    scenario.slug === featuredScenario?.slug ? "scenario-nav-item--featured" : ""
-                  ]
-                    .filter(Boolean)
-                    .join(" ")}
-                  href={scenarioRoute(scenario.slug)}
-                  key={scenario.slug}
-                  role="listitem"
-                >
-                  <span className="scenario-nav-item__index">{String(index + 1).padStart(2, "0")}</span>
-                  <span className="scenario-nav-item__icon" aria-hidden="true">
-                    <AppIcon name={stageIconBySlug[scenario.slug] ?? "compass"} />
-                  </span>
-                  <span className="scenario-nav-item__body">
-                    <span className="scenario-nav-item__label">{scenario.stageLabel}</span>
-                    <strong>{scenario.shortTitle}</strong>
-                    <span>{scenario.actionSummary}</span>
-                  </span>
-                  <em>{checklist ? "资料清单" : "准备流程"}</em>
-                </Link>
-              );
-            })}
-          </div>
-          {featuredScenario && (
-            <aside className="scenario-preview" aria-label="推荐场景预览">
-              <p className="eyebrow">Selected Preview</p>
-              <h3>{featuredScenario.shortTitle}</h3>
-              <p>{featuredScenario.problem}</p>
-              <div className="scenario-preview__output">
-                <span>
-                  <strong>{featuredScenario.documentsToPrepare.length}</strong>
-                  资料类别
-                </span>
-                <span>
-                  <strong>{featuredScenario.advisorQuestions.length}</strong>
-                  顾问问题
-                </span>
-                <span>
-                  <strong>{featuredScenario.boundaries.length}</strong>
-                  边界提醒
-                </span>
-              </div>
-              <div className="scenario-preview__list">
-                <span>会议前先准备</span>
-                <ul>
-                  {featuredScenario.documentsToPrepare.slice(0, 3).map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <Link className="button button--primary" href={scenarioRoute(featuredScenario.slug)}>
-                查看这个流程
-              </Link>
-            </aside>
-          )}
-        </div>
+        <HomeScenarioExplorer initialSlug={featuredScenario?.slug} items={scenarioExplorerItems} />
       </Reveal>
+
+      <HomeReadinessStory />
 
       <RevealGroup className="section prep-flow" ariaLabelledBy="prep-flow-title">
         <RevealItem className="prep-flow__header">

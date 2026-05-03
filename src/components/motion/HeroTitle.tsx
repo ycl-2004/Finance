@@ -22,7 +22,7 @@ export function HeroTitle({
       animate="visible"
       className="hero-title"
       id={id}
-      initial={false}
+      initial={shouldReduceMotion ? false : "hidden"}
       variants={{
         hidden: {},
         visible: {
@@ -33,16 +33,17 @@ export function HeroTitle({
       }}
     >
       {titleLines.map((line, index) => (
-        <motion.span
-          className="hero-title__line"
-          key={`${line}-${index}`}
-          variants={{
-            hidden: shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 22 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.62, ease } }
-          }}
-        >
-          {line}
-        </motion.span>
+        <span className="hero-title__mask" key={`${line}-${index}`}>
+          <motion.span
+            className="hero-title__line"
+            variants={{
+              hidden: shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: "105%" },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.72, ease } }
+            }}
+          >
+            {line}
+          </motion.span>
+        </span>
       ))}
     </motion.h1>
   );
